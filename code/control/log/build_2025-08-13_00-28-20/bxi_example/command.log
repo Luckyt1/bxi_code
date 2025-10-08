@@ -1,2 +1,0 @@
-Invoking command in '/home/tang/code/control/build/bxi_example': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tang/code/control/bxi_rl_controller_ros2_example/src/bxi_example -DCMAKE_INSTALL_PREFIX=/home/tang/code/control/install/bxi_example
-Invoked command in '/home/tang/code/control/build/bxi_example' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tang/code/control/bxi_rl_controller_ros2_example/src/bxi_example -DCMAKE_INSTALL_PREFIX=/home/tang/code/control/install/bxi_example

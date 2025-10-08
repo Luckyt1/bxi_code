@@ -1,4 +1,0 @@
-Invoking command in '/home/tang/code/control/build/remote_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tang/code/control/build/remote_controller -- -j16 -l16
-Invoked command in '/home/tang/code/control/build/remote_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tang/code/control/build/remote_controller -- -j16 -l16
-Invoking command in '/home/tang/code/control/build/remote_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tang/code/control/build/remote_controller
-Invoked command in '/home/tang/code/control/build/remote_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tang/code/control/build/remote_controller
