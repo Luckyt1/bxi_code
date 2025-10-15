@@ -37,14 +37,14 @@ SMOOTH_FACTOR = 0.2   # 平滑因子 (0-1)，值越小越平滑
 MAX_ANGLE_CHANGE = 0.2  # 单步最大角度变化（弧度），防止突变
 
 JOINT_DIRECTION = {
-    1: 1,     # 第1个关节：正方向 (1) 或反方向 (-1)
-    2: -1,    # 第2个关节：反方向
-    3: -1,     # 第3个关节：正方向
-    4: -1,    # 第4个关节：反方向
-    5: -1,     # 第5个关节：正方向
-    6: -1,     # 第6个关节：正方向
+    1: -1,     # 第1个关节：正方向 (1) 或反方向 (-1)
+    2: 1,    # 第2个关节：反方向
+    3: 1,     # 第3个关节：正方向
+    4: 1,    # 第4个关节：反方向
+    5: 1,     # 第5个关节：正方向
+    6: 1,     # 第6个关节：正方向
     7: -1,     # 第7个关节：正方向
-    8: -1,     # 第8个关节：正方向 (如果有的话)
+    8: 1,     # 第8个关节：正方向 (如果有的话)
 }
 
 JOINT_ZERO_OFFSETS = {
@@ -84,7 +84,7 @@ joint_kp = np.array([     # 指定关节的kp，和joint_name顺序一一对应
     0,0,0,0,0,0,
     40,50,15,40,15,
     0,0,0,0,0,
-    15,15,10,
+    20,20,10,
     0,0,0,], dtype=np.float32)
 
 joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
@@ -93,7 +93,7 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
     0,0,0,0,0,0,
     1.0,1.0,0.8,1.0,0.8,
     0,0,0,0,0,
-    0.4,0.4,0.5,
+    0.5,0.3,0.5,
     0,0,0], dtype=np.float32)
 # joint_kp = np.array([     # 指定关节的kp，和joint_name顺序一一对应
 #     500,500,300,
@@ -131,8 +131,7 @@ def limit_angle_range(angle, min_angle=-np.pi, max_angle=np.pi, joint_id=None):
             return 0.0
         
     range_size = max_angle - min_angle
-    while angle < min_angle:
-        angle += range_size
+    while angle < min_angle:        angle += range_size
     while angle > max_angle:
         angle -= range_size
 
@@ -247,11 +246,11 @@ def parse_esp32_data(json_data, num_joints):
             for sensor in sensors_sorted:
                 sensor_id = sensor.get('id', 0)
                 angle = sensor.get('angle', 0.0)
-
+                
                 zero_offset = JOINT_ZERO_OFFSETS.get(sensor_id, 0)
                 adjusted_angle = angle - zero_offset
                 
-                direction = JOINT_DIRECTION.get(sensor_id, 1)
+                direction = JOINT_DIRECTION.get(sensor_id+1, 1)
                 final_angle = adjusted_angle * direction
 
                 angles.append(final_angle)
@@ -316,7 +315,7 @@ class WristControlNode(Node):
         # 缓启动
         self.last_qpos = None
         self.smooth_factor = 0.1  # 平滑因子，值越小越平滑
-        self.max_angle_step = 0.2  # 最大单步角度变化（弧度）
+        self.max_angle_step = 0.15  # 最大单步角度变化（弧度）
         self.start_time = time.time()
 
     def display_esp32_data(self, esp32_pos, latest_data):
@@ -370,18 +369,22 @@ class WristControlNode(Node):
         """平滑角度过渡，正确处理-π到π的跳跃"""
         target_angles = np.array(target_angles, dtype=np.float32)
         
-        # 如果没有当前角度，直接返回目标角度
-        if current_angles is None or self.last_qpos is None:
+        # 使用self.last_qpos作为当前角度
+        if self.last_qpos is None:
             self.last_qpos = target_angles.copy()
             return target_angles.copy()
         
-        current_angles = np.array(current_angles, dtype=np.float32)
-        
+        current_angles = self.last_qpos  # 使用上一次的角度作为当前角度
         smooth_angles = np.zeros_like(target_angles)
         
         for i in range(len(target_angles)):
-            # 计算角度差值（考虑循环性）
+            # 检测是否存在异常跳变
             angle_diff = self.angle_difference(target_angles[i], current_angles[i])
+            
+            # 如果角度变化过大，可能是传感器错误或通信错误，保持当前值
+            if abs(angle_diff) > np.pi/2:  # 90度以上的突变认为是异常
+                smooth_angles[i] = current_angles[i]
+                continue
             
             # 限制最大单步变化
             if abs(angle_diff) > self.max_angle_step:
@@ -398,9 +401,9 @@ class WristControlNode(Node):
                 new_angle -= 2 * np.pi
             while new_angle < -np.pi:
                 new_angle += 2 * np.pi
-
-        smooth_angles[i] = new_angle
-        
+                
+            smooth_angles[i] = new_angle
+    
         # 更新历史角度
         self.last_qpos = smooth_angles.copy()
         
@@ -422,23 +425,43 @@ class WristControlNode(Node):
                 # 自动模式：使用ESP32数据
                 latest_data = self.udp_receiver.get_latest_data()
                 esp32_pos = parse_esp32_data(latest_data, 16)
+                
+                # 改进的角度限制和跳变检测
                 for i in range(len(esp32_pos)):
-                    esp32_pos[i] = limit_angle_range(esp32_pos[i], -180, 180, joint_id=i)
-                # 这里可以添加数据处理逻辑
-                self.radians[0]=esp32_pos[0]
-                self.radians[1]=esp32_pos[1]
-                self.radians[2]=esp32_pos[2]
-                self.radians[3]=esp32_pos[3]
-                self.radians[4]=esp32_pos[4]
-                self.radians[10]=esp32_pos[5]
-                self.radians[11]=esp32_pos[6]
-                self.radians[12]=esp32_pos[7]*20
-                #左臂
-                self.radians = self.smooth_angle_transition(self.radians)
-                qpos=self.radians
+                    esp32_pos[i] = limit_angle_range(esp32_pos[i], -np.pi, np.pi, joint_id=i)
+                    
+                    # 额外的跳变检测
+                    if self.last_qpos is not None and i < len(self.last_qpos):
+                        angle_diff = abs(esp32_pos[i] - self.last_qpos[i])
+                        # 如果单个关节变化超过90度，保持上一个值
+                        if angle_diff > np.pi:
+                            if(i!=7):  
+                                esp32_pos[i] = self.last_qpos[i]
+                
+                # 映射到机械臂关节
+                new_radians = self.radians.copy()
+                new_radians[0] = esp32_pos[0]
+                new_radians[1] = esp32_pos[1]
+                new_radians[2] = esp32_pos[2]
+                new_radians[3] = esp32_pos[3]
+                new_radians[4] = esp32_pos[4]
+                new_radians[10] = esp32_pos[5]
+                new_radians[11] = esp32_pos[6]
+                
+                # 应用平滑过渡
+                self.radians = self.smooth_angle_transition(new_radians)
+                self.radians[12] = esp32_pos[7] * 7
+                if(self.radians[12]>-0.1):
+                    self.radians[12]=-0.1
+                qpos = self.radians
+                
                 self.display_counter += 1
-                if self.display_counter % 5 == 0:  # 每5次循环更新一次（约0.05秒）
+                if self.display_counter % 5 == 0:
                     self.display_esp32_data(self.radians, latest_data)
+            else:
+                # 如果没有ESP32数据，保持当前位置
+                qpos = self.radians if hasattr(self, 'radians') else np.zeros(16, dtype=np.float32)
+                
             # 创建消息
             msg = bxiMsg.ActuatorCmds()
             
