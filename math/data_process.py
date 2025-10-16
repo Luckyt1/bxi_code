@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 radians=np.zeros(16,dtype=np.float32)
 class math_data_process:
     def __init__(self):
@@ -58,3 +59,27 @@ class math_data_process:
         self.last_qpos = smooth_angles.copy()
         
         return smooth_angles
+    
+    def display_esp32_data(self, esp32_pos, latest_data):
+        """原地刷新显示ESP32数据"""
+        # 清除当前行并回到行首
+        sys.stdout.write('\r' + ' ' * 100 + '\r')
+        
+        # 格式化显示esp32_pos数据
+        if esp32_pos is not None and len(esp32_pos) > 0:
+            angles_deg = esp32_pos
+            angles_str = ' | '.join([f"J{i}:{angle:6.1f}rad" for i, angle in enumerate(angles_deg)])
+            
+            # 显示统计信息
+            stats = self.udp_receiver.get_stats()
+            timestamp = latest_data.get('timestamp', 0) if latest_data else 0
+            
+            # 组合显示信息
+            display_info = f"ESP32: {angles_str} | {stats['packets_received']}包 | {timestamp}"
+            
+            # 原地显示（不换行）
+            sys.stdout.write(display_info)
+            sys.stdout.flush()
+        else:
+            sys.stdout.write(" 等待ESP32数据...")
+            sys.stdout.flush()

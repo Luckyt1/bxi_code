@@ -40,7 +40,7 @@ JOINT_DIRECTION = {
     1: -1,     # 第1个关节：正方向 (1) 或反方向 (-1)
     2: 1,    # 第2个关节：反方向
     3: 1,     # 第3个关节：正方向
-    4: 1,    # 第4个关节：反方向
+    4: -1,    # 第4个关节：反方向
     5: 1,     # 第5个关节：正方向
     6: 1,     # 第6个关节：正方向
     7: -1,     # 第7个关节：正方向
@@ -112,12 +112,11 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
 #     1.0,1.0,0.8,1.0,0.8,
 #     0.4,0.4,0.5,
 #     0.4,0.4,0.5], dtype=np.float32)
+# 参考参数
 last_angle = {}
 def limit_angle_range(angle, min_angle=-np.pi, max_angle=np.pi, joint_id=None):
     """将角度限制在指定范围内，支持循环限幅"""
     global last_angle
-
-
     reasonable_min = radians(-1000)
     reasonable_max = radians(1000)
 
@@ -189,7 +188,6 @@ class ESP32UDPReceiver:
                 data, addr = self.socket.recvfrom(1024)
                 self.stats['packets_received'] += 1
                 self.stats['last_receive_time'] = time.time()
-                
                 # 解析JSON数据
                 try:
                     message = data.decode('utf-8')
@@ -341,19 +339,7 @@ class WristControlNode(Node):
         else:
             sys.stdout.write(" 等待ESP32数据...")
             sys.stdout.flush()
-    # def filter_position(self, target_pos):
-    #     """对目标位置进行平滑处理，防止突变"""
 
-    #     for i in range(len(target_pos)):
-    #         if self.current_pos is None:
-    #             self.current_pos = target_pos
-    #         if target_pos[i] > 370:
-    #             return self.current_pos
-    #         else:
-    #             self.current_pos=target_pos.copy()
-    #     return target_pos
-
-       # 计算位置变化
     def angle_difference(self, target, current):
         """计算两个角度之间的最短差值，考虑-π到π的循环性"""
         diff = target - current
@@ -382,7 +368,7 @@ class WristControlNode(Node):
             angle_diff = self.angle_difference(target_angles[i], current_angles[i])
             
             # 如果角度变化过大，可能是传感器错误或通信错误，保持当前值
-            if abs(angle_diff) > np.pi/2:  # 90度以上的突变认为是异常
+            if abs(angle_diff) > 1.5*np.pi:  # 度以上的突变认为是异常
                 smooth_angles[i] = current_angles[i]
                 continue
             
@@ -447,7 +433,7 @@ class WristControlNode(Node):
                 new_radians[4] = esp32_pos[4]
                 new_radians[10] = esp32_pos[5]
                 new_radians[11] = esp32_pos[6]
-                
+                # print(f"esp32_pos:{esp32_pos[4]}")
                 # 应用平滑过渡
                 self.radians = self.smooth_angle_transition(new_radians)
                 self.radians[12] = esp32_pos[7] * 7
