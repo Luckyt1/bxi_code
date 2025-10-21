@@ -1,0 +1,549 @@
+<mujoco model="elf31">
+    <compiler angle="radian" autolimits="true" meshdir="meshes"/>
+    <size njmax="500" nconmax="100" />
+    
+    <!-- 添加默认设置 -->
+    <default>
+        <light castshadow="false" />
+        
+        <default class="visual">
+            <geom contype="0" conaffinity="0"/>
+        </default>
+        
+        <default class="collision">
+            <geom contype="1" conaffinity="1"/>
+        </default>
+        
+        <joint damping="0.1" armature="0.01" frictionloss="0.01" />
+        <geom friction="0.9 0.8 0.8" contype="0" conaffinity="0"/>
+    </default>
+    
+    <!-- 添加视觉设置 -->
+    <visual>
+        <rgba com="0.502 1.0 0 1.0" fog="0 0 0 1" contactpoint="0.4 0.4 0.4 0.8"
+          contactforce="0.0 0.9 0.9 0.5" />
+        <scale com="0.05" forcewidth="0.04" contactwidth="0.10" contactheight="0.005" selectpoint="0.01" />
+        <map force="0.005" />
+    </visual>
+    
+    <option timestep="0.001" />
+    <asset>
+        <mesh name="base_link" file="base_link.STL" />
+        <mesh name="elb_z_link" file="elb_z_link.STL" />
+        <mesh name="gripper_l" file="gripper_l.STL" />
+        <mesh name="gripper_r" file="gripper_r.STL" />
+
+        <mesh name="l_ankle_x_link" file="l_ankle_x_link.STL" />
+        <mesh name="l_ankle_y_link" file="l_ankle_y_link.STL" />
+        <mesh name="l_elb_y_link" file="l_elb_y_link.STL" />
+        <mesh name="l_elb_z_link" file="l_elb_z_link.STL" />
+        <mesh name="l_hip_x_link" file="l_hip_x_link.STL" />
+        <mesh name="l_hip_y_link" file="l_hip_y_link.STL" />
+        <mesh name="l_hip_z_link" file="l_hip_z_link.STL" />
+        <mesh name="l_hum_foot" file="l_hum_foot.STL" />
+        <mesh name="l_knee_y_link" file="l_knee_y_link.STL" />
+        <mesh name="l_shld_x_link" file="l_shld_x_link.STL" />
+        <mesh name="l_shld_y_link" file="l_shld_y_link.STL" />
+        <mesh name="l_shld_z_link" file="l_shld_z_link.STL" />
+
+        <mesh name="r_ankle_x_link" file="r_ankle_x_link.STL" />
+        <mesh name="r_ankle_y_link" file="r_ankle_y_link.STL" />
+        <mesh name="r_elb_y_link" file="r_elb_y_link.STL" />
+        <mesh name="r_elb_z_link" file="r_elb_z_link.STL" />
+        <mesh name="r_hip_x_link" file="r_hip_x_link.STL" />
+        <mesh name="r_hip_y_link" file="r_hip_y_link.STL" />
+        <mesh name="r_hip_z_link" file="r_hip_z_link.STL" />
+        <mesh name="r_hum_foot" file="r_hum_foot.STL" />
+        <mesh name="r_knee_y_link" file="r_knee_y_link.STL" />
+        <mesh name="r_shld_x_link" file="r_shld_x_link.STL" />
+        <mesh name="r_shld_y_link" file="r_shld_y_link.STL" />
+        <mesh name="r_shld_z_link" file="r_shld_z_link.STL" />
+
+        <mesh name="waist_x_link" file="waist_x_link.STL" />
+        <mesh name="waist_y_link" file="waist_y_link.STL" />
+        <mesh name="waist_z_link" file="waist_z_link.STL" />
+        <mesh name="wrist_x_link" file="wrist_x_link.STL" />
+        <mesh name="wrist_y_link" file="wrist_y_link.STL" />
+
+        <mesh name="d_cups_Collider01_m_collision" file="../../cups/collision/d_cups_Collider01_m.obj"/>
+        <mesh name="d_cups_Collider06_m_collision" file="../../cups/collision/d_cups_Collider06_m.obj"/>
+        <mesh name="d_cups_Collider07_m_collision" file="../../cups/collision/d_cups_Collider07_m.obj"/>
+        <mesh name="d_cups_Collider08_m_collision" file="../../cups/collision/d_cups_Collider08_m.obj"/>
+        <mesh name="d_cups_Collider09_m_collision" file="../../cups/collision/d_cups_Collider09_m.obj"/>
+        <mesh name="d_cups_Collider10_m_collision" file="../../cups/collision/d_cups_Collider10_m.obj"/>
+        <mesh name="d_cups_Collider11_m_collision" file="../../cups/collision/d_cups_Collider11_m.obj"/>
+        <mesh name="d_cups_Collider12_m_collision" file="../../cups/collision/d_cups_Collider12_m.obj"/>
+        <mesh name="d_cups_Collider02_m_collision" file="../../cups/collision/d_cups_Collider02_m.obj"/>
+        <mesh name="d_cups_Collider13_m_collision" file="../../cups/collision/d_cups_Collider13_m.obj"/>
+        <mesh name="d_cups_Collider14_m_collision" file="../../cups/collision/d_cups_Collider14_m.obj"/>
+        <mesh name="d_cups_Collider15_m_collision" file="../../cups/collision/d_cups_Collider15_m.obj"/>
+        <mesh name="d_cups_Collider16_m_collision" file="../../cups/collision/d_cups_Collider16_m.obj"/>
+        <mesh name="d_cups_Collider17_m_collision" file="../../cups/collision/d_cups_Collider17_m.obj"/>
+        <mesh name="d_cups_Collider18_m_collision" file="../../cups/collision/d_cups_Collider18_m.obj"/>
+        <mesh name="d_cups_Collider19_m_collision" file="../../cups/collision/d_cups_Collider19_m.obj"/>
+        <mesh name="d_cups_Collider03_m_collision" file="../../cups/collision/d_cups_Collider03_m.obj"/>
+        <mesh name="d_cups_Collider20_m_collision" file="../../cups/collision/d_cups_Collider20_m.obj"/>
+        <mesh name="d_cups_Collider21_m_collision" file="../../cups/collision/d_cups_Collider21_m.obj"/>
+        <mesh name="d_cups_Collider22_m_collision" file="../../cups/collision/d_cups_Collider22_m.obj"/>
+        <mesh name="d_cups_Collider23_m_collision" file="../../cups/collision/d_cups_Collider23_m.obj"/>
+        <mesh name="d_cups_Collider24_m_collision" file="../../cups/collision/d_cups_Collider24_m.obj"/>
+        <mesh name="d_cups_Collider25_m_collision" file="../../cups/collision/d_cups_Collider25_m.obj"/>
+        <mesh name="d_cups_Collider26_m_collision" file="../../cups/collision/d_cups_Collider26_m.obj"/>
+        <mesh name="d_cups_Collider04_m_collision" file="../../cups/collision/d_cups_Collider04_m.obj"/>
+        <mesh name="d_cups_Collider27_m_collision" file="../../cups/collision/d_cups_Collider27_m.obj"/>
+        <mesh name="d_cups_Collider28_m_collision" file="../../cups/collision/d_cups_Collider28_m.obj"/>
+        <mesh name="d_cups_Collider29_m_collision" file="../../cups/collision/d_cups_Collider29_m.obj"/>
+        <mesh name="d_cups_Collider30_m_collision" file="../../cups/collision/d_cups_Collider30_m.obj"/>
+        <mesh name="d_cups_Collider31_m_collision" file="../../cups/collision/d_cups_Collider31_m.obj"/>
+        <mesh name="d_cups_Collider32_m_collision" file="../../cups/collision/d_cups_Collider32_m.obj"/>
+        <mesh name="d_cups_Collider33_m_collision" file="../../cups/collision/d_cups_Collider33_m.obj"/>
+        <mesh name="d_cups_Collider34_m_collision" file="../../cups/collision/d_cups_Collider34_m.obj"/>
+        <mesh name="d_cups_Collider05_m_collision" file="../../cups/collision/d_cups_Collider05_m.obj"/>
+        <mesh name="d_cups_Collider35_m_collision" file="../../cups/collision/d_cups_Collider35_m.obj"/>
+        <mesh name="d_cups_Collider36_m_collision" file="../../cups/collision/d_cups_Collider36_m.obj"/>
+        <mesh name="d_cups_Collider37_m_collision" file="../../cups/collision/d_cups_Collider37_m.obj"/>
+        <mesh name="d_cups_Collider38_m_collision" file="../../cups/collision/d_cups_Collider38_m.obj"/>
+        <mesh name="cup_body" file="../../cups/visuals/d_cups.obj" />
+        <!-- 修改天空盒纹理 -->
+        <!-- <texture type="skybox" builtin="gradient" width="512" height="512" rgb1=".4 .6 .8"
+            rgb2="0 0 0" /> -->
+        <texture type="skybox" builtin="gradient" width="1024" height="1024" rgb1="0.3 0.5 0.8" rgb2="0.1 0.1 0.3"/>     
+        <texture name="texgeom" type="cube" builtin="flat" mark="cross" width="128" height="128" rgb1="0.6 0.6 0.6" rgb2="0.6 0.6 0.6" markrgb="1 1 1" />
+        <texture name="texplane" type="2d" builtin="checker" rgb1=".4 .4 .4" rgb2=".6 .6 .6" width="512" height="512" />
+        <!-- 修改地板材质 -->
+        <material name='MatPlane' reflectance='0.3' texture="texplane" texrepeat="1 1"
+                    texuniform="true" rgba=".7 .7 .7 1" />
+        <!-- <material name="MatPlane" texture="texplane" texrepeat="10 10" 
+                texuniform="true" reflectance="0.2" rgba="0.8 0.8 0.8 1"/> -->
+
+        <!-- 添加桌子材质 -->
+        <material name="MatTableTop" texture="texplane" texrepeat="1 0" rgba="0.9 0.8 0.7 1"/>
+        <material name="MatTableLeg" rgba="0.4 0.3 0.2 1"/>
+
+        <material name="MatBox" rgba="0.6 0.4 0.2 1"/> 
+        <texture name="texbox" type="cube" builtin="flat" mark="cross" width="128" height="128" 
+            rgb1="0.8 0.6 0.4" rgb2="0.7 0.5 0.3" markrgb="0.3 0.2 0.1" />
+        <!-- 高度图纹理 -->
+        <!-- <hfield name="hilly_terrain" size="5 5 0.5 0.1" file="heightmap.png"/> -->
+
+        <!-- 或者使用自定义图片纹理 -->
+        <!-- <texture name="tex_floor" type="2d" file="floor_texture.jpg" width="512" height="512"/> -->
+        <!-- <material name="MatCustomFloor" texture="tex_floor" texrepeat="5 5"/> -->
+
+    </asset>
+
+    <worldbody>
+        <light directional="true" diffuse=".8 .8 .8" pos="0 0 10" dir="0 0 -10" />
+
+        <geom class="collision" name="floor" pos="0 0 0" type="plane" size="0 0 1" material="MatPlane" />
+        <!-- 替换原来的地板 -->
+        <!-- <geom class="collision" name="terrain" type="hfield" hfield="hilly_terrain" pos="2 0 0" material="MatPlane"/> -->
+
+        <camera name="track" mode="targetbody" target="base_link" pos="0 -1.3 1.6"
+        xyaxes="1 0 0 0 0.707 0.707" />
+
+        <body name="base_link" pos="0 0 1.1" gravcomp="0">
+            <inertial pos="-0.002719 0.001928 0.003917" quat="0.99998 0.000694877 0.00586675 -0.00203064" mass="8.94844" diaginertia="0.187477 0.142271 0.0695066"/>
+            <joint name="world_joint" type="free"/>
+            <geom class="collision" type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="base_link"/>
+            <!-- 头部相机 -->
+            <!-- <camera name="head_camera" mode="fixed" pos="0.015 0 0.285" euler="1.57 -1.57 0" fovy="90"/> -->
+            <camera name="head_camera" mode="fixed" pos="0.031 0 0.29" euler="0 -1.04 -1.57" fovy="90"/>
+            <site name="imu" pos="0 0 0" />
+            <body name="waist_y_link" pos="0 0 -0.2087" gravcomp="0">
+                <inertial pos="0 0 0" quat="0.5 0.5 -0.5 0.5" mass="0.0531674" diaginertia="1.819e-05 9.7e-06 9.7e-06"/>
+                <joint name="waist_y_joint" pos="0 0 0" axis="0 1 0" range="-0.523 0.523" damping="100.0"/>
+                <body name="waist_x_link" pos="0 0 0" gravcomp="0">
+                    <inertial pos="-0.00448944 0 -0.0238919" quat="0 0.867095 0 0.498142" mass="0.21792" diaginertia="0.000150161 0.0001491 7.07387e-05"/>
+                    <joint name="waist_x_joint" pos="0 0 0" axis="1 0 0" range="-0.261 0.261" damping="100.0"/>
+                    <body name="waist_z_link" pos="0 0 0" gravcomp="0">
+                        <inertial pos="0.00031142 0.00082403 -0.0822689" quat="0.496903 0.498782 -0.503063 0.50123" mass="3.12645" diaginertia="0.0229475 0.0215716 0.00322266"/>
+                        <joint name="waist_z_joint" pos="0 0 0" axis="0 0 1" range="-1.57 1.57" damping="100.0"/>
+                        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="waist_z_link"/>
+                        <body name="l_hip_z_link" pos="0 0.1 -0.2175" gravcomp="0">
+                            <inertial pos="-0.0951743 -0.00029544 0.011577" quat="0.950348 -0.0165245 0.307379 -0.0456384" mass="1.26003" diaginertia="0.00318767 0.00299323 0.00121169"/>
+                            <joint name="l_hip_z_joint" pos="0 0 0" axis="0 0 1" range="-0.785 0.785"/>
+                            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_hip_z_link"/>
+                            <body name="l_hip_x_link" pos="0 0 0" gravcomp="0">
+                                <inertial pos="-0.00349545 -0.0501608 0.00015601" quat="0.578435 0.631575 0.35193 0.377717" mass="1.75826" diaginertia="0.00198223 0.00181137 0.00131094"/>
+                                <joint name="l_hip_x_joint" pos="0 0 0" axis="1 0 0" range="-0.523 0.785"/>
+                                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_hip_x_link"/>
+                                <body name="l_hip_y_link" pos="0 0 0" gravcomp="0">
+                                    <inertial pos="0.00237237 0.0240808 -0.0487449" quat="0.915126 -0.0824256 0.0170128 0.394286" mass="2.66296" diaginertia="0.0268551 0.0267772 0.00387364"/>
+                                    <joint name="l_hip_y_joint" pos="0 0 0" axis="0 1 0" range="-2 1"/>
+                                    <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_hip_y_link"/>
+                                    <body name="l_knee_y_link" pos="0 0 -0.3" gravcomp="0">
+                                        <inertial pos="0.00711393 -0.00031499 -0.109778" quat="0.999281 -0.00839565 0.0304989 0.0209001" mass="1.63072" diaginertia="0.0104617 0.0101879 0.00137116"/>
+                                        <joint name="l_knee_y_joint" pos="0 0 0" axis="0 1 0" range="0 2.355"/>
+                                        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_knee_y_link"/>
+                                        <body name="l_ankle_y_link" pos="0 0 -0.3" gravcomp="0">
+                                            <inertial pos="0 0 -0.00046563" quat="0.5 0.5 -0.5 0.5" mass="0.0120696" diaginertia="3.01e-06 2.89e-06 3.4e-07"/>
+                                            <joint name="l_ankle_y_joint" pos="0 0 0" axis="0 1 0" range="-2 2"/>
+                                            <body name="l_ankle_x_link" pos="0 0 0" gravcomp="0">
+                                                <inertial pos="-0.00088171 0 -0.0224519" quat="0 0.710014 0 0.704188" mass="0.270642" diaginertia="0.000816706 0.00071745 0.000145444"/>
+                                                <joint name="l_ankle_x_joint" pos="0 0 0" axis="1 0 0" range="-0.349 0.349"/>
+                                                <geom class="collision" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_ankle_x_link" pos="0.03 0 0"/>
+                                                <site name="lf_tc" type="box" size="0.1 0.042 0.005" pos="0.0 0 -0.035" rgba="0 0 0 0"/>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+
+                        <body name="r_hip_z_link" pos="0 -0.1 -0.2175" gravcomp="0">
+                            <inertial pos="-0.0951743 0.00029543 0.011577" quat="0.950348 0.0165245 0.307379 0.0456384" mass="1.26003" diaginertia="0.00318767 0.00299323 0.00121169"/>
+                            <joint name="r_hip_z_joint" pos="0 0 0" axis="0 0 1" range="-0.785 0.785"/>
+                            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_hip_z_link"/>
+                            <body name="r_hip_x_link" pos="0 0 0" gravcomp="0">
+                                <inertial pos="-0.00349545 0.0501608 0.000156" quat="0.377717 0.35193 0.631575 0.578435" mass="1.75826" diaginertia="0.00198223 0.00181137 0.00131094"/>
+                                <joint name="r_hip_x_joint" pos="0 0 0" axis="1 0 0" range="-0.785 0.523"/>
+                                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_hip_x_link"/>
+                                <body name="r_hip_y_link" pos="0 0 0" gravcomp="0">
+                                    <inertial pos="0.00237237 -0.0240808 -0.0487449" quat="0.394265 0.0170111 -0.0824261 0.915135" mass="2.66296" diaginertia="0.0268551 0.0267772 0.00387363"/>
+                                    <joint name="r_hip_y_joint" pos="0 0 0" axis="0 1 0" range="-2 1"/>
+                                    <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_hip_y_link"/>
+                                    <body name="r_knee_y_link" pos="0 0 -0.3" gravcomp="0">
+                                        <inertial pos="0.00711396 0.00031502 -0.109778" quat="0.999281 0.00839515 0.0304983 -0.0208987" mass="1.63072" diaginertia="0.0104617 0.0101878 0.00137116"/>
+                                        <joint name="r_knee_y_joint" pos="0 0 0" axis="0 1 0" range="0 2.355"/>
+                                        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_knee_y_link"/>
+                                        <body name="r_ankle_y_link" pos="0 0 -0.3" gravcomp="0">
+                                            <inertial pos="0 0 -0.00046563" quat="0.5 0.5 -0.5 0.5" mass="0.0120696" diaginertia="3.01e-06 2.89e-06 3.4e-07"/>
+                                            <joint name="r_ankle_y_joint" pos="0 0 0" axis="0 1 0" range="-2 2"/>
+                                            <body name="r_ankle_x_link" pos="0 0 0" gravcomp="0">
+                                                <inertial pos="-0.00088171 0 -0.0224519" quat="0 0.710014 0 0.704188" mass="0.270642" diaginertia="0.000816706 0.00071745 0.000145444"/>
+                                                <joint name="r_ankle_x_joint" pos="0 0 0" axis="1 0 0" range="-0.349 0.349"/>
+                                                <geom class="collision" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_ankle_x_link" pos="0.03 0 0"/>
+                                                <site name="rf_tc" type="box"  size="0.1 0.042 0.005" pos="0.0 0 -0.035" rgba="0 0 0 0"/>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <body name="l_shld_y_link" pos="0 0.21705 0.09205" gravcomp="0">
+                <inertial pos="0.00068297 -0.00449372 2.22e-06" quat="0.435933 0.557654 -0.43314 0.558009" mass="0.53805" diaginertia="0.00032312 0.000307497 0.000290513" />
+                <joint name="l_shld_y_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2 2" />
+                <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_shld_y_link" /> 
+                <body name="l_shld_x_link" pos="0 0 0" gravcomp="0"> 
+                    <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_shld_x_link" />
+                    <inertial pos="-2.047e-05 5.316e-05 -0.0616265" quat="0.511019 0.489093 0.494385 0.505204" mass="0.488475" diaginertia="0.000337096 0.000288412 0.000271922" />
+                    <joint name="l_shld_x_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-0.5 1.57" />
+                    <body name="l_shld_z_link" pos="0 0 0"  gravcomp="0">
+                        <inertial pos="4.164e-05 0.00022669 -0.221278" quat="0.999947 0.000588453 -1.03341e-06 0.0102498" mass="0.593095" diaginertia="0.00136574 0.00133988 0.000303419" />
+                        <!-- <joint name="l_shld_z_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-0.785 0.785" /> -->
+                        <joint name="l_shld_z_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_shld_z_link" />
+                        <body name="l_elb_y_link" pos="0 0 -0.24" gravcomp="0">
+                            <inertial pos="5.192e-05 1.999e-05 -0.0856119" quat="0.999983 0.00544979 0.0018217 -0.000285656" mass="0.500057" diaginertia="0.000437132 0.000360437 0.000302651" />
+                            <joint name="l_elb_y_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2.355 0.5" />
+                            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_elb_y_link" />
+                            <body name="l_elb_z_link" pos="0 0 -0.12"  gravcomp="0">
+                                <!-- <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="l_elb_z_link" /> -->
+                                <inertial pos="0 0 0" quat="1 0.00021844 2.91405e-05 -8.74832e-05" mass="0.134574" diaginertia="0.00040001 0.00039996 5.66199e-05" />
+                                <!-- <joint name="l_elb_z_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-0.785 0.785" /> -->
+                                <joint name="l_elb_z_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                <geom quat="1.89469e-08 0.707107 0.707107 1.89469e-08" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="elb_z_link" />
+                                <body name="l_wrist_y_link" pos="0 0 -0.0415"   gravcomp="0">
+                                    <inertial pos="0 0 0" quat="1 0.00021844 2.91405e-05 -8.74832e-05" mass="0.134574" diaginertia="0.00040001 0.00039996 5.66199e-05" />
+                                    <joint name="l_wrist_y_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.785 0.785" />
+                                    <geom quat="0.5 -0.5 -0.5 -0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="wrist_y_link" />
+                                    <body name="l_wrist_x_link" pos="0 0 -0.059" gravcomp="0">
+                                        <inertial pos="0 0 0" quat="1 0.00021844 2.91405e-05 -8.74832e-05" mass="0.134574" diaginertia="0.00040001 0.00039996 5.66199e-05" />
+                                        <joint name="l_wrist_x_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5 1.5" />
+                                        <geom quat="0.5 0.5 0.5 0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="wrist_x_link" />
+                                        <!-- 左手相机 -->
+                                        <camera name="left_hand_camera" mode="fixed" pos="0 0.08 -0.05" euler="0 0 0" fovy="120"/>
+                                         <body name="l_gripper_l" pos="-0.02 0 -0.105" gravcomp="0">
+                                            <inertial pos="0 0 0" mass="0.025" diaginertia="1e-05 1e-05 1e-05" />
+                                            <joint name="l_gripper_l_joint" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="-0.05 0.03" damping="0.5" armature="0.001" frictionloss="0.05"/>
+                                            <geom quat="0.5 -0.5 -0.5 0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="gripper_l" />
+                                            <geom name="l_gripper_r_tip1" type="sphere" size="0.008" 
+                                                pos="-0.003 0 -0.09" rgba="1 0 0 0"  friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" condim="6" contype="1" conaffinity="1"  priority="1"/>
+                                            <geom name="l_gripper_r_tip2" type="sphere" size="0.008"
+                                                pos="-0.003 0 -0.07" rgba="1 0 0 0"  friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001"  solref="0.01 0.3" condim="6"  contype="1" conaffinity="1"  priority="1"/>
+                                            <geom name="l_gripper_r_tip3" type="sphere" size="0.008" 
+                                                pos="-0.003 0 -0.05" rgba="1 0 0 0"  friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" condim="6"  contype="1" conaffinity="1"  priority="1"/>
+                                        </body>
+                                        <body name="l_gripper_r" pos="0.02 0 -0.105" gravcomp="0">
+                                            <inertial pos="0 0 0" mass="0.025" diaginertia="1e-05 1e-05 1e-05" />
+                                            <joint name="l_gripper_r_joint" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="-0.03 0.05" damping="0.5" armature="0.001" frictionloss="0.05"/>
+                                            <geom quat="0.5 -0.5 -0.5 0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="gripper_r" />
+                                            <geom name="r_gripper_l_tip1" type="sphere" size="0.008" 
+                                                pos="0.003 0 -0.09" rgba="1 0 0 0"  friction="3.0 2.5 0.1"  solimp="0.99 0.995 0.001" solref="0.01 0.3" condim="6" contype="1" conaffinity="1" priority="1"/>
+                                            <geom name="r_gripper_l_tip2" type="sphere" size="0.008" 
+                                                pos="0.003 0 -0.07" rgba="1 0 0 0"  friction="3.0 2.5 0.1"  solimp="0.99 0.995 0.001" solref="0.01 0.3" condim="6" contype="1" conaffinity="1" priority="1"/>
+                                            <geom name="r_gripper_l_tip3" type="sphere" size="0.008" 
+                                                pos="0.003 0 -0.05" rgba="1 0 0 0"  friction="3.0 2.5 0.1"  solimp="0.99 0.995 0.001" solref="0.01 0.3" condim="6" contype="1" conaffinity="1" priority="1"/>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <body name="r_shld_y_link" pos="0 -0.21705 0.09205" gravcomp="0">
+                <inertial pos="0.00068297 0.00449372 -2.22e-06" quat="0.558009 0.43314 -0.557654 0.435933" mass="0.53805" diaginertia="0.00032312 0.000307497 0.000290513" />
+                <joint name="r_shld_y_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2 2" />
+                <geom type="mesh" rgba="1 1 1 1" mesh="r_shld_y_link"/>
+                <body name="r_shld_x_link" pos="0 0 0" gravcomp="0">
+                    <inertial pos="2.047e-05 -5.316e-05 -0.0616265" quat="0.489093 0.511019 0.505204 0.494385" mass="0.488475" diaginertia="0.000337096 0.000288412 0.000271922" />
+                    <joint name="r_shld_x_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-1.57 0.5" />
+                    <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_shld_x_link"/>
+                    <body name="r_shld_z_link" pos="0 0 0" gravcomp="0">
+                        <inertial pos="-4.164e-05 -0.00022669 -0.221278" quat="0.999947 -0.000588453 1.03341e-06 0.0102498" mass="0.593095" diaginertia="0.00136574 0.00133988 0.000303419" />
+                        <joint name="r_shld_z_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                        <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_shld_z_link" />
+                        <body name="r_elb_y_link" pos="0 0 -0.24" gravcomp="0">
+                            <inertial pos="-5.192e-05 -1.999e-05 -0.0856119" quat="0.999983 -0.00544979 -0.0018217 -0.000285656" mass="0.500057" diaginertia="0.000437132 0.000360437 0.000302651" />
+                            <joint name="r_elb_y_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-2.355 0.5" />
+                            <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_elb_y_link" />
+                            <body name="r_elb_z_link" pos="0 0 -0.12" gravcomp="0">
+                                <!-- <geom type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="r_elb_z_link" /> -->
+                                <inertial pos="0 0 0" quat="1 0.00021844 2.91405e-05 -8.74832e-05" mass="0.134574" diaginertia="0.00040001 0.00039996 5.66199e-05" />
+                                <joint name="r_elb_z_joint" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                <geom quat="1.89469e-08 0.707107 0.707107 1.89469e-08" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="elb_z_link" />
+                                <body name="r_wrist_y_link" pos="0 0 -0.0415" gravcomp="0">
+                                    <inertial pos="0 0 0" quat="1 0.00021844 2.91405e-05 -8.74832e-05" mass="0.134574" diaginertia="0.00040001 0.00039996 5.66199e-05" />
+                                    <joint name="r_wrist_y_joint" pos="0 0 0" axis="0 1 0" limited="true" range="-0.785 0.785" />
+                                    <geom quat="0.5 -0.5 -0.5 -0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="wrist_y_link" />
+                                    <body name="r_wrist_x_link" pos="0 0 -0.059" gravcomp="0">
+                                        <inertial pos="0 0 0" quat="1 0.00021844 2.91405e-05 -8.74832e-05" mass="0.134574" diaginertia="0.00040001 0.00039996 5.66199e-05" />
+                                        <joint name="r_wrist_x_joint" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5 1.5" />
+                                        <geom quat="0.5 0.5 0.5 0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="wrist_x_link" />
+                                        <!-- 右手相机 -->
+                                        <camera name="right_hand_camera" mode="fixed" pos="0 -0.08 -0.05" euler="0 0 3.14159" fovy="120"/>
+                                        <body name="r_gripper_l" pos="-0.02 0 -0.105" gravcomp="0">
+                                            <inertial pos="0 0 0" mass="0.025" diaginertia="1e-05 1e-05 1e-05" />
+                                            <joint name="r_gripper_l_joint" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="-0.5 0.01" />
+                                            <geom quat="0.5 -0.5 -0.5 0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="gripper_l" />
+                                            <geom class="collision" name="r_gripper_l_collision" type="box" size="0.01 0.015 0.05" 
+                                             pos="-0.008 0 -0.05" rgba="1 0 0 0" friction="1.0 0.5 0.01" density="10" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+                                        </body>
+                                        <body name="r_gripper_r" pos="0.02 0 -0.105" gravcomp="0">
+                                            <inertial pos="0 0 0" mass="0.025" diaginertia="1e-05 1e-05 1e-05" />
+                                            <joint name="r_gripper_r_joint" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="-0.5 0.01" />
+                                            <geom quat="0.5 -0.5 -0.5 0.5" type="mesh" rgba="0.752941 0.752941 0.752941 1" mesh="gripper_r" />
+                                            <geom class="collision" name="r_gripper_r_collision" type="box" size="0.01 0.015 0.05" 
+                                                pos="0.008 0 -0.05" rgba="0 1 0 0" friction="1.0 0.5 0.01" density="10" solimp="0.9 0.95 0.001" solref="0.02 1"/>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+        <body name="table" pos="0.6 0 0.8" gravcomp="0">
+            <joint type="free"/>
+            <geom class="collision" type="box" size="0.3 0.5 0.02" pos="0 0 0.02" material="MatTableTop" rgba="0.8 0.7 0.6 1"/>
+            <geom class="collision" type="box" size="0.02 0.02 0.4" pos="0.28 0.48 -0.38" material="MatTableLeg"/>
+            <geom class="collision" type="box" size="0.02 0.02 0.4" pos="-0.28 0.48 -0.38" material="MatTableLeg"/>
+            <geom class="collision" type="box" size="0.02 0.02 0.4" pos="0.28 -0.48 -0.38" material="MatTableLeg"/>
+            <geom class="collision" type="box" size="0.02 0.02 0.4" pos="-0.28 -0.48 -0.38" material="MatTableLeg"/>
+        </body>
+        <!-- 降低箱子高度 - 从原来的30cm高改为15cm高 -->
+        <body name="box" pos="0.5 0 0.925" gravcomp="0">  <!-- z位置从1.0降低到0.925 -->
+            <joint type="free"/>
+            <inertial pos="0 0 0" mass="1.5" diaginertia="0.02 0.02 0.02"/>  <!-- 质量也相应减轻 -->
+            
+            <!-- 底部 (不变) -->
+            <geom class="collision" type="box" size="0.15 0.15 0.01" 
+                pos="0 0 -0.065" 
+                material="MatBox" 
+                friction="1.2 0.8 0.01" 
+                solimp="0.95 0.99 0.001" 
+                solref="0.01 0.5"
+                condim="6"/>
+            
+            <!-- 前壁  -->
+            <geom class="collision" type="box" size="0.15 0.01 0.075" 
+                pos="0 -0.14 -0.0075" 
+                material="MatBox" 
+                friction="1.2 0.8 0.01" 
+                solimp="0.95 0.99 0.001" 
+                solref="0.01 0.5"
+                condim="6"/>
+            
+            <!-- 后壁  -->
+            <geom class="collision" type="box" size="0.15 0.01 0.075"  
+                pos="0 0.14 -0.0075" 
+                material="MatBox" 
+                friction="1.2 0.8 0.01" 
+                solimp="0.95 0.99 0.001" 
+                solref="0.01 0.5"
+                condim="6"/>
+            
+            <!-- 左壁  -->
+            <geom class="collision" type="box" size="0.01 0.15 0.075" 
+                pos="-0.14 0 -0.0075" 
+                material="MatBox" 
+                friction="1.2 0.8 0.01" 
+                solimp="0.95 0.99 0.001" 
+                solref="0.01 0.5"
+                condim="6"/>
+            
+            <!-- 右壁  -->
+            <geom class="collision" type="box" size="0.01 0.15 0.075"  
+                pos="0.14 0 -0.0075" 
+                material="MatBox" 
+                friction="1.2 0.8 0.01" 
+                solimp="0.95 0.99 0.001" 
+                solref="0.01 0.5"
+                condim="6"/>
+        </body>
+        <body name="cup" pos="0.42 0.35 0.92" gravcomp="0">
+            <include file="../cups/model.xml"/>
+        </body>
+        
+         <!-- 修改地形物体，添加碰撞属性 -->
+        <!-- <geom class="collision" name="ramp" type="box" size="1 2 0.05" pos="2 0 0.05" euler="0 -0.1 0" material="MatPlane" rgba="0.6 0.6 0.6 1"/>
+        <geom class="collision" name="platform" type="box" size="0.8 0.8 0.1" pos="-1.5 1 0.3" material="MatPlane" rgba="0.7 0.7 0.7 1"/>
+        <geom class="collision" name="obstacle1" type="cylinder" size="0.1 0.3" pos="1 1 0.3" material="MatPlane" rgba="0.5 0.5 0.5 1"/>
+        <geom class="collision" name="obstacle2" type="box" size="0.2 0.05 0.15" pos="0.5 -1 0.15" material="MatPlane" rgba="0.5 0.5 0.5 1"/> -->
+
+    </worldbody>
+
+    <equality>
+        <!-- 左夹爪约束：右指跟随左指做镜像运动 -->
+        <joint name="l_gripper_constraint" joint1="l_gripper_l_joint" joint2="l_gripper_r_joint" polycoef="0 -1 0 0 0" />
+        
+        <!-- 右夹爪约束：右指跟随左指做镜像运动 -->
+        <joint name="r_gripper_constraint" joint1="r_gripper_l_joint" joint2="r_gripper_r_joint" polycoef="0 -1 0 0 0" />
+    </equality>
+
+    <actuator>
+        <motor name="waist_y_joint" joint="waist_y_joint" gear="1" ctrllimited='true' ctrlrange='-50 50' />
+        <motor name="waist_x_joint" joint="waist_x_joint" gear="1" ctrllimited='true' ctrlrange='-50 50' />
+        <motor name="waist_z_joint" joint="waist_z_joint" gear="1" ctrllimited='true' ctrlrange='-50 50' />
+
+        <motor name="l_hip_z_joint" joint="l_hip_z_joint" gear="1" ctrllimited='true' ctrlrange='-20 20' />
+        <motor name="l_hip_x_joint" joint="l_hip_x_joint" gear="1" ctrllimited='true' ctrlrange='-40 40' />
+        <motor name="l_hip_y_joint" joint="l_hip_y_joint" gear="1" ctrllimited='true' ctrlrange='-100 100' />
+        <motor name="l_knee_y_joint" joint="l_knee_y_joint" gear="1" ctrllimited='true' ctrlrange='-120 120' />
+        <motor name="l_ankle_y_joint" joint="l_ankle_y_joint" gear="1" ctrllimited='true' ctrlrange='-50 50' />
+        <motor name="l_ankle_x_joint" joint="l_ankle_x_joint" gear="1" ctrllimited='true' ctrlrange='-20 20' />
+
+        <motor name="r_hip_z_joint" joint="r_hip_z_joint" gear="1" ctrllimited='true' ctrlrange='-20 20' />
+        <motor name="r_hip_x_joint" joint="r_hip_x_joint" gear="1" ctrllimited='true' ctrlrange='-40 40' />
+        <motor name="r_hip_y_joint" joint="r_hip_y_joint" gear="1" ctrllimited='true' ctrlrange='-100 100' />
+        <motor name="r_knee_y_joint" joint="r_knee_y_joint" gear="1" ctrllimited='true' ctrlrange='-120 120' />
+        <motor name="r_ankle_y_joint" joint="r_ankle_y_joint" gear="1" ctrllimited='true' ctrlrange='-50 50' />
+        <motor name="r_ankle_x_joint" joint="r_ankle_x_joint" gear="1" ctrllimited='true' ctrlrange='-20 20' />
+
+        <motor name="l_shld_y_joint" joint="l_shld_y_joint" gear="1" ctrllimited='true' ctrlrange='-27 27' />
+        <motor name="l_shld_x_joint" joint="l_shld_x_joint" gear="1" ctrllimited='true' ctrlrange='-27 27' />
+        <motor name="l_shld_z_joint" joint="l_shld_z_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="l_elb_y_joint" joint="l_elb_y_joint" gear="1" ctrllimited='true' ctrlrange='-27 27' />
+        <motor name="l_elb_z_joint" joint="l_elb_z_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="l_wrist_y_joint" joint="l_wrist_y_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="l_wrist_x_joint" joint="l_wrist_x_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="l_gripper_joint" joint="l_gripper_l_joint" gear="1" ctrllimited='true' ctrlrange='-5 5' />
+
+        <motor name="r_shld_y_joint" joint="r_shld_y_joint" gear="1" ctrllimited='true' ctrlrange='-27 27' />
+        <motor name="r_shld_x_joint" joint="r_shld_x_joint" gear="1" ctrllimited='true' ctrlrange='-27 27' />
+        <motor name="r_shld_z_joint" joint="r_shld_z_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="r_elb_y_joint" joint="r_elb_y_joint" gear="1" ctrllimited='true' ctrlrange='-27 27' />
+        <motor name="r_elb_z_joint" joint="r_elb_z_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+
+        
+        <motor name="r_wrist_y_joint" joint="r_wrist_y_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="r_wrist_x_joint" joint="r_wrist_x_joint" gear="1" ctrllimited='true' ctrlrange='-7 7' />
+        <motor name="r_gripper_joint" joint="r_gripper_l_joint" gear="1" ctrllimited='true' ctrlrange='-5 5' /> 
+    </actuator>
+
+    <sensor>
+        <!-- IMU传感器 -->
+        <framequat name="Body_Quat" objtype="site" objname="imu" />
+        <gyro name="Body_Gyro" site="imu" />
+        <accelerometer name="Body_Acc" site="imu" />
+
+        <!-- 关节位置传感器 -->
+        <jointpos name="waist_y_joint_pos" joint="waist_y_joint" />
+        <jointpos name="waist_x_joint_pos" joint="waist_x_joint" />
+        <jointpos name="waist_z_joint_pos" joint="waist_z_joint" />
+
+        <jointpos name="l_hip_z_joint_pos" joint="l_hip_z_joint" />
+        <jointpos name="l_hip_x_joint_pos" joint="l_hip_x_joint" />
+        <jointpos name="l_hip_y_joint_pos" joint="l_hip_y_joint" />
+        <jointpos name="l_knee_y_joint_pos" joint="l_knee_y_joint" />
+        <jointpos name="l_ankle_y_joint_pos" joint="l_ankle_y_joint" />
+        <jointpos name="l_ankle_x_joint_pos" joint="l_ankle_x_joint" />
+
+        <jointpos name="r_hip_z_joint_pos" joint="r_hip_z_joint" />
+        <jointpos name="r_hip_x_joint_pos" joint="r_hip_x_joint" />
+        <jointpos name="r_hip_y_joint_pos" joint="r_hip_y_joint" />
+        <jointpos name="r_knee_y_joint_pos" joint="r_knee_y_joint" />
+        <jointpos name="r_ankle_y_joint_pos" joint="r_ankle_y_joint" />
+        <jointpos name="r_ankle_x_joint_pos" joint="r_ankle_x_joint" />
+
+        <jointpos name="l_shld_y_joint_pos" joint="l_shld_y_joint" />
+        <jointpos name="l_shld_x_joint_pos" joint="l_shld_x_joint" />
+        <jointpos name="l_shld_z_joint_pos" joint="l_shld_z_joint" />
+        <jointpos name="l_elb_y_joint_pos" joint="l_elb_y_joint" />
+        <jointpos name="l_elb_z_joint_pos" joint="l_elb_z_joint" />
+        <jointpos name="l_wrist_y_joint_pos" joint="l_wrist_y_joint" />
+        <jointpos name="l_wrist_x_joint_pos" joint="l_wrist_x_joint" />
+        <jointpos name="l_gripper_l_joint_pos" joint="l_gripper_l_joint" />
+        <jointpos name="l_gripper_r_joint_pos" joint="l_gripper_r_joint" />
+
+        <jointpos name="r_shld_y_joint_pos" joint="r_shld_y_joint" />
+        <jointpos name="r_shld_x_joint_pos" joint="r_shld_x_joint" />
+        <jointpos name="r_shld_z_joint_pos" joint="r_shld_z_joint" />
+        <jointpos name="r_elb_y_joint_pos" joint="r_elb_y_joint" />
+        <jointpos name="r_elb_z_joint_pos" joint="r_elb_z_joint" />
+        <jointpos name="r_wrist_y_joint_pos" joint="r_wrist_y_joint" />
+        <jointpos name="r_wrist_x_joint_pos" joint="r_wrist_x_joint" />
+        <jointpos name="r_gripper_l_joint_pos" joint="r_gripper_l_joint" />
+        <jointpos name="r_gripper_r_joint_pos" joint="r_gripper_r_joint" />
+
+        <!-- 关节速度传感器 -->
+        <jointvel name="waist_y_joint_vel" joint="waist_y_joint" />
+        <jointvel name="waist_x_joint_vel" joint="waist_x_joint" />
+        <jointvel name="waist_z_joint_vel" joint="waist_z_joint" />
+
+        <jointvel name="l_hip_z_joint_vel" joint="l_hip_z_joint" />
+        <jointvel name="l_hip_x_joint_vel" joint="l_hip_x_joint" />
+        <jointvel name="l_hip_y_joint_vel" joint="l_hip_y_joint" />
+        <jointvel name="l_knee_y_joint_vel" joint="l_knee_y_joint" />
+        <jointvel name="l_ankle_y_joint_vel" joint="l_ankle_y_joint" />
+        <jointvel name="l_ankle_x_joint_vel" joint="l_ankle_x_joint" />
+
+        <jointvel name="r_hip_z_joint_vel" joint="r_hip_z_joint" />
+        <jointvel name="r_hip_x_joint_vel" joint="r_hip_x_joint" />
+        <jointvel name="r_hip_y_joint_vel" joint="r_hip_y_joint" />
+        <jointvel name="r_knee_y_joint_vel" joint="r_knee_y_joint" />
+        <jointvel name="r_ankle_y_joint_vel" joint="r_ankle_y_joint" />
+        <jointvel name="r_ankle_x_joint_vel" joint="r_ankle_x_joint" />
+
+        <jointvel name="l_shld_y_joint_vel" joint="l_shld_y_joint" />
+        <jointvel name="l_shld_x_joint_vel" joint="l_shld_x_joint" />
+        <jointvel name="l_shld_z_joint_vel" joint="l_shld_z_joint" />
+        <jointvel name="l_elb_y_joint_vel" joint="l_elb_y_joint" />
+        <jointvel name="l_elb_z_joint_vel" joint="l_elb_z_joint" />
+        <jointvel name="l_wrist_y_joint_vel" joint="l_wrist_y_joint" />
+        <jointvel name="l_wrist_x_joint_vel" joint="l_wrist_x_joint" />
+        <jointvel name="l_gripper_l_joint_vel" joint="l_gripper_l_joint" />
+
+        <jointvel name="r_shld_y_joint_vel" joint="r_shld_y_joint" />
+        <jointvel name="r_shld_x_joint_vel" joint="r_shld_x_joint" />
+        <jointvel name="r_shld_z_joint_vel" joint="r_shld_z_joint" />
+        <jointvel name="r_elb_y_joint_vel" joint="r_elb_y_joint" />
+        <jointvel name="r_elb_z_joint_vel" joint="r_elb_z_joint" />
+        <jointvel name="r_wrist_y_joint_vel" joint="r_wrist_y_joint" />
+        <jointvel name="r_wrist_x_joint_vel" joint="r_wrist_x_joint" />
+        <jointvel name="r_gripper_l_joint_vel" joint="r_gripper_l_joint" />
+
+        <!-- 接触传感器 -->
+        <touch name="lf_touch" site="lf_tc" />
+        <touch name="rf_touch" site="rf_tc" />
+    </sensor>
+
+</mujoco>

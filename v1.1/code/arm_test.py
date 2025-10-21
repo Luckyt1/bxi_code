@@ -33,8 +33,6 @@ TIMEOUT = 2.0         # UDP接收超时时间（秒）
 STICK_THRESHOLD = 30000  # 摇杆最大值约为32767
 GRIPPER_STEP = 0.5       # 夹爪每次移动的步长
 ANGLE_UNIT = "degrees"  # "degrees" 或 "radians" - ESP32发送的角度单位
-SMOOTH_FACTOR = 0.2   # 平滑因子 (0-1)，值越小越平滑
-MAX_ANGLE_CHANGE = 0.2  # 单步最大角度变化（弧度），防止突变
 
 JOINT_DIRECTION = {
     1: -1,     # 第1个关节：正方向 (1) 或反方向 (-1)
@@ -82,9 +80,9 @@ joint_kp = np.array([     # 指定关节的kp，和joint_name顺序一一对应
     0,0,0,
     0,0,0,0,0,0,
     0,0,0,0,0,0,
-    40,50,15,40,15,
+    40,50,20,50,20,
     0,0,0,0,0,
-    20,20,10,
+    20,20,50,
     0,0,0,], dtype=np.float32)
 
 joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
@@ -93,7 +91,7 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
     0,0,0,0,0,0,
     1.0,1.0,0.8,1.0,0.8,
     0,0,0,0,0,
-    0.5,0.3,0.5,
+    0.5,0.3,1,
     0,0,0], dtype=np.float32)
 # joint_kp = np.array([     # 指定关节的kp，和joint_name顺序一一对应
 #     500,500,300,
@@ -280,7 +278,6 @@ def parse_esp32_data(json_data, num_joints):
 
 class WristControlNode(Node):
     """ROS2节点，用于接收ESP32数据并发布机械臂关节位置"""
-    
     def __init__(self):
         super().__init__('wrist_control_node')
         
@@ -312,8 +309,8 @@ class WristControlNode(Node):
         self.display_counter = 0
         # 缓启动
         self.last_qpos = None
-        self.smooth_factor = 0.1  # 平滑因子，值越小越平滑
-        self.max_angle_step = 0.15  # 最大单步角度变化（弧度）
+        self.smooth_factor = 0.6  # 平滑因子，值越小越平滑
+        self.max_angle_step = 0.3  # 最大单步角度变化（弧度）
         self.start_time = time.time()
 
     def display_esp32_data(self, esp32_pos, latest_data):
@@ -436,9 +433,9 @@ class WristControlNode(Node):
                 # print(f"esp32_pos:{esp32_pos[4]}")
                 # 应用平滑过渡
                 self.radians = self.smooth_angle_transition(new_radians)
-                self.radians[12] = esp32_pos[7] * 7
-                if(self.radians[12]>-0.1):
-                    self.radians[12]=-0.1
+                self.radians[12] = esp32_pos[7] * 12
+                if(self.radians[12]>1):
+                    self.radians[12]=1
                 qpos = self.radians
                 
                 self.display_counter += 1
