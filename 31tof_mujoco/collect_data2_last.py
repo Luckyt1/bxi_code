@@ -14,7 +14,9 @@ import csv  # 添加csv模块用于保存csv文件
 import threading
 import rclpy
 from rclpy.node import Node
+import sensor_msgs.msg
 from communication.msg import ActuatorCmds, MotionCommands
+from sensor_msgs.msg import JointState
 ################################################keyboard_controller
 # 全局变量：速度命令和键盘控制标志
 x_vel_cmd, y_vel_cmd, yaw_vel_cmd = 0.0, 0.0, 0.0  # x方向速度，y方向速度，偏航角速度
@@ -42,7 +44,6 @@ os.makedirs(csv_dir, exist_ok=True)
 os.makedirs(hand_imgs_dir, exist_ok=True)
 os.makedirs(head_imgs_dir, exist_ok=True)
 
-# 添加:自动检测已有数据组数的函数
 def detect_existing_data_groups():
     """检测已存在的数据组数量"""
     global data_group_count
@@ -289,7 +290,7 @@ def get_camera_image(camera_name,model, data, renderer):
     img = renderer.render()
     return img
 
-def save_data(group_id, frame_id, qs, head_img, hand_img):
+def save_data(group_id, frame_id, target_qs, head_img, hand_img):
     """保存数据到文件"""
     # 保存图片
     head_img_filename = f"{group_id}_{frame_id}.jpg"
@@ -318,7 +319,8 @@ def save_data(group_id, frame_id, qs, head_img, hand_img):
         
         # 写入数据行
         image_name = f"{group_id}_{frame_id}"
-        writer.writerow([image_name, qs[15], qs[16], qs[17], qs[18], qs[19], qs[20], qs[21], qs[22], 0.0])
+        writer.writerow([image_name, target_qs[15], target_qs[16], target_qs[17], target_qs[18], 
+                         target_qs[19], target_qs[20], target_qs[21], target_qs[22], 0.0])
             
 def run_mujoco(policy, cfg, env_cfg):
     # 手动指定MuJoCo模型路径
@@ -549,7 +551,7 @@ def run_mujoco(policy, cfg, env_cfg):
                             hand_img = cv2.resize(hand_img, (640, 480))
                             
                             # 保存数据
-                            save_data(data_group_count, frame_count,qs, head_img, hand_img)
+                            save_data(data_group_count, frame_count, target_qs, head_img, hand_img)
                             
                             # 更新帧计数
                             frame_count += 1
@@ -791,19 +793,19 @@ if __name__ == '__main__':
                 500,500,300,
                 100,100,100,150,50,30,
                 100,100,100,150,50,30,
-                100,100,100,100,100,
-                100,100,100,
-                100,100,100,100,100,
-                100,100,100], dtype=np.float32)
+                200,200,200,200,200,
+                200,200,200,
+                200,200,200,200,200,
+                200,200,200], dtype=np.float32)
 
             joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
                 5,5,3,
                 2,2,2,2.5,1,1,
                 2,2,2,2.5,1,1,
-                1,1,0.8,1,0.8,
-                1,1,1,
-                1,1,0.8,1,0.8,
-                1,1,1], dtype=np.float32)
+                2,2,2,2,2,
+                2,2,2,
+                2,2,2,2,2,
+                2,2,2], dtype=np.float32)
 
             ####
             kps=joint_kp
@@ -837,3 +839,4 @@ if __name__ == '__main__':
     print("ROS2订阅者已启动，等待接收ActuatorCmds和MotionCommands消息...")
     # 运行MuJoCo仿真
     run_mujoco(policy, Sim2simCfg(), env_cfg)
+
