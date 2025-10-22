@@ -1,5 +1,6 @@
 import numpy as np
 import sys
+import time
 radians=np.zeros(16,dtype=np.float32)
 class math_data_process:
     def __init__(self):
@@ -83,3 +84,9 @@ class math_data_process:
         else:
             sys.stdout.write(" 等待ESP32数据...")
             sys.stdout.flush()
+def time_process():
+    current_time = time.time()
+    if current_time - last_time >= 2.0:
+        # 操作
+        last_time = current_time
+        # 每秒执行的操作    
