@@ -10,10 +10,9 @@ import signal
 import sys
 import time
 import threading
-import struct
-import select
-import os
-import fcntl
+import mujoco
+import pinocchio as pin
+import sensor_msgs.msg
 from math import radians, degrees
 from scipy.spatial.transform import Rotation
 from queue import Queue
@@ -21,7 +20,7 @@ import math
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64MultiArray
-
+from sensor_msgs.msg import JointState
 import communication.msg as bxiMsg
 import termios
 import tty
@@ -38,10 +37,10 @@ JOINT_DIRECTION = {
     1: -1,     # 第1个关节：正方向 (1) 或反方向 (-1)
     2: 1,    # 第2个关节：反方向
     3: 1,     # 第3个关节：正方向
-    4: -1,    # 第4个关节：反方向
+    4: -1  ,    # 第4个关节：反方向
     5: 1,     # 第5个关节：正方向
     6: 1,     # 第6个关节：正方向
-    7: -1,     # 第7个关节：正方向
+    7: 1,     # 第7个关节：正方向
     8: 1,     # 第8个关节：正方向 (如果有的话)
 }
 
@@ -111,6 +110,40 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
 #     0.4,0.4,0.5,
 #     0.4,0.4,0.5], dtype=np.float32)
 # 参考参数
+class MuJoCoGravityCompensator:
+    """MuJoCo重力补偿器"""
+    
+    def __init__(self):
+        """初始化"""
+        # 加载MuJoCo模型
+        mjcf_path = "model/elf2_31_arm/elf2_31_arm.xml"
+        self.mj_model = mujoco.MjModel.from_xml_path(mjcf_path)
+        self.mj_data = mujoco.MjData(self.mj_model)
+        
+        # 加载Pinocchio模型
+        self.pin_model = pin.buildModelFromMJCF(mjcf_path)
+        self.pin_data = self.pin_model.createData()
+        # self.pin_model.gravity.linear = np.array([0., 0., -9.81])
+        # 控制模式
+        self.gravity_comp_enabled = True
+
+    def get_gravity_compensation(self,mujoco_data) -> np.ndarray:
+        """计算左臂重力补偿力矩"""
+        q = mujoco_data.qpos[0:40].copy()  # 提取机器人关节位置
+        q[3:7] = [mujoco_data.qpos[4], mujoco_data.qpos[5], mujoco_data.qpos[6], mujoco_data.qpos[3]]  # 四元数
+        tau_full = pin.computeGeneralizedGravity(
+            self.pin_model, self.pin_data, q
+        )
+        return tau_full[21:28]  # 返回左臂关节的重力补偿力矩
+    
+    def apply_gravity_compensation(self,mujoco_data):
+        """应用重力补偿"""
+        if self.gravity_comp_enabled:
+            tau = self.get_gravity_compensation(mujoco_data)
+            return tau
+        else:
+            return np.zeros(7)
+
 last_angle = {}
 def limit_angle_range(angle, min_angle=-np.pi, max_angle=np.pi, joint_id=None):
     """将角度限制在指定范围内，支持循环限幅"""
@@ -302,7 +335,7 @@ class WristControlNode(Node):
         self.udp_started = False
 
         # 创建定时器来处理数据和发布
-        self.timer = self.create_timer(0.01, self.process_and_publish)  # 100Hz
+        self.timer = self.create_timer(0.001, self.process_and_publish)  #
 
         self.gripper_l_real = -2.5
         self.gripper_r_real = -2.5
@@ -433,14 +466,25 @@ class WristControlNode(Node):
                 # print(f"esp32_pos:{esp32_pos[4]}")
                 # 应用平滑过渡
                 self.radians = self.smooth_angle_transition(new_radians)
-                self.radians[12] = esp32_pos[7] * 12
+                self.radians[12] = esp32_pos[7]*2
                 if(self.radians[12]>1):
-                    self.radians[12]=1
+                    self.radians[12]=1 
                 qpos = self.radians
                 
                 self.display_counter += 1
                 if self.display_counter % 5 == 0:
                     self.display_esp32_data(self.radians, latest_data)
+            if self.control_mode == 'manual':
+                new_radians = self.radians.copy()
+                new_radians[0] = esp32_pos[0]
+                new_radians[1] = esp32_pos[1]
+                new_radians[2] = esp32_pos[2]
+                new_radians[3] = esp32_pos[3]
+                new_radians[4] = esp32_pos[4]
+                new_radians[10] = esp32_pos[5]
+                new_radians[11] = esp32_pos[6]
+                self.radians = self.current_pos
+                qpos = self.radians
             else:
                 # 如果没有ESP32数据，保持当前位置
                 qpos = self.radians if hasattr(self, 'radians') else np.zeros(16, dtype=np.float32)

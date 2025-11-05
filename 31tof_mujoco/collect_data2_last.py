@@ -551,7 +551,7 @@ def run_mujoco(policy, cfg, env_cfg):
                             hand_img = cv2.resize(hand_img, (640, 480))
                             
                             # 保存数据
-                            save_data(data_group_count, frame_count, target_qs, head_img, hand_img)
+                            save_data(data_group_count, frame_count, ros_target_q, head_img, hand_img)
                             
                             # 更新帧计数
                             frame_count += 1
