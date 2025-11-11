@@ -13,7 +13,7 @@ const long printInterval = 1000;   // 串口打印间隔
 const long wifiSendInterval = 500; // WiFi发送间隔
 
 #define MIN_SERVO_ID 0
-#define MAX_SERVO_ID 7
+#define MAX_SERVO_ID 15
 #define SERVO_COUNT (MAX_SERVO_ID - MIN_SERVO_ID + 1)
 #define TARGET_ANGLE 180
 #define MOVE_SPEED 500
@@ -24,7 +24,7 @@ const long wifiSendInterval = 500; // WiFi发送间隔
 const char *ssid = "ikuai-hupa2.4G";
 const char *password = "Hupa@2018";
 // const char *server_ip = "192.168.88.92";
-const char *server_ip = "192.168.88.119";
+const char *server_ip = "192.168.88.131";
 const int server_port = 8080;
 WiFiUDP udp;
 bool wifi_connected = false;
@@ -41,7 +41,7 @@ struct Sensor_Data
     int last_raw_pos = 0;         // 上次原始位置值
     bool first_read = true;       // 是否第一次读取
 };
-Sensor_Data sensor[9];
+Sensor_Data sensor[20];
 
 // 初始化零点校正函数
 void initializeZeroCalibration()
@@ -150,11 +150,12 @@ void readSensorData()
 }
 void sendWifiData()
 {
+    // Serial.println("test");
     if (wifi_connected)
     {
         String jsonData = "{\"sensors\":[";
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 16; i++)
         {
             if (i > 0)
                 jsonData += ",";
@@ -172,6 +173,10 @@ void sendWifiData()
         {
             Serial.println("UDP发送失败");
         }
+        // else
+        // {
+        //     Serial.println("UDP success");
+        // }
     }
 }
 
@@ -198,6 +203,7 @@ void setup()
 {
     Serial1.begin(1000000, SERIAL_8N1, 44, 43);
     Serial.begin(115200);
+    wifi_init();
     hlscl.pSerial = &Serial1;
     delay(100);
     int targetPulse = TARGET_ANGLE / 360.0 * 4095;
@@ -210,7 +216,7 @@ void setup()
     }
     // 执行初始化零点校正
     initializeZeroCalibration();
-    wifi_init();
+   
 }
 
 void loop()
