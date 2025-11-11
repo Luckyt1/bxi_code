@@ -10,9 +10,10 @@ import signal
 import sys
 import time
 import threading
-import mujoco
-import pinocchio as pin
-import sensor_msgs.msg
+import struct
+import select
+import os
+import fcntl
 from math import radians, degrees
 from scipy.spatial.transform import Rotation
 from queue import Queue
@@ -20,7 +21,7 @@ import math
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64MultiArray
-from sensor_msgs.msg import JointState
+
 import communication.msg as bxiMsg
 import termios
 import tty
@@ -34,14 +35,23 @@ GRIPPER_STEP = 0.5       # 夹爪每次移动的步长
 ANGLE_UNIT = "degrees"  # "degrees" 或 "radians" - ESP32发送的角度单位
 
 JOINT_DIRECTION = {
-    1: -1,     # 第1个关节：正方向 (1) 或反方向 (-1)
+    1: 1,     # 第1个关节：正方向 (1) 或反方向 (-1)
     2: 1,    # 第2个关节：反方向
     3: 1,     # 第3个关节：正方向
-    4: -1  ,    # 第4个关节：反方向
+    4: -1,    # 第4个关节：反方向
     5: 1,     # 第5个关节：正方向
     6: 1,     # 第6个关节：正方向
     7: 1,     # 第7个关节：正方向
     8: 1,     # 第8个关节：正方向 (如果有的话)
+
+    9: -1,     # 第1个关节：正方向 (1) 或反方向 (-1)
+    10: -1,    # 第2个关节：反方向
+    11: 1,     # 第3个关节：正方向
+    12: 1,    # 第4个关节：反方向
+    13: 1,     # 第5个关节：正方向
+    14: 1,     # 第6个关节：正方向
+    15: 1,     # 第7个关节：正方向
+    16: 1,     # 第8个关节：正方向 (如果有的话)
 }
 
 JOINT_ZERO_OFFSETS = {
@@ -53,6 +63,15 @@ JOINT_ZERO_OFFSETS = {
     6: 0,     # 第6个关节零点偏移: 0度
     7: 0,     # 第7个关节零点偏移: 0度
     8: 0,     # 第8个关节零点偏移: 0度 (如果有的话)
+
+    9: 0,     # 第1个关节：正方向 (1) 或反方向 (-1)
+    10: 0,    # 第2个关节：反方向
+    11: 0,     # 第3个关节：正方向
+    12: 0,    # 第4个关节：反方向
+    13: 0,     # 第5个关节：正方向
+    14: 0,     # 第6个关节：正方向
+    15: 0,     # 第7个关节：正方向
+    16: 0,     # 第8个关节：正方向 (如果有的话)
 }
 
 joint_name = (
@@ -79,19 +98,20 @@ joint_kp = np.array([     # 指定关节的kp，和joint_name顺序一一对应
     0,0,0,
     0,0,0,0,0,0,
     0,0,0,0,0,0,
-    40,50,20,50,20,
+    100,100,50,70,50,
     0,0,0,0,0,
-    20,20,50,
-    0,0,0,], dtype=np.float32)
+    20,20,20,
+    0,0,0], dtype=np.float32)
 
 joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
     0,0,0,
     0,0,0,0,0,0,
     0,0,0,0,0,0,
-    1.0,1.0,0.8,1.0,0.8,
+    5.0,5.0,1.0,2.0,0.8,
     0,0,0,0,0,
-    0.5,0.3,1,
+    0.4,0.5,0.4,
     0,0,0], dtype=np.float32)
+
 # joint_kp = np.array([     # 指定关节的kp，和joint_name顺序一一对应
 #     500,500,300,
 #     100,100,100,150,30,10,
@@ -110,40 +130,18 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
 #     0.4,0.4,0.5,
 #     0.4,0.4,0.5], dtype=np.float32)
 # 参考参数
-class MuJoCoGravityCompensator:
-    """MuJoCo重力补偿器"""
-    
+class SimpleRateMonitor:
     def __init__(self):
-        """初始化"""
-        # 加载MuJoCo模型
-        mjcf_path = "model/elf2_31_arm/elf2_31_arm.xml"
-        self.mj_model = mujoco.MjModel.from_xml_path(mjcf_path)
-        self.mj_data = mujoco.MjData(self.mj_model)
-        
-        # 加载Pinocchio模型
-        self.pin_model = pin.buildModelFromMJCF(mjcf_path)
-        self.pin_data = self.pin_model.createData()
-        # self.pin_model.gravity.linear = np.array([0., 0., -9.81])
-        # 控制模式
-        self.gravity_comp_enabled = True
-
-    def get_gravity_compensation(self,mujoco_data) -> np.ndarray:
-        """计算左臂重力补偿力矩"""
-        q = mujoco_data.qpos[0:40].copy()  # 提取机器人关节位置
-        q[3:7] = [mujoco_data.qpos[4], mujoco_data.qpos[5], mujoco_data.qpos[6], mujoco_data.qpos[3]]  # 四元数
-        tau_full = pin.computeGeneralizedGravity(
-            self.pin_model, self.pin_data, q
-        )
-        return tau_full[21:28]  # 返回左臂关节的重力补偿力矩
+        self.last_time = None
+        self.rate = 0.0
     
-    def apply_gravity_compensation(self,mujoco_data):
-        """应用重力补偿"""
-        if self.gravity_comp_enabled:
-            tau = self.get_gravity_compensation(mujoco_data)
-            return tau
-        else:
-            return np.zeros(7)
-
+    def tick(self):
+        current = time.time()
+        if self.last_time:
+            dt = current - self.last_time
+            self.rate = 1.0 / dt if dt > 0 else 0.0
+        self.last_time = current
+        return self.rate
 last_angle = {}
 def limit_angle_range(angle, min_angle=-np.pi, max_angle=np.pi, joint_id=None):
     """将角度限制在指定范围内，支持循环限幅"""
@@ -335,17 +333,18 @@ class WristControlNode(Node):
         self.udp_started = False
 
         # 创建定时器来处理数据和发布
-        self.timer = self.create_timer(0.001, self.process_and_publish)  #
+        self.timer = self.create_timer(0.001, self.process_and_publish)  # 100Hz
+        self.exec_times = []
 
         self.gripper_l_real = -2.5
         self.gripper_r_real = -2.5
         self.display_counter = 0
         # 缓启动
         self.last_qpos = None
-        self.smooth_factor = 0.6  # 平滑因子，值越小越平滑
+        self.smooth_factor = 0.01  # 平滑因子，值越小越平滑
         self.max_angle_step = 0.3  # 最大单步角度变化（弧度）
         self.start_time = time.time()
-
+        
     def display_esp32_data(self, esp32_pos, latest_data):
         """原地刷新显示ESP32数据"""
         # 清除当前行并回到行首
@@ -369,7 +368,6 @@ class WristControlNode(Node):
         else:
             sys.stdout.write(" 等待ESP32数据...")
             sys.stdout.flush()
-
     def angle_difference(self, target, current):
         """计算两个角度之间的最短差值，考虑-π到π的循环性"""
         diff = target - current
@@ -427,6 +425,7 @@ class WristControlNode(Node):
     
     def process_and_publish(self):
         """处理数据并发布qpos"""
+        start_time = time.time()
         try:
             # 启动UDP接收器（只启动一次）
             if not self.udp_started:
@@ -451,40 +450,41 @@ class WristControlNode(Node):
                         angle_diff = abs(esp32_pos[i] - self.last_qpos[i])
                         # 如果单个关节变化超过90度，保持上一个值
                         if angle_diff > np.pi:
-                            if(i!=7):  
                                 esp32_pos[i] = self.last_qpos[i]
-                
                 # 映射到机械臂关节
                 new_radians = self.radians.copy()
-                new_radians[0] = esp32_pos[0]
-                new_radians[1] = esp32_pos[1]
-                new_radians[2] = esp32_pos[2]
-                new_radians[3] = esp32_pos[3]
-                new_radians[4] = esp32_pos[4]
-                new_radians[10] = esp32_pos[5]
-                new_radians[11] = esp32_pos[6]
+                new_radians[0] = esp32_pos[8]
+                new_radians[1] = esp32_pos[9]
+                new_radians[2] = esp32_pos[10]
+                new_radians[3] = esp32_pos[11]
+                new_radians[4] = esp32_pos[12]
+                new_radians[10] = esp32_pos[13]
+                new_radians[11] = esp32_pos[14]
+                new_radians[12] = esp32_pos[15]
+
+                new_radians[5] = esp32_pos[0]
+                new_radians[6] = esp32_pos[1]
+                new_radians[7] = esp32_pos[2]
+                new_radians[8] = esp32_pos[3]
+                new_radians[9] = esp32_pos[4]
+                new_radians[13] = esp32_pos[5]
+                new_radians[14] = esp32_pos[6]
+                new_radians[15] = esp32_pos[7]
                 # print(f"esp32_pos:{esp32_pos[4]}")
                 # 应用平滑过渡
+                if(new_radians[12]>1):
+                    new_radians[12]=-3.14
+                if(new_radians[15]>1):
+                    new_radians[15]=-3.14
                 self.radians = self.smooth_angle_transition(new_radians)
-                self.radians[12] = esp32_pos[7]*2
-                if(self.radians[12]>1):
-                    self.radians[12]=1 
+                self.radians[12]=self.radians[12]*2
+                self.radians[15]=self.radians[15]*2
+           
                 qpos = self.radians
                 
                 self.display_counter += 1
                 if self.display_counter % 5 == 0:
                     self.display_esp32_data(self.radians, latest_data)
-            if self.control_mode == 'manual':
-                new_radians = self.radians.copy()
-                new_radians[0] = esp32_pos[0]
-                new_radians[1] = esp32_pos[1]
-                new_radians[2] = esp32_pos[2]
-                new_radians[3] = esp32_pos[3]
-                new_radians[4] = esp32_pos[4]
-                new_radians[10] = esp32_pos[5]
-                new_radians[11] = esp32_pos[6]
-                self.radians = self.current_pos
-                qpos = self.radians
             else:
                 # 如果没有ESP32数据，保持当前位置
                 qpos = self.radians if hasattr(self, 'radians') else np.zeros(16, dtype=np.float32)
@@ -497,9 +497,9 @@ class WristControlNode(Node):
             soft_kp = joint_kp[-16:] * soft_k
              
             kp_mask =  [1,1,1,1,1,
-                        0,0,0,0,0,
+                        1,1,1,1,1,
                         1,1,1,
-                        0,0,0]
+                        1,1,1]
             
             msg.kp = (soft_kp * kp_mask).tolist()
             msg.kd = joint_kd[-16:].tolist()
@@ -509,7 +509,13 @@ class WristControlNode(Node):
             
             # 发布消息
             self.qpos_publisher.publish(msg)
-            
+            # exec_time = (time.time() - start_time) * 1000  # 毫秒
+            # self.exec_times.append(exec_time)
+            # if len(self.exec_times) > 100:
+            #     avg_time = sum(self.exec_times) / len(self.exec_times)
+            #     max_time = max(self.exec_times)
+            #     print(f"执行时间 - 平均: {avg_time:.2f}ms, 最大: {max_time:.2f}ms")
+            #     self.exec_times.clear()
         except Exception as e:
             self.get_logger().error(f"处理和发布数据时出错: {e}")
     
