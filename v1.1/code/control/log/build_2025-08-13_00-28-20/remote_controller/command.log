@@ -1,1 +1,0 @@
-Invoking command in '/home/tang/code/control/build/remote_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tang/code/control/bxi_rl_controller_ros2_example/src/remote_controller -DCMAKE_INSTALL_PREFIX=/home/tang/code/control/install/remote_controller
