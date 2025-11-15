@@ -1,0 +1,123 @@
+<!-- 方案1: 白色杯子 -->
+<body name="cup_object" pos="0 0 0">
+  <freejoint/>
+  <inertial pos="0 0 0.033" mass="0.15" diaginertia="0.0002 0.0002 0.0001"/>
+  
+  <!-- 杯身部分 - 白色 -->
+  <geom name="d_cups_Collider01_m" type="mesh" mesh="d_cups_Collider01_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider02_m" type="mesh" mesh="d_cups_Collider02_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider03_m" type="mesh" mesh="d_cups_Collider03_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider04_m" type="mesh" mesh="d_cups_Collider04_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider05_m" type="mesh" mesh="d_cups_Collider05_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider06_m" type="mesh" mesh="d_cups_Collider06_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider07_m" type="mesh" mesh="d_cups_Collider07_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider08_m" type="mesh" mesh="d_cups_Collider08_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider09_m" type="mesh" mesh="d_cups_Collider09_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider10_m" type="mesh" mesh="d_cups_Collider10_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider11_m" type="mesh" mesh="d_cups_Collider11_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider12_m" type="mesh" mesh="d_cups_Collider12_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider13_m" type="mesh" mesh="d_cups_Collider13_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider14_m" type="mesh" mesh="d_cups_Collider14_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider15_m" type="mesh" mesh="d_cups_Collider15_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider16_m" type="mesh" mesh="d_cups_Collider16_m_collision"
+        friction="3.0 2.5 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  
+  <!-- 把手部分 - 浅灰色 -->
+  <geom name="d_cups_Collider17_m" type="mesh" mesh="d_cups_Collider17_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider18_m" type="mesh" mesh="d_cups_Collider18_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider19_m" type="mesh" mesh="d_cups_Collider19_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider20_m" type="mesh" mesh="d_cups_Collider20_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider21_m" type="mesh" mesh="d_cups_Collider21_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider22_m" type="mesh" mesh="d_cups_Collider22_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider23_m" type="mesh" mesh="d_cups_Collider23_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider24_m" type="mesh" mesh="d_cups_Collider24_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider25_m" type="mesh" mesh="d_cups_Collider25_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider26_m" type="mesh" mesh="d_cups_Collider26_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider27_m" type="mesh" mesh="d_cups_Collider27_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider28_m" type="mesh" mesh="d_cups_Collider28_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider29_m" type="mesh" mesh="d_cups_Collider29_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider30_m" type="mesh" mesh="d_cups_Collider30_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider31_m" type="mesh" mesh="d_cups_Collider31_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider32_m" type="mesh" mesh="d_cups_Collider32_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider33_m" type="mesh" mesh="d_cups_Collider33_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider34_m" type="mesh" mesh="d_cups_Collider34_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider35_m" type="mesh" mesh="d_cups_Collider35_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider36_m" type="mesh" mesh="d_cups_Collider36_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider37_m" type="mesh" mesh="d_cups_Collider37_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+  <geom name="d_cups_Collider38_m" type="mesh" mesh="d_cups_Collider38_m_collision"
+        friction="5 3.0 0.1" solimp="0.99 0.995 0.001" solref="0.01 0.3" contype="1" conaffinity="1"
+        rgba="0.9 0.3 0.3 1"/>
+</body>

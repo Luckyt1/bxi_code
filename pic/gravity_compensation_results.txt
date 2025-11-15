@@ -1,0 +1,26 @@
+机械臂重力补偿分析报告
+==================================================
+模型名称: arm.SLDASM
+位置自由度 (nq): 14
+速度自由度 (nv): 7
+重力向量: [ 0.    0.   -9.81]
+
+关节详细信息:
+----------------------------------------
+  joint_link1: JointModel (nq=2, nv=1) [可动]
+  joint_link2: JointModel (nq=2, nv=1) [可动]
+  joint_link3: JointModel (nq=2, nv=1) [可动]
+  joint_link4: JointModel (nq=2, nv=1) [可动]
+  joint_link5: JointModel (nq=2, nv=1) [可动]
+  joint_link6: JointModel (nq=2, nv=1) [可动]
+  joint_link7: JointModel (nq=2, nv=1) [可动]
+
+中性位置重力补偿:
+------------------------------
+  joint_link1: -0.000000 N⋅m
+  joint_link2: -0.004898 N⋅m
+  joint_link3: -0.000000 N⋅m
+  joint_link4: -0.006033 N⋅m
+  joint_link5: -0.000000 N⋅m
+  joint_link6: -0.005294 N⋅m
+  joint_link7: -0.000008 N⋅m
