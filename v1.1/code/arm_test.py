@@ -21,11 +21,12 @@ import math
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64MultiArray
+from threading import Thread  #键盘线程控制
 
 import communication.msg as bxiMsg
 import termios
 import tty
-
+import pygame
 # 摇杆阈值（摇杆触发时的值）
 UDP_HOST = "0.0.0.0"  # 监听所有网络接口
 UDP_PORT = 8080       # UDP端口，与您的接收器保持一致
@@ -33,6 +34,46 @@ TIMEOUT = 2.0         # UDP接收超时时间（秒）
 STICK_THRESHOLD = 30000  # 摇杆最大值约为32767
 GRIPPER_STEP = 0.5       # 夹爪每次移动的步长
 ANGLE_UNIT = "degrees"  # "degrees" 或 "radians" - ESP32发送的角度单位
+keyboard_use = True  # 是否使用键盘控制
+if keyboard_use:
+    pygame.init()  # 初始化pygame
+    try:
+        # 设置窗口用于接收键盘输入
+        screen = pygame.display.set_mode((200, 100))
+        pygame.display.set_caption("Keyboard Control")
+        keyboard_opened = True
+  
+        print("空格键: 停止所有运动")
+    except Exception as e:
+        print(f"无法初始化键盘：{e}")
+    # 键盘线程退出标志
+    exit_flag = False
+    def handle_keyboard_input():
+        """处理键盘输入的线程函数"""
+        global key_press_flag
+        node = WristControlNode()
+        key_press_flag=False  # 防止按键连发标志
+        while not exit_flag:
+            # 获取键盘输入
+            keys = pygame.key.get_pressed()
+            
+            if keys[pygame.K_a]:
+                node.control_mode='auto'
+            if keys[pygame.K_d]:
+                node.control_mode='manual'
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    exit_flag = True
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        exit_flag = True
+            
+            pygame.time.delay(50)  # 50ms延迟,减少CPU使用
+
+    # 启动键盘输入处理线程
+    if keyboard_opened and keyboard_use:
+        keyboard_thread = Thread(target=handle_keyboard_input)
+        keyboard_thread.start()
 
 JOINT_DIRECTION = {
     1: 1,     # 第1个关节：正方向 (1) 或反方向 (-1)
@@ -130,41 +171,7 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
 #     0.4,0.4,0.5,
 #     0.4,0.4,0.5], dtype=np.float32)
 # 参考参数
-class SimpleRateMonitor:
-    def __init__(self):
-        self.last_time = None
-        self.rate = 0.0
-    
-    def tick(self):
-        current = time.time()
-        if self.last_time:
-            dt = current - self.last_time
-            self.rate = 1.0 / dt if dt > 0 else 0.0
-        self.last_time = current
-        return self.rate
 last_angle = {}
-def limit_angle_range(angle, min_angle=-np.pi, max_angle=np.pi, joint_id=None):
-    """将角度限制在指定范围内，支持循环限幅"""
-    global last_angle
-    reasonable_min = radians(-1000)
-    reasonable_max = radians(1000)
-
-    if angle > reasonable_max or angle < reasonable_min:
-        # 如果是突变值，返回上一次的正常值
-        if joint_id in last_angle:
-            return last_angle[joint_id]
-        else:
-            # 如果没有历史值，返回0
-            last_angle[joint_id] = 0.0
-            return 0.0
-        
-    range_size = max_angle - min_angle
-    while angle < min_angle:        angle += range_size
-    while angle > max_angle:
-        angle -= range_size
-
-    last_angle[joint_id] = angle
-    return angle
 
 class ESP32UDPReceiver:
     """ESP32 UDP数据接收器"""
@@ -326,7 +333,6 @@ class WristControlNode(Node):
 
         # 控制模式：'auto' 或 'manual'
         self.control_mode = 'auto'
-        self.selected_joint = 0  # 当前选中的关节
 
         # 初始化UDP接收器（只创建一次）
         self.udp_receiver = ESP32UDPReceiver(UDP_HOST, UDP_PORT, TIMEOUT)
@@ -335,9 +341,6 @@ class WristControlNode(Node):
         # 创建定时器来处理数据和发布
         self.timer = self.create_timer(0.001, self.process_and_publish)  # 100Hz
         self.exec_times = []
-
-        self.gripper_l_real = -2.5
-        self.gripper_r_real = -2.5
         self.display_counter = 0
         # 缓启动
         self.last_qpos = None
@@ -394,12 +397,7 @@ class WristControlNode(Node):
         for i in range(len(target_angles)):
             # 检测是否存在异常跳变
             angle_diff = self.angle_difference(target_angles[i], current_angles[i])
-            
-            # 如果角度变化过大，可能是传感器错误或通信错误，保持当前值
-            if abs(angle_diff) > 1.5*np.pi:  # 度以上的突变认为是异常
-                smooth_angles[i] = current_angles[i]
-                continue
-            
+        
             # 限制最大单步变化
             if abs(angle_diff) > self.max_angle_step:
                 angle_diff = np.sign(angle_diff) * self.max_angle_step
@@ -411,11 +409,6 @@ class WristControlNode(Node):
             new_angle = current_angles[i] + smooth_step
             
             # 规范化到[-π, π]范围
-            while new_angle > np.pi:
-                new_angle -= 2 * np.pi
-            while new_angle < -np.pi:
-                new_angle += 2 * np.pi
-                
             smooth_angles[i] = new_angle
     
         # 更新历史角度
@@ -426,6 +419,7 @@ class WristControlNode(Node):
     def process_and_publish(self):
         """处理数据并发布qpos"""
         start_time = time.time()
+        global key_press_flag
         try:
             # 启动UDP接收器（只启动一次）
             if not self.udp_started:
@@ -443,8 +437,6 @@ class WristControlNode(Node):
                 
                 # 改进的角度限制和跳变检测
                 for i in range(len(esp32_pos)):
-                    esp32_pos[i] = limit_angle_range(esp32_pos[i], -np.pi, np.pi, joint_id=i)
-                    
                     # 额外的跳变检测
                     if self.last_qpos is not None and i < len(self.last_qpos):
                         angle_diff = abs(esp32_pos[i] - self.last_qpos[i])
@@ -485,6 +477,18 @@ class WristControlNode(Node):
                 self.display_counter += 1
                 if self.display_counter % 5 == 0:
                     self.display_esp32_data(self.radians, latest_data)
+                    
+            elif self.control_mode == 'manual':
+                new_radians[0] = 0.785
+                new_radians[1] = 0.0
+                new_radians[2] = 0.0
+                new_radians[3] = -0.785-1.56
+                new_radians[4] = -1.56
+                new_radians[10] = 0.0
+                new_radians[11] = 0.0
+                new_radians[12] = 0.0
+                self.radians = self.smooth_angle_transition(new_radians)
+                qpos = self.radians
             else:
                 # 如果没有ESP32数据，保持当前位置
                 qpos = self.radians if hasattr(self, 'radians') else np.zeros(16, dtype=np.float32)
@@ -497,9 +501,9 @@ class WristControlNode(Node):
             soft_kp = joint_kp[-16:] * soft_k
              
             kp_mask =  [1,1,1,1,1,
-                        1,1,1,1,1,
+                        0,0,0,0,0,
                         1,1,1,
-                        1,1,1]
+                        0,0,0]
             
             msg.kp = (soft_kp * kp_mask).tolist()
             msg.kd = joint_kd[-16:].tolist()
