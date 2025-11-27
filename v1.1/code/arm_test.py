@@ -50,7 +50,7 @@ if keyboard_use:
     exit_flag = False
     def handle_keyboard_input():
         """处理键盘输入的线程函数"""
-        global key_press_flag
+        global key_press_flag ,node
         node = WristControlNode()
         key_press_flag=False  # 防止按键连发标志
         while not exit_flag:
@@ -93,26 +93,6 @@ JOINT_DIRECTION = {
     14: 1,     # 第6个关节：正方向
     15: 1,     # 第7个关节：正方向
     16: 1,     # 第8个关节：正方向 (如果有的话)
-}
-
-JOINT_ZERO_OFFSETS = {
-    1: 0,     # 第1个关节零点偏移: 0度
-    2: 0,    # 第2个关节零点偏移: 90度 (当ESP32发送90度时，机械臂关节为0度)
-    3: 0,     # 第3个关节零点偏移: 0度
-    4: 0,     # 第4个关节零点偏移: 0度
-    5: 0,     # 第5个关节零点偏移: 0度
-    6: 0,     # 第6个关节零点偏移: 0度
-    7: 0,     # 第7个关节零点偏移: 0度
-    8: 0,     # 第8个关节零点偏移: 0度 (如果有的话)
-
-    9: 0,     # 第1个关节：正方向 (1) 或反方向 (-1)
-    10: 0,    # 第2个关节：反方向
-    11: 0,     # 第3个关节：正方向
-    12: 0,    # 第4个关节：反方向
-    13: 0,     # 第5个关节：正方向
-    14: 0,     # 第6个关节：正方向
-    15: 0,     # 第7个关节：正方向
-    16: 0,     # 第8个关节：正方向 (如果有的话)
 }
 
 joint_name = (
@@ -281,11 +261,8 @@ def parse_esp32_data(json_data, num_joints):
                 sensor_id = sensor.get('id', 0)
                 angle = sensor.get('angle', 0.0)
                 
-                zero_offset = JOINT_ZERO_OFFSETS.get(sensor_id, 0)
-                adjusted_angle = angle - zero_offset
-                
                 direction = JOINT_DIRECTION.get(sensor_id+1, 1)
-                final_angle = adjusted_angle * direction
+                final_angle = angle * direction
 
                 angles.append(final_angle)
         else:
@@ -421,14 +398,6 @@ class WristControlNode(Node):
         start_time = time.time()
         global key_press_flag
         try:
-            # 启动UDP接收器（只启动一次）
-            if not self.udp_started:
-                if self.udp_receiver.start():
-                    self.udp_started = True
-                    self.get_logger().info("UDP接收器启动成功")
-                else:
-                    self.get_logger().warn("UDP接收器启动失败，使用手动控制")
-            
             # 根据控制模式计算qpos
             if self.control_mode == 'auto' and self.udp_started:
                 # 自动模式：使用ESP32数据
@@ -445,32 +414,41 @@ class WristControlNode(Node):
                                 esp32_pos[i] = self.last_qpos[i]
                 # 映射到机械臂关节
                 new_radians = self.radians.copy()
-                new_radians[0] = esp32_pos[8]
-                new_radians[1] = esp32_pos[9]
-                new_radians[2] = esp32_pos[10]
-                new_radians[3] = esp32_pos[11]
-                new_radians[4] = esp32_pos[12]
-                new_radians[10] = esp32_pos[13]
-                new_radians[11] = esp32_pos[14]
-                new_radians[12] = esp32_pos[15]
+                new_radians[0] = esp32_pos[0]
+                new_radians[1] = esp32_pos[1]
+                new_radians[2] = esp32_pos[2]
+                new_radians[3] = esp32_pos[3]
+                new_radians[4] = esp32_pos[4]
+                new_radians[10] = esp32_pos[5]
+                new_radians[11] = esp32_pos[6]
+                new_radians[12] = esp32_pos[7]
+                
+                # new_radians[0] = esp32_pos[8]
+                # new_radians[1] = esp32_pos[9]
+                # new_radians[2] = esp32_pos[10]
+                # new_radians[3] = esp32_pos[11]
+                # new_radians[4] = esp32_pos[12]
+                # new_radians[10] = esp32_pos[13]
+                # new_radians[11] = esp32_pos[14]
+                # new_radians[12] = esp32_pos[15]
 
-                new_radians[5] = esp32_pos[0]
-                new_radians[6] = esp32_pos[1]
-                new_radians[7] = esp32_pos[2]
-                new_radians[8] = esp32_pos[3]
-                new_radians[9] = esp32_pos[4]
-                new_radians[13] = esp32_pos[5]
-                new_radians[14] = esp32_pos[6]
-                new_radians[15] = esp32_pos[7]
+                # new_radians[5] = esp32_pos[0]
+                # new_radians[6] = esp32_pos[1]
+                # new_radians[7] = esp32_pos[2]
+                # new_radians[8] = esp32_pos[3]
+                # new_radians[9] = esp32_pos[4]
+                # new_radians[13] = esp32_pos[5]
+                # new_radians[14] = esp32_pos[6]
+                # new_radians[15] = esp32_pos[7]
                 # print(f"esp32_pos:{esp32_pos[4]}")
                 # 应用平滑过渡
                 if(new_radians[12]>1):
                     new_radians[12]=-3.14
-                if(new_radians[15]>1):
-                    new_radians[15]=-3.14
+                # if(new_radians[15]>1):
+                #     new_radians[15]=-3.14
                 self.radians = self.smooth_angle_transition(new_radians)
                 self.radians[12]=self.radians[12]*2
-                self.radians[15]=self.radians[15]*2
+                # self.radians[15]=self.radians[15]*2
            
                 qpos = self.radians
                 
@@ -478,7 +456,8 @@ class WristControlNode(Node):
                 if self.display_counter % 5 == 0:
                     self.display_esp32_data(self.radians, latest_data)
                     
-            elif self.control_mode == 'manual':
+            elif self.control_mode == 'manual' or not self.udp_started:
+                new_radians = self.radians.copy()
                 new_radians[0] = 0.785
                 new_radians[1] = 0.0
                 new_radians[2] = 0.0
@@ -532,6 +511,7 @@ class WristControlNode(Node):
 
 def main(args=None):
     """主函数"""
+    global node
     rclpy.init(args=args)
     
     try:
