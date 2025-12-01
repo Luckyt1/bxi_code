@@ -1,4 +1,5 @@
 import communication.msg as bxiMsg
+import communication.msg as ActuatorCmds
 import rclpy
 from rclpy.node import Node
 import numpy as np
@@ -29,6 +30,7 @@ joint_kd = np.array([  # 指定关节的kd，和joint_name顺序一一对应
     0,0,0,0,0,
     0.5,0.3,1,
     0,0,0], dtype=np.float32)
+# example for publisher
 class WristControlNode(Node):
     def __init__(self):
         super().__init__('wrist_control_node')
@@ -47,6 +49,20 @@ class WristControlNode(Node):
         msg.vel = np.zeros_like(joint_nominal_pos).tolist()
         msg.torque = np.zeros_like(joint_nominal_pos).tolist()
         self.qpos_publisher.publish(msg)
+# example for subscriber
+class ActuatorCmdsSubscriber(Node):
+    def __init__(self):
+        super().__init__('actuator_cmds_subscriber')
+        self.subscription = self.create_subscription(
+            ActuatorCmds,
+            '/hardware/arm_actuators_cmds',
+            self.listener_callback,
+            10)
+        self.subscription
+        self.get_logger().info('ActuatorCmds订阅者已启动')
+        self.temp=np.zeros(16, dtype=np.double)
+    def listener_callback(self, msg):
+        self.temp=msg.pos
 def main(args=None):
     """主函数"""
     rclpy.init(args=args)
