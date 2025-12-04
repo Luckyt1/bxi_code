@@ -1,0 +1,12 @@
+{
+  "package_name": "wheeltec_mic_msg",
+  "non_idl_tuples": [
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:msg/PcmMsg.msg",
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:msg/MotionControl.msg",
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:srv/GetDeviceType.srv",
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:srv/GetOfflineResult.srv",
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:srv/SetAwakeWord.srv",
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:srv/SetMajorMic.srv",
+    "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_msg:srv/SwitchMic.srv"
+  ]
+}

@@ -1,0 +1,5 @@
+[ 36%] Built target call_recognition
+[ 36%] Built target voice_control
+[ 54%] Built target node_feedback
+[ 63%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[ 81%] Built target command_recognition

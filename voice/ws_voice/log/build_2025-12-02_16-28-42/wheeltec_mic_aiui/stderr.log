@@ -1,0 +1,64 @@
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In constructor ‘[01m[Kaiui_v2::AudioProvider::AudioProvider()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:14:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   14 |                 for (i = 0; [01;35m[Ki < retries[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~[m[K
+In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/AudioProvider.h:5[m[K,
+                 from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:1[m[K:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:25:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   25 |                 assert( [01;35m[Ki < retries[m[K);
+      |                         [01;35m[K~~^~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In member function ‘[01m[Kconst char* aiui_v2::AudioProvider::startRecord()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:93:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   93 |                         int [01;35m[Kret[m[K = pcm_read(recordData.handle, recordData.buf);
+      |                             [01;35m[K^~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In constructor ‘[01m[Kaiui_v2::AudioProvider::AudioProvider()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:21:97:[m[K [01;35m[Kwarning: [m[K‘[01m[Kerr[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   21 |                 std::cerr << "snd_pcm_open failed (attempt " << i+1 << "): " << snd_strerror(err[01;35m[K)[m[K << std::endl;
+      |                                                                                                 [01;35m[K^[m[K
+In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/Processor.h:30[m[K,
+                 from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:1[m[K:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:[m[K In member function ‘[01m[Kvoid StreamNlpTtsHelper::addText(const string&, int, int)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:258:49:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<StreamNlpTtsHelper::InTextSeg>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  258 |         for (int i = mOrderedEndSegIndex + 1; [01;35m[Ki < mInTextSegList.size()[m[K; i++) {
+      |                                               [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:[m[K In member function ‘[01m[Kstd::shared_ptr<StreamNlpTtsHelper::OutTextSeg> StreamNlpTtsHelper::fetchOrderedText()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:327:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::__cxx11::basic_string<wchar_t>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  327 |         if (isAddCompleted() && [01;35m[KdividerPos == leftPart.length() - 1[m[K) {
+      |                                 [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:[m[K In member function ‘[01m[Kvoid StreamNlpTtsHelper::processOrderedText()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:503:20:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSTARTED[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  503 |             switch [01;35m[K([m[KmFetchStatus) {
+      |                    [01;35m[K^[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:521:20:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KINIT[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  521 |             switch [01;35m[K([m[KmFetchStatus) {
+      |                    [01;35m[K^[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:521:20:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KINTERRUPTED[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:[m[K In function ‘[01m[Kvoid onProgress(int, int, const char*, int, bool)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KstreamId[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | void onProgress([01;35m[Kint streamId[m[K, int progress, const char* audio, int len, bool isCompleted)
+      |                 [01;35m[K~~~~^~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprogress[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | void onProgress(int streamId, [01;35m[Kint progress[m[K, const char* audio, int len, bool isCompleted)
+      |                               [01;35m[K~~~~^~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaudio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | void onProgress(int streamId, int progress, [01;35m[Kconst char* audio[m[K, int len, bool isCompleted)
+      |                                             [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klen[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | void onProgress(int streamId, int progress, const char* audio, [01;35m[Kint len[m[K, bool isCompleted)
+      |                                                                [01;35m[K~~~~^~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KisCompleted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | void onProgress(int streamId, int progress, const char* audio, int len, [01;35m[Kbool isCompleted[m[K)
+      |                                                                         [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:[m[K In function ‘[01m[Kvoid createAgent(bool, const char*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:863:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstatic aiui_v2::IAIUIAgent* aiui_v2::IAIUIAgent::createAgent(const char*, aiui_v2::IAIUIListener*)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  863 |         g_pAgent = [01;35m[KIAIUIAgent::createAgent(paramJson.toString().c_str(), g_pListener)[m[K;
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/Processor.h:27[m[K,
+                 from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:1[m[K:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/aiui/AIUI_V2.h:194:51:[m[K [01;36m[Knote: [m[Kdeclared here
+  194 |     AIUIEXPORT static IAIUIAgent AIUI_DEPRECATED* [01;36m[KcreateAgent[m[K(const char* params,
+      |                                                   [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:[m[K In function ‘[01m[Kvoid startTTS(const string&, const string&)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:1075:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1075 | void startTTS(const std::string& text, [01;35m[Kconst std::string& tag[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K

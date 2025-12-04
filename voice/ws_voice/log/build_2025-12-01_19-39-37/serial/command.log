@@ -1,0 +1,4 @@
+Invoking command in '/home/tang/voice/ws_voice/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/serial -- -j16 -l16
+Invoked command in '/home/tang/voice/ws_voice/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/serial -- -j16 -l16
+Invoking command in '/home/tang/voice/ws_voice/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/serial
+Invoked command in '/home/tang/voice/ws_voice/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/serial

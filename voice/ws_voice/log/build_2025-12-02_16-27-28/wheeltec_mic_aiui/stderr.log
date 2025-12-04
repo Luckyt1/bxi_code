@@ -1,0 +1,16 @@
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In constructor ‘[01m[Kaiui_v2::AudioProvider::AudioProvider()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:14:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   14 |                 for (i = 0; [01;35m[Ki < retries[m[K; ++i)
+      |                             [01;35m[K~~^~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:27:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   27 |                 if ([01;35m[Ki >= retries[m[K) {
+      |                     [01;35m[K~~^~~~~~~~~~[m[K
+In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/AudioProvider.h:5[m[K,
+                 from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:1[m[K:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:37:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   37 |                 assert( [01;35m[Ki < retries[m[K);
+      |                         [01;35m[K~~^~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In member function ‘[01m[Kconst char* aiui_v2::AudioProvider::startRecord()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:105:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  105 |                         int [01;35m[Kret[m[K = pcm_read(recordData.handle, recordData.buf);
+      |                             [01;35m[K^~~[m[K

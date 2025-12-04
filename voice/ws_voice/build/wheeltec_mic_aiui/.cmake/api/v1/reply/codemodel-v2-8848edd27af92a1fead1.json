@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-18ba49220c791b784681.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wheeltec_mic_aiui",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "command_recognition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-command_recognition-e86d6c8dc7101584060d.json",
+					"name" : "command_recognition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6490506e603991be3d76.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_mic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_mic-0225087b08437fb68699.json",
+					"name" : "wheeltec_mic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_mic_aiui::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_mic_aiui-89610495682104389ac8.json",
+					"name" : "wheeltec_mic_aiui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_mic_aiui_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_mic_aiui_uninstall-08e399f836bb636fde42.json",
+					"name" : "wheeltec_mic_aiui_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tang/voice/ws_voice/build/wheeltec_mic_aiui",
+		"source" : "/home/tang/voice/ws_voice/src/wheeltec_mic_aiui"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

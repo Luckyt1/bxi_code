@@ -1,0 +1,94 @@
+[0.012s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_aiui -- -j16 -l16
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_mic[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target command_recognition[0m
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_mic_aiui[0m
+[0.050s] [ 11%] Built target command_recognition
+[0.051s] [ 27%] Built target wheeltec_mic
+[0.061s] [100%] Built target wheeltec_mic_aiui
+[0.067s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_aiui -- -j16 -l16
+[0.069s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/wheeltec_mic_aiui
+[0.080s] -- Install configuration: ""
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/mic_start.launch.py
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/voi_navigation.launch.py
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/laserfollower.launch.py
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/lasertracker.launch.py
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/aiui_chat.launch.py
+[0.080s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofei.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/chongchong.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoshi.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/yifeng.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/catherine.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoying.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaokun.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoxue.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoqian.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaolin.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/common_CnCn.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaorong.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoyan.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaowang.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoqiang.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaomei.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoyuan.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofeng.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaomeng.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofang.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/john.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaobao.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/qianqian.jet
+[0.081s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/nannan.jet
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaodong.jet
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn/res.bin
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn/vtn.ini
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr/contact.jet
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr/esr.jet
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/esr.log
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/grammar
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/esr.cfg
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/msc.cfg
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee/local.6.6.0001.0047
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee/local.6.6.0001.0047/local.cache
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/local.6.6.0001.0047
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/local.6.6.0001.0047/local.cache
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/ns.6.6.0001.0047
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/ns.6.6.0001.0047/ns.cache
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/aiui.log
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/local.6.6.0001.0047
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/local.6.6.0001.0047/local.cache
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/ns.6.6.0001.0047
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/ns.6.6.0001.0047/ns.cache
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/cfg
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/cfg/aiui.cfg
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/audio
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/audio/test.pcm
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic_aiui
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/command_recognition
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic
+[0.082s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/package_run_dependencies/wheeltec_mic_aiui
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/parent_prefix_path/wheeltec_mic_aiui
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/ament_prefix_path.sh
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/ament_prefix_path.dsv
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/path.sh
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/path.dsv
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.bash
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.sh
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.zsh
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.dsv
+[0.083s] -- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/package.dsv
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/packages/wheeltec_mic_aiui
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/cmake/wheeltec_mic_aiuiConfig.cmake
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/cmake/wheeltec_mic_aiuiConfig-version.cmake
+[0.083s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/package.xml
+[0.090s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/wheeltec_mic_aiui

@@ -1,0 +1,35 @@
+[0.006s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/wheeltec_mic_aiui -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/wheeltec_mic_aiui
+[0.013s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.100s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.116s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.117s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.120s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.125s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.133s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.152s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.156s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.170s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.171s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.180s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.200s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.217s] -- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)
+[0.223s] [31mCMake Error at CMakeLists.txt:28 (find_package):
+[0.223s]   By not providing "Findollama_ros_msgs.cmake" in CMAKE_MODULE_PATH this
+[0.223s]   project has asked CMake to find a package configuration file provided by
+[0.223s]   "ollama_ros_msgs", but CMake did not find one.
+[0.223s] 
+[0.223s]   Could not find a package configuration file provided by "ollama_ros_msgs"
+[0.223s]   with any of the following names:
+[0.223s] 
+[0.223s]     ollama_ros_msgsConfig.cmake
+[0.223s]     ollama_ros_msgs-config.cmake
+[0.224s] 
+[0.224s]   Add the installation prefix of "ollama_ros_msgs" to CMAKE_PREFIX_PATH or
+[0.224s]   set "ollama_ros_msgs_DIR" to a directory containing one of the above files.
+[0.224s]   If "ollama_ros_msgs" provides a separate development package or SDK, be
+[0.224s]   sure it has been installed.
+[0.224s] 
+[0.224s] [0m
+[0.224s] -- Configuring incomplete, errors occurred!
+[0.224s] See also "/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/CMakeOutput.log".
+[0.227s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/wheeltec_mic_aiui -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/wheeltec_mic_aiui

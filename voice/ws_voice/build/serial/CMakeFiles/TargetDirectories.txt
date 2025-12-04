@@ -1,0 +1,10 @@
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/uninstall.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/serial_uninstall.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/serial.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/test.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/edit_cache.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/rebuild_cache.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/list_install_components.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/install.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/install/local.dir
+/home/tang/voice/ws_voice/build/serial/CMakeFiles/install/strip.dir

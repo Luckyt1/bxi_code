@@ -1,0 +1,12 @@
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/uninstall.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/wheeltec_mic_aiui_uninstall.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/wheeltec_mic_aiui.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/command_recognition.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/wheeltec_mic.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/test.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/edit_cache.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/rebuild_cache.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/list_install_components.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/install.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/install/local.dir
+/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/install/strip.dir

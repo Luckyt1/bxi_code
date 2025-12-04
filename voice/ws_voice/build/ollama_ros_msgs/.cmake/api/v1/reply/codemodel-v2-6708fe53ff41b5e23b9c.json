@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-85102de0677d3d32b21a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "ollama_ros_msgs__py",
+					"jsonFile" : "directory-ollama_ros_msgs__py-684d1922ff3cd4502623.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/tang/voice/ws_voice/build/ollama_ros_msgs/ollama_ros_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ollama_ros_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ollama_ros_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ollama_ros_msgs_egg-9387b9fb36906b3bf860.json",
+					"name" : "ament_cmake_python_build_ollama_ros_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ollama_ros_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ollama_ros_msgs-9734d228e1e475b0cfc6.json",
+					"name" : "ament_cmake_python_copy_ollama_ros_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs-093780161cf992fda274.json",
+					"name" : "ollama_ros_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__cpp-972b4bf22eac2f237521.json",
+					"name" : "ollama_ros_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ollama_ros_msgs__py::@5a08fcc16dde30f65154",
+					"jsonFile" : "target-ollama_ros_msgs__py-ead817f57d99f3a7e749.json",
+					"name" : "ollama_ros_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_generator_c-1b31433809bd9b781609.json",
+					"name" : "ollama_ros_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_generator_py-89f51f5d041dfc4738eb.json",
+					"name" : "ollama_ros_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_c-51a98049dd197c77b79e.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_c__pyext-bbbd6216e29549c04685.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_cpp-b7c8602f073ddf591ed1.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_fastrtps_c-d0516d91f83bb044f0f3.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_fastrtps_c__pyext-635ce9edf39f8ff7fef9.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_fastrtps_cpp-5f2a5ae3d222c7bb114f.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_introspection_c-3f1f9901f831fa5de646.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_introspection_c__pyext-a7dad3bb086c53518d85.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs__rosidl_typesupport_introspection_cpp-5c1ab45a8748e96e5212.json",
+					"name" : "ollama_ros_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ollama_ros_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ollama_ros_msgs_uninstall-4a1acb7398ce32fc2964.json",
+					"name" : "ollama_ros_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a8eb9c6e96db289258f5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tang/voice/ws_voice/build/ollama_ros_msgs",
+		"source" : "/home/tang/voice/ws_voice/src/ollama_ros_chat/ollama_ros_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

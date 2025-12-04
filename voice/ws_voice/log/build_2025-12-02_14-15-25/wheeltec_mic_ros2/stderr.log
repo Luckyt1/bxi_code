@@ -1,0 +1,23 @@
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::business_data_t(unsigned char*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:244:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  244 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::finish_record_sound()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:305:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  305 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kbool SpeechProcess::Get_Offline_Recognise_Result(const std::shared_ptr<wheeltec_mic_msg::srv::GetOfflineResult_Request_<std::allocator<void> > >&, std::shared_ptr<wheeltec_mic_msg::srv::GetOfflineResult_Response_<std::allocator<void> > >&)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:378:34:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+  378 |                 if ([01;35m[Kwhole_result != ""[m[K)
+      |                     [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:414:32:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  414 |                 whole_result = [01;35m[K""[m[K;
+      |                                [01;35m[K^~[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::get_record_sound(const char*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:294:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  294 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[KEffective_Result SpeechProcess::show_result(char*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:343:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchar* strncpy(char*, const char*, size_t)[m[K’ destination unchanged after copying no bytes [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wstringop-truncation-Wstringop-truncation]8;;[m[K]
+  343 |                         [01;35m[Kstrncpy(asr_result, "", 0)[m[K;
+      |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K

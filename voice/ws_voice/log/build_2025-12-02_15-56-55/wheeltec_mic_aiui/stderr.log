@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:28 (find_package):
+  By not providing "Findollama_ros_msgs.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ollama_ros_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ollama_ros_msgs"
+  with any of the following names:
+
+    ollama_ros_msgsConfig.cmake
+    ollama_ros_msgs-config.cmake
+
+  Add the installation prefix of "ollama_ros_msgs" to CMAKE_PREFIX_PATH or
+  set "ollama_ros_msgs_DIR" to a directory containing one of the above files.
+  If "ollama_ros_msgs" provides a separate development package or SDK, be
+  sure it has been installed.
+
+[0m

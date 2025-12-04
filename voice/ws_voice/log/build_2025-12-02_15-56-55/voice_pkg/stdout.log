@@ -1,0 +1,21 @@
+[ 50%] Built target talker
+[100%] Built target voice_llm_node
+-- Install configuration: ""
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/lib/voice_pkg/libSparkChain.so
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/lib/voice_pkg/talker
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/lib/voice_pkg/voice_llm_node
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/ament_index/resource_index/package_run_dependencies/voice_pkg
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/ament_index/resource_index/parent_prefix_path/voice_pkg
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/path.sh
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/path.dsv
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.bash
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.sh
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.zsh
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.dsv
+-- Installing: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/package.dsv
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/ament_index/resource_index/packages/voice_pkg
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/cmake/voice_pkgConfig.cmake
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/cmake/voice_pkgConfig-version.cmake
+-- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/package.xml

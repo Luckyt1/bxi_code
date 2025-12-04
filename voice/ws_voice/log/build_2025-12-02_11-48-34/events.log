@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.000156] (-) JobUnselected: {'identifier': 'serial'}
+[0.000184] (-) JobUnselected: {'identifier': 'voice_pkg'}
+[0.000215] (-) JobUnselected: {'identifier': 'wheeltec_mic_msg'}
+[0.000242] (wheeltec_mic_ros2) JobQueued: {'identifier': 'wheeltec_mic_ros2', 'dependencies': OrderedDict([('wheeltec_mic_msg', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg')])}
+[0.000300] (wheeltec_mic_ros2) JobStarted: {'identifier': 'wheeltec_mic_ros2'}
+[0.006314] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'cmake'}
+[0.006796] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'build'}
+[0.007249] (wheeltec_mic_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', '--', '-j16', '-l16'], 'cwd': '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'tang'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin'), ('HOME', '/home/tang'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tang/voice/ws_voice'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1516'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1893'), ('BUNDLED_DEBUGPY_PATH', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/tang/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10699'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/bxi/bxi_ros2_pkg'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tang'), ('JOURNAL_STREAM', '8:9619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'tang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tang/.local/bin:/usr/local/cuda-12.4/bin:/opt/ros/humble/bin:/home/tang/miniconda3/condabin:/home/tang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts:/home/tang/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tang/miniconda3/bin'), ('SESSION_MANAGER', 'local/tang:@/tmp/.ICE-unix/1864,unix/tang:/tmp/.ICE-unix/1864'), ('INVOCATION_ID', 'edcc4db45563420fa8e5a4c113579f98'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('MUJOCO_PY_MUJOCO_PATH', '/home/tang/.mujoco/mujoco336/mujoco-3.3.6'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-af5faa90532656f1.txt'), ('MUJOCO_PY_MJKEY_PATH', '/home/tang/.mujoco/mjkey.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/tang/.config/Code/User/workspaceStorage/b8123f7c2046fb6dbcc1b2263f857fcd/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-52b2883bbf.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/tang/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/bin/g++-11'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/bxi/bxi_ros2_pkg/share/mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/opt/bxi/bxi_ros2_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CC', '/usr/bin/gcc-11'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble')]), 'shell': False}
+[0.025103] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099544] (-) TimerEvent: {}
+[0.109617] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.113257] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.114165] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.115625] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.132009] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.145117] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.164579] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.165315] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.174624] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.199625] (-) TimerEvent: {}
+[0.200615] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)\n'}
+[0.201877] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found wheeltec_mic_msg: 0.0.0 (/home/tang/voice/ws_voice/install/wheeltec_mic_msg/share/wheeltec_mic_msg/cmake)\n'}
+[0.207990] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.254048] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.256218] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.256416] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include\n'}
+[0.256523] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.258575] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.258677] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.258896] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.259579] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.259910] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.262035] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.262138] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.262373] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.262848] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.273807] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[0.278092] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/tang/voice/ws_voice/build/wheeltec_mic_ros2\n'}
+[0.293689] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node_feedback\x1b[0m\n'}
+[0.293811] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target command_recognition\x1b[0m\n'}
+[0.293850] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target call_recognition\x1b[0m\n'}
+[0.293881] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target voice_control\x1b[0m\n'}
+[0.293985] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target wheeltec_mic\x1b[0m\n'}
+[0.299704] (-) TimerEvent: {}
+[0.303778] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 54%] Built target command_recognition\n'}
+[0.303982] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 54%] Built target voice_control\n'}
+[0.304076] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 54%] Built target node_feedback\n'}
+[0.306849] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o\x1b[0m\n'}
+[0.307174] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 81%] Built target call_recognition\n'}
+[0.309597] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o\x1b[0m\n'}
+[0.399858] (-) TimerEvent: {}
+[0.500248] (-) TimerEvent: {}
+[0.600553] (-) TimerEvent: {}
+[0.700851] (-) TimerEvent: {}
+[0.801174] (-) TimerEvent: {}
+[0.901506] (-) TimerEvent: {}
+[1.001827] (-) TimerEvent: {}
+[1.102158] (-) TimerEvent: {}
+[1.202538] (-) TimerEvent: {}
+[1.302848] (-) TimerEvent: {}
+[1.403161] (-) TimerEvent: {}
+[1.503562] (-) TimerEvent: {}
+[1.603913] (-) TimerEvent: {}
+[1.629732] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/ros2_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool Wheeltec_Mic::getDeviceTypeCallback(const std::shared_ptr<wheeltec_mic_msg::srv::GetDeviceType_Request_<std::allocator<void> > >&, std::shared_ptr<wheeltec_mic_msg::srv::GetDeviceType_Response_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.630000] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/ros2_service.cpp:36:112:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.630169] (wheeltec_mic_ros2) StderrLine: {'line': b'   36 | bool Wheeltec_Mic::getDeviceTypeCallback(\x1b[01;35m\x1b[Kconst std::shared_ptr<wheeltec_mic_msg::srv::GetDeviceType::Request>& request\x1b[m\x1b[K,\n'}
+[1.630267] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.630346] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/ros2_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool Wheeltec_Mic::setAwakeWordCallback(const std::shared_ptr<wheeltec_mic_msg::srv::SetAwakeWord_Request_<std::allocator<void> > >&, std::shared_ptr<wheeltec_mic_msg::srv::SetAwakeWord_Response_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.630431] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/ros2_service.cpp:68:100:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.630580] (wheeltec_mic_ros2) StderrLine: {'line': b'   68 |                                    \x1b[01;35m\x1b[Kstd::shared_ptr<wheeltec_mic_msg::srv::SetAwakeWord::Response>& response\x1b[m\x1b[K){\n'}
+[1.630712] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.704027] (-) TimerEvent: {}
+[1.804264] (-) TimerEvent: {}
+[1.904505] (-) TimerEvent: {}
+[2.004741] (-) TimerEvent: {}
+[2.104994] (-) TimerEvent: {}
+[2.205248] (-) TimerEvent: {}
+[2.305571] (-) TimerEvent: {}
+[2.405797] (-) TimerEvent: {}
+[2.506060] (-) TimerEvent: {}
+[2.606304] (-) TimerEvent: {}
+[2.706536] (-) TimerEvent: {}
+[2.806748] (-) TimerEvent: {}
+[2.906993] (-) TimerEvent: {}
+[2.907473] (wheeltec_mic_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable wheeltec_mic\x1b[0m\n'}
+[3.007098] (-) TimerEvent: {}
+[3.042378] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Get_Serial_Data()':\n"}
+[3.042547] (wheeltec_mic_ros2) StderrLine: {'line': b"wheeltec_mic.cpp:(.text+0xa3a): undefined reference to `serial::Serial::read(unsigned char*, unsigned long)'\n"}
+[3.042617] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0xa81): undefined reference to `serial::Serial::available()'\n"}
+[3.042647] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::handle_serial_error()':\n"}
+[3.042674] (wheeltec_mic_ros2) StderrLine: {'line': b"wheeltec_mic.cpp:(.text+0xd17): undefined reference to `serial::Serial::close()'\n"}
+[3.042768] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0xea6): undefined reference to `serial::Serial::open()'\n"}
+[3.042802] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0xebb): undefined reference to `serial::Serial::isOpen() const'\n"}
+[3.042862] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0xed8): undefined reference to `serial::Serial::flush()'\n"}
+[3.042891] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::initialize_serial()':\n"}
+[3.042920] (wheeltec_mic_ros2) StderrLine: {'line': b"wheeltec_mic.cpp:(.text+0x1664): undefined reference to `serial::Serial::isOpen() const'\n"}
+[3.042947] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x167d): undefined reference to `serial::Serial::close()'\n"}
+[3.042979] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16a3): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[3.043028] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16c7): undefined reference to `serial::Serial::setBaudrate(unsigned int)'\n"}
+[3.043056] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16e7): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'\n"}
+[3.043107] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16fc): undefined reference to `serial::Serial::open()'\n"}
+[3.043136] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x1711): undefined reference to `serial::Serial::isOpen() const'\n"}
+[3.043168] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x172e): undefined reference to `serial::Serial::flush()'\n"}
+[3.043193] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Wheeltec_Mic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[3.043247] (wheeltec_mic_ros2) StderrLine: {'line': b"wheeltec_mic.cpp:(.text+0x1eea): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'\n"}
+[3.043292] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x2952): undefined reference to `serial::Serial::~Serial()'\n"}
+[3.043315] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::~Wheeltec_Mic()':\n"}
+[3.043338] (wheeltec_mic_ros2) StderrLine: {'line': b"wheeltec_mic.cpp:(.text+0x2b43): undefined reference to `serial::Serial::close()'\n"}
+[3.043362] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: wheeltec_mic.cpp:(.text+0x2c54): undefined reference to `serial::Serial::~Serial()'\n"}
+[3.047320] (wheeltec_mic_ros2) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o: in function `Wheeltec_Mic::Send_Serial_Data(ServicePacket&)':\n"}
+[3.047483] (wheeltec_mic_ros2) StderrLine: {'line': b"ros2_service.cpp:(.text+0x13c7): undefined reference to `serial::Serial::write(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[3.058256] (wheeltec_mic_ros2) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[3.059349] (wheeltec_mic_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:184\xef\xbc\x9awheeltec_mic] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[3.059755] (wheeltec_mic_ros2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:223\xef\xbc\x9aCMakeFiles/wheeltec_mic.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[3.059998] (wheeltec_mic_ros2) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[3.061773] (wheeltec_mic_ros2) CommandEnded: {'returncode': 2}
+[3.067907] (wheeltec_mic_ros2) JobEnded: {'identifier': 'wheeltec_mic_ros2', 'rc': 2}
+[3.078242] (-) EventReactorShutdown: {}

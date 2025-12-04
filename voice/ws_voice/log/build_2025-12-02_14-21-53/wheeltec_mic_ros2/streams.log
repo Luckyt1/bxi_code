@@ -1,0 +1,207 @@
+[0.007s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2': CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/home/tang/voice/ws_voice/install/wheeltec_mic_ros2:/home/tang/voice/ws_voice/install/voice_pkg:/home/tang/voice/ws_voice/install/serial:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/home/tang/voice/ws_voice/install/serial/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16
+[0.024s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.106s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.110s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.111s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.112s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.142s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.162s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.163s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.172s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.199s] -- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)
+[0.200s] -- Found wheeltec_mic_msg: 0.0.0 (/home/tang/voice/ws_voice/install/wheeltec_mic_msg/share/wheeltec_mic_msg/cmake)
+[0.206s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.254s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.256s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.256s] -- Configured cppcheck include dirs: /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include
+[0.256s] -- Configured cppcheck exclude dirs and/or files: 
+[0.259s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.259s] -- Configured cpplint exclude dirs and/or files: 
+[0.259s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.260s] -- Added test 'lint_cmake' to check CMake code style
+[0.260s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.262s] -- Added test 'uncrustify' to check C / C++ code style
+[0.262s] -- Configured uncrustify additional arguments: 
+[0.263s] -- Added test 'xmllint' to check XML markup files
+[0.263s] -- Configuring done
+[0.274s] -- Generating done
+[0.279s] -- Build files have been written to: /home/tang/voice/ws_voice/build/wheeltec_mic_ros2
+[0.298s] [35m[1mConsolidate compiler generated dependencies of target command_recognition[0m
+[0.298s] [35m[1mConsolidate compiler generated dependencies of target node_feedback[0m
+[0.298s] [35m[1mConsolidate compiler generated dependencies of target call_recognition[0m
+[0.298s] [35m[1mConsolidate compiler generated dependencies of target voice_control[0m
+[0.300s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_mic[0m
+[0.308s] [ 18%] [32mBuilding CXX object CMakeFiles/voice_control.dir/src/voice_control.cpp.o[0m
+[0.308s] [ 36%] Built target node_feedback
+[0.309s] [ 45%] Built target command_recognition
+[0.311s] [ 63%] Built target call_recognition
+[0.315s] [ 72%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[0.510s] [ 90%] Built target wheeltec_mic
+[1.566s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::business_data_t(unsigned char*)[m[K’:
+[1.566s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:244:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.566s]   244 | [01;35m[K}[m[K
+[1.566s]       | [01;35m[K^[m[K
+[1.566s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::finish_record_sound()[m[K’:
+[1.566s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:305:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.566s]   305 | [01;35m[K}[m[K
+[1.566s]       | [01;35m[K^[m[K
+[1.568s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kbool SpeechProcess::Get_Offline_Recognise_Result(const std::shared_ptr<wheeltec_mic_msg::srv::GetOfflineResult_Request_<std::allocator<void> > >&, std::shared_ptr<wheeltec_mic_msg::srv::GetOfflineResult_Response_<std::allocator<void> > >&)[m[K’:
+[1.568s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:378:34:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+[1.568s]   378 |                 if ([01;35m[Kwhole_result != ""[m[K)
+[1.568s]       |                     [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[1.570s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:414:32:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[1.570s]   414 |                 whole_result = [01;35m[K""[m[K;
+[1.570s]       |                                [01;35m[K^~[m[K
+[2.041s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::get_record_sound(const char*)[m[K’:
+[2.041s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:294:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.041s]   294 | [01;35m[K}[m[K
+[2.041s]       | [01;35m[K^[m[K
+[2.041s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[KEffective_Result SpeechProcess::show_result(char*)[m[K’:
+[2.041s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:343:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchar* strncpy(char*, const char*, size_t)[m[K’ destination unchanged after copying no bytes [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wstringop-truncation-Wstringop-truncation]8;;[m[K]
+[2.041s]   343 |                         [01;35m[Kstrncpy(asr_result, "", 0)[m[K;
+[2.041s]       |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.930s] [100%] [32m[1mLinking CXX executable voice_control[0m
+[3.139s] [100%] Built target voice_control
+[3.147s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2' returned '0': CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/home/tang/voice/ws_voice/install/wheeltec_mic_ros2:/home/tang/voice/ws_voice/install/voice_pkg:/home/tang/voice/ws_voice/install/serial:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/home/tang/voice/ws_voice/install/serial/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16
+[3.147s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2': CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/home/tang/voice/ws_voice/install/wheeltec_mic_ros2:/home/tang/voice/ws_voice/install/voice_pkg:/home/tang/voice/ws_voice/install/serial:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/home/tang/voice/ws_voice/install/serial/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --install /home/tang/voice/ws_voice/build/wheeltec_mic_ros2
+[3.155s] -- Install configuration: ""
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch/mic_init.launch.py
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch/base.launch.py
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/msc.log
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res
+[3.155s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr
+[3.155s] -- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/common.jet
+[3.161s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/lhheaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/azcfaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/bzvskdaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/zhdfaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/rtpyyuba.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/qgieaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/fyrdwpaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/uikawbda.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/rlieaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/mcaudaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/gcoeaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/lhheaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/azcfaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/bzvskdaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/zhdfaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/rtpyyuba.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/qgieaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/fyrdwpaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/uikawbda.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/rlieaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/mcaudaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/gcoeaaaa.d
+[3.162s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/commit
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/whsnkqba.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/arlfaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/sqieaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/rbswtvaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/mmheaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/call.g
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/kcheaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/imqhxtba.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/ddykzcaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/zwwzwvaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/deofaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/call_16K
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/whsnkqba.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/arlfaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/sqieaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/rbswtvaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/mmheaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/call.g
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/kcheaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/imqhxtba.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/ddykzcaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/zwwzwvaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/deofaaaa.d
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/call_16K
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/msc.cfg
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/waiter.log
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/isr.log
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/lgi.log
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/grm_lex.log
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/isr_local.log
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/call.bnf
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/recognition_params.yaml
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/voice_control.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/navigation_close.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/line_open.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_mapping_close.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/line_close.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/stop.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rrt_open.wav
+[3.163s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_navigation_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_mapping_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/find.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/visual_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/sleep.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/car_front.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_mapping.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_navigation_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/OK.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rrt_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_navigation_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/turn_right.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/awake.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_navigation.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_navigation_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/web_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/web_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rplidar_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/close_node.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/classify_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/car_back.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/Tracker.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_navigation_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/classify_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/reach_goal.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/kcf_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/turn_left.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/search_voice.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/open_node.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/overmap.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_mapping_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/AR_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/visual_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/AR_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_mapping_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_mapping_open.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/kcf_close.wav
+[3.164s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rplidar_open.wav
+[3.164s] -- Execute custom install script
+[3.164s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/call_recognition
+[3.164s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/call_recognition
+[3.164s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/command_recognition
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/command_recognition
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/node_feedback
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/node_feedback
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/wheeltec_mic
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/wheeltec_mic
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/voice_control
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/voice_control
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/ament_index/resource_index/package_run_dependencies/wheeltec_mic_ros2
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/ament_index/resource_index/parent_prefix_path/wheeltec_mic_ros2
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/ament_prefix_path.sh
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/ament_prefix_path.dsv
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/path.sh
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/path.dsv
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.bash
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.sh
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.zsh
+[3.165s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.dsv
+[3.165s] -- Symlinking: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/package.dsv
+[3.170s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/ament_index/resource_index/packages/wheeltec_mic_ros2
+[3.171s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/cmake/wheeltec_mic_ros2Config.cmake
+[3.171s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/cmake/wheeltec_mic_ros2Config-version.cmake
+[3.171s] -- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/package.xml
+[3.173s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2' returned '0': CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/home/tang/voice/ws_voice/install/wheeltec_mic_ros2:/home/tang/voice/ws_voice/install/voice_pkg:/home/tang/voice/ws_voice/install/serial:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/home/tang/voice/ws_voice/install/serial/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --install /home/tang/voice/ws_voice/build/wheeltec_mic_ros2

@@ -1,0 +1,56 @@
+[0.006s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16
+[0.022s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.095s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.099s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.100s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.101s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.117s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.130s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.148s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.149s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.158s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.184s] -- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)
+[0.185s] -- Found wheeltec_mic_msg: 0.0.0 (/home/tang/voice/ws_voice/install/wheeltec_mic_msg/share/wheeltec_mic_msg/cmake)
+[0.191s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.242s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.244s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.244s] -- Configured cppcheck include dirs: /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include
+[0.245s] -- Configured cppcheck exclude dirs and/or files: 
+[0.247s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.247s] -- Configured cpplint exclude dirs and/or files: 
+[0.247s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.248s] -- Added test 'lint_cmake' to check CMake code style
+[0.248s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.251s] -- Added test 'uncrustify' to check C / C++ code style
+[0.251s] -- Configured uncrustify additional arguments: 
+[0.251s] -- Added test 'xmllint' to check XML markup files
+[0.252s] -- Configuring done
+[0.263s] -- Generating done
+[0.267s] -- Build files have been written to: /home/tang/voice/ws_voice/build/wheeltec_mic_ros2
+[0.284s] [35m[1mConsolidate compiler generated dependencies of target node_feedback[0m
+[0.284s] [35m[1mConsolidate compiler generated dependencies of target voice_control[0m
+[0.284s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_mic[0m
+[0.286s] [35m[1mConsolidate compiler generated dependencies of target command_recognition[0m
+[0.286s] [35m[1mConsolidate compiler generated dependencies of target call_recognition[0m
+[0.294s] [ 18%] Built target node_feedback
+[0.295s] [ 45%] [32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o[0m
+[0.295s] [ 45%] Built target call_recognition
+[0.296s] [ 54%] [32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o[0m
+[0.297s] [ 72%] Built target voice_control
+[0.299s] [ 90%] Built target command_recognition
+[0.331s] In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/ros2_service.cpp:6[m[K:
+[0.331s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include/wheeltec_mic.h:7:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: 没有那个文件或目录
+[0.331s]     7 | #include [01;31m[K<serial/serial.h>[m[K
+[0.331s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.331s] compilation terminated.
+[0.332s] gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:90：CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o] 错误 1
+[0.332s] gmake[2]: *** 正在等待未完成的任务....
+[0.332s] In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/wheeltec_mic.cpp:6[m[K:
+[0.332s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include/wheeltec_mic.h:7:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: 没有那个文件或目录
+[0.332s]     7 | #include [01;31m[K<serial/serial.h>[m[K
+[0.332s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.332s] compilation terminated.
+[0.333s] gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:76：CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o] 错误 1
+[0.333s] gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/wheeltec_mic.dir/all] 错误 2
+[0.334s] gmake: *** [Makefile:146：all] 错误 2
+[0.335s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2' returned '2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16

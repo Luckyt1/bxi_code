@@ -1,0 +1,160 @@
+[0.006s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_aiui -- -j16 -l16
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_mic_aiui[0m
+[0.042s] [ 11%] Built target command_recognition
+[0.044s] [ 27%] Built target wheeltec_mic
+[0.046s] [ 38%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/AudioProvider.cpp.o[0m
+[0.046s] [ 38%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/Processor.cpp.o[0m
+[0.206s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In constructor ‘[01m[Kaiui_v2::AudioProvider::AudioProvider()[m[K’:
+[0.206s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:14:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.206s]    14 |                 for (i = 0; [01;35m[Ki < retries[m[K; ++i)
+[0.206s]       |                             [01;35m[K~~^~~~~~~~~[m[K
+[0.206s] In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/AudioProvider.h:5[m[K,
+[0.206s]                  from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:1[m[K:
+[0.206s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:25:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.206s]    25 |                 assert( [01;35m[Ki < retries[m[K);
+[0.206s]       |                         [01;35m[K~~^~~~~~~~~[m[K
+[0.207s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In member function ‘[01m[Kconst char* aiui_v2::AudioProvider::startRecord()[m[K’:
+[0.207s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:93:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[0.207s]    93 |                         int [01;35m[Kret[m[K = pcm_read(recordData.handle, recordData.buf);
+[0.207s]       |                             [01;35m[K^~~[m[K
+[0.223s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:[m[K In constructor ‘[01m[Kaiui_v2::AudioProvider::AudioProvider()[m[K’:
+[0.223s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/AudioProvider.cpp:21:97:[m[K [01;35m[Kwarning: [m[K‘[01m[Kerr[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+[0.223s]    21 |                 std::cerr << "snd_pcm_open failed (attempt " << i+1 << "): " << snd_strerror(err[01;35m[K)[m[K << std::endl;
+[0.223s]       |                                                                                                 [01;35m[K^[m[K
+[0.515s] In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/Processor.h:30[m[K,
+[0.515s]                  from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:1[m[K:
+[0.515s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:[m[K In member function ‘[01m[Kvoid StreamNlpTtsHelper::addText(const string&, int, int)[m[K’:
+[0.515s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:258:49:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<StreamNlpTtsHelper::InTextSeg>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.515s]   258 |         for (int i = mOrderedEndSegIndex + 1; [01;35m[Ki < mInTextSegList.size()[m[K; i++) {
+[0.515s]       |                                               [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.518s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:[m[K In member function ‘[01m[Kstd::shared_ptr<StreamNlpTtsHelper::OutTextSeg> StreamNlpTtsHelper::fetchOrderedText()[m[K’:
+[0.518s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:327:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::__cxx11::basic_string<wchar_t>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.518s]   327 |         if (isAddCompleted() && [01;35m[KdividerPos == leftPart.length() - 1[m[K) {
+[0.518s]       |                                 [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.521s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:[m[K In member function ‘[01m[Kvoid StreamNlpTtsHelper::processOrderedText()[m[K’:
+[0.521s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:503:20:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSTARTED[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[0.521s]   503 |             switch [01;35m[K([m[KmFetchStatus) {
+[0.521s]       |                    [01;35m[K^[m[K
+[0.521s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:521:20:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KINIT[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[0.521s]   521 |             switch [01;35m[K([m[KmFetchStatus) {
+[0.521s]       |                    [01;35m[K^[m[K
+[0.521s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/../src/utils/StreamNlpTtsHelper.h:521:20:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KINTERRUPTED[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.448s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:[m[K In function ‘[01m[Kvoid onProgress(int, int, const char*, int, bool)[m[K’:
+[1.448s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KstreamId[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.448s]    49 | void onProgress([01;35m[Kint streamId[m[K, int progress, const char* audio, int len, bool isCompleted)
+[1.448s]       |                 [01;35m[K~~~~^~~~~~~~[m[K
+[1.448s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprogress[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.448s]    49 | void onProgress(int streamId, [01;35m[Kint progress[m[K, const char* audio, int len, bool isCompleted)
+[1.448s]       |                               [01;35m[K~~~~^~~~~~~~[m[K
+[1.448s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaudio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.448s]    49 | void onProgress(int streamId, int progress, [01;35m[Kconst char* audio[m[K, int len, bool isCompleted)
+[1.448s]       |                                             [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[1.448s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klen[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.448s]    49 | void onProgress(int streamId, int progress, const char* audio, [01;35m[Kint len[m[K, bool isCompleted)
+[1.448s]       |                                                                [01;35m[K~~~~^~~[m[K
+[1.448s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:49:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KisCompleted[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.448s]    49 | void onProgress(int streamId, int progress, const char* audio, int len, [01;35m[Kbool isCompleted[m[K)
+[1.448s]       |                                                                         [01;35m[K~~~~~^~~~~~~~~~~[m[K
+[1.465s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:[m[K In function ‘[01m[Kvoid createAgent(bool, const char*)[m[K’:
+[1.465s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:863:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstatic aiui_v2::IAIUIAgent* aiui_v2::IAIUIAgent::createAgent(const char*, aiui_v2::IAIUIListener*)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[1.465s]   863 |         g_pAgent = [01;35m[KIAIUIAgent::createAgent(paramJson.toString().c_str(), g_pListener)[m[K;
+[1.465s]       |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.465s] In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/Processor.h:27[m[K,
+[1.465s]                  from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:1[m[K:
+[1.465s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include/aiui/AIUI_V2.h:194:51:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.465s]   194 |     AIUIEXPORT static IAIUIAgent AIUI_DEPRECATED* [01;36m[KcreateAgent[m[K(const char* params,
+[1.465s]       |                                                   [01;36m[K^~~~~~~~~~~[m[K
+[1.467s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:[m[K In function ‘[01m[Kvoid startTTS(const string&, const string&)[m[K’:
+[1.467s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/Processor.cpp:1075:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.467s]  1075 | void startTTS(const std::string& text, [01;35m[Kconst std::string& tag[m[K)
+[1.467s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.439s] [ 44%] [32m[1mLinking CXX executable wheeltec_mic_aiui[0m
+[7.881s] [100%] Built target wheeltec_mic_aiui
+[7.890s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_aiui -- -j16 -l16
+[7.897s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/wheeltec_mic_aiui
+[7.903s] -- Install configuration: ""
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/mic_start.launch.py
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/voi_navigation.launch.py
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/laserfollower.launch.py
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/lasertracker.launch.py
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/aiui_chat.launch.py
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofei.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/chongchong.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoshi.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/yifeng.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/catherine.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoying.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaokun.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoxue.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoqian.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaolin.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/common_CnCn.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaorong.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoyan.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaowang.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoqiang.jet
+[7.903s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaomei.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoyuan.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofeng.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaomeng.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofang.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/john.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaobao.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/qianqian.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/nannan.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaodong.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn/res.bin
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn/vtn.ini
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr/contact.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr/esr.jet
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/esr.log
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/grammar
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/esr.cfg
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/msc.cfg
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee/local.6.6.0001.0047
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee/local.6.6.0001.0047/local.cache
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/local.6.6.0001.0047
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/local.6.6.0001.0047/local.cache
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/ns.6.6.0001.0047
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/ns.6.6.0001.0047/ns.cache
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/aiui.log
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/local.6.6.0001.0047
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/local.6.6.0001.0047/local.cache
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/ns.6.6.0001.0047
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/ns.6.6.0001.0047/ns.cache
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/cfg
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/cfg/aiui.cfg
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/audio
+[7.904s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/audio/test.pcm
+[7.904s] -- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic_aiui
+[7.907s] -- Set runtime path of "/home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic_aiui" to ""
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/command_recognition
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/package_run_dependencies/wheeltec_mic_aiui
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/parent_prefix_path/wheeltec_mic_aiui
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/ament_prefix_path.sh
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/ament_prefix_path.dsv
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/path.sh
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/path.dsv
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.bash
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.sh
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.zsh
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.dsv
+[7.907s] -- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/package.dsv
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/packages/wheeltec_mic_aiui
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/cmake/wheeltec_mic_aiuiConfig.cmake
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/cmake/wheeltec_mic_aiuiConfig-version.cmake
+[7.907s] -- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/package.xml
+[7.908s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/wheeltec_mic_aiui

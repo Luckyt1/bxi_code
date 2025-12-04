@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b0e2713bbca2f43e260a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wheeltec_mic_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "call_recognition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-call_recognition-dda1095357f46fcdcfb5.json",
+					"name" : "call_recognition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "command_recognition::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-command_recognition-08fc9be97ff71eaa0a95.json",
+					"name" : "command_recognition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "node_feedback::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-node_feedback-494cecc5848f66ea84c7.json",
+					"name" : "node_feedback",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2b7dc8d938fce9d05499.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "voice_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-voice_control-877e615207419288527d.json",
+					"name" : "voice_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "voice_listener::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-voice_listener-740bc36950bef621254f.json",
+					"name" : "voice_listener",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_mic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_mic-d9dfbe903c0674e5c142.json",
+					"name" : "wheeltec_mic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_mic_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_mic_ros2_uninstall-a247b14980a80812d574.json",
+					"name" : "wheeltec_mic_ros2_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tang/voice/ws_voice/build/wheeltec_mic_ros2",
+		"source" : "/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:66 (install):
+  install TARGETS given target "chat_service" which does not exist.
+
+[0m

@@ -1,0 +1,6 @@
+Invoking command in '/home/tang/voice/ws_voice/build/voice_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/voice_pkg -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/voice_pkg
+Invoked command in '/home/tang/voice/ws_voice/build/voice_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/voice_pkg -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/voice_pkg
+Invoking command in '/home/tang/voice/ws_voice/build/voice_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/voice_pkg -- -j16 -l16
+Invoked command in '/home/tang/voice/ws_voice/build/voice_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/voice_pkg -- -j16 -l16
+Invoking command in '/home/tang/voice/ws_voice/build/voice_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/voice_pkg
+Invoked command in '/home/tang/voice/ws_voice/build/voice_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/voice_pkg

@@ -1,0 +1,52 @@
+[0.012s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/wheeltec_mic_aiui -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/wheeltec_mic_aiui
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.107s] -- The CXX compiler identification is GNU 11.4.0
+[0.114s] -- Detecting C compiler ABI info
+[0.158s] -- Detecting C compiler ABI info - done
+[0.162s] -- Check for working C compiler: /usr/bin/gcc-11 - skipped
+[0.163s] -- Detecting C compile features
+[0.163s] -- Detecting C compile features - done
+[0.165s] -- Detecting CXX compiler ABI info
+[0.225s] -- Detecting CXX compiler ABI info - done
+[0.227s] -- Check for working CXX compiler: /usr/bin/g++-11 - skipped
+[0.227s] -- Detecting CXX compile features
+[0.227s] -- Detecting CXX compile features - done
+[0.229s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.353s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.407s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.427s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.431s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.435s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.443s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.476s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.481s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.501s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.502s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.514s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.519s] -- Looking for pthread.h
+[0.579s] -- Looking for pthread.h - found
+[0.579s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.629s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.629s] -- Found Threads: TRUE  
+[0.658s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.708s] [31mCMake Error at CMakeLists.txt:27 (find_package):
+[0.708s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[0.708s]   asked CMake to find a package configuration file provided by "serial", but
+[0.708s]   CMake did not find one.
+[0.708s] 
+[0.708s]   Could not find a package configuration file provided by "serial" with any
+[0.708s]   of the following names:
+[0.708s] 
+[0.708s]     serialConfig.cmake
+[0.708s]     serial-config.cmake
+[0.708s] 
+[0.708s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[0.708s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[0.708s]   provides a separate development package or SDK, be sure it has been
+[0.708s]   installed.
+[0.708s] 
+[0.708s] [0m
+[0.708s] -- Configuring incomplete, errors occurred!
+[0.708s] See also "/home/tang/voice/ws_voice/build/wheeltec_mic_aiui/CMakeFiles/CMakeOutput.log".
+[0.719s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_aiui' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/wheeltec_mic_aiui -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/wheeltec_mic_aiui

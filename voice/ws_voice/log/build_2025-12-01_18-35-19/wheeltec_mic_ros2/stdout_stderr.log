@@ -1,0 +1,28 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Configuring incomplete, errors occurred!
+See also "/home/tang/voice/ws_voice/build/wheeltec_mic_ros2/CMakeFiles/CMakeOutput.log".
+[31mCMake Error at CMakeLists.txt:24 (find_package):
+  By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "serial", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "serial" with any
+  of the following names:
+
+    serialConfig.cmake
+    serial-config.cmake
+
+  Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+  "serial_DIR" to a directory containing one of the above files.  If "serial"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+[0m

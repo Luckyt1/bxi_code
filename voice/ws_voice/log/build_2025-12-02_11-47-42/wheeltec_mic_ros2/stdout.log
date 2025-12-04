@@ -1,0 +1,6 @@
+[ 36%] Built target node_feedback
+[ 36%] Built target voice_control
+[ 54%] [32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o[0m
+[ 63%] Built target command_recognition
+[ 72%] [32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o[0m
+[ 90%] Built target call_recognition

@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target voice_control[0m
+[ 27%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[ 27%] Built target command_recognition
+[ 45%] Built target node_feedback
+[ 63%] Built target call_recognition
+[ 81%] Built target voice_control
+/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Get_Serial_Data()':
+wheeltec_mic.cpp:(.text+0xa3a): undefined reference to `serial::Serial::read(unsigned char*, unsigned long)'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0xa81): undefined reference to `serial::Serial::available()'
+/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::handle_serial_error()':
+wheeltec_mic.cpp:(.text+0xd17): undefined reference to `serial::Serial::close()'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0xea6): undefined reference to `serial::Serial::open()'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0xebb): undefined reference to `serial::Serial::isOpen() const'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0xed8): undefined reference to `serial::Serial::flush()'
+/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::initialize_serial()':
+wheeltec_mic.cpp:(.text+0x1664): undefined reference to `serial::Serial::isOpen() const'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x167d): undefined reference to `serial::Serial::close()'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16a3): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16c7): undefined reference to `serial::Serial::setBaudrate(unsigned int)'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16e7): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x16fc): undefined reference to `serial::Serial::open()'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x1711): undefined reference to `serial::Serial::isOpen() const'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x172e): undefined reference to `serial::Serial::flush()'
+/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Wheeltec_Mic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+wheeltec_mic.cpp:(.text+0x1eea): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x2952): undefined reference to `serial::Serial::~Serial()'
+/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::~Wheeltec_Mic()':
+wheeltec_mic.cpp:(.text+0x2b43): undefined reference to `serial::Serial::close()'
+/usr/bin/ld: wheeltec_mic.cpp:(.text+0x2c54): undefined reference to `serial::Serial::~Serial()'
+/usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o: in function `Wheeltec_Mic::Send_Serial_Data(ServicePacket&)':
+ros2_service.cpp:(.text+0x13c7): undefined reference to `serial::Serial::write(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:184：wheeltec_mic] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/wheeltec_mic.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

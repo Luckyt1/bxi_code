@@ -1,0 +1,136 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)
+-- Found wheeltec_mic_msg: 0.0.0 (/home/tang/voice/ws_voice/install/wheeltec_mic_msg/share/wheeltec_mic_msg/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/tang/voice/ws_voice/src/wheeltec_mic_aiui/include;/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/utils;/home/tang/voice/ws_voice/src/wheeltec_mic_aiui/src/jsoncpp
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tang/voice/ws_voice/build/wheeltec_mic_aiui
+[  5%] [32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/node/ros2_service.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/wheeltec_mic.dir/node/wheeltec_mic.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/command_recognition.dir/node/command_recognition.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/AudioListenThread.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/Processor.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/AudioProvider.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/PCMPlayer.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/jsoncpp/json_value.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/jsoncpp/json_writer.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/utils/ConvertUtil.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/jsoncpp/json_reader.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/utils/IatResultUtil.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/utils/file/FileUtil.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/utils/StreamNlpTtsHelper.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/wheeltec_mic_aiui.dir/src/utils/Base64Util.cpp.o[0m
+[ 88%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[ 88%] Built target wheeltec_mic
+[ 94%] [32m[1mLinking CXX executable command_recognition[0m
+[ 94%] Built target command_recognition
+[100%] [32m[1mLinking CXX executable wheeltec_mic_aiui[0m
+[100%] Built target wheeltec_mic_aiui
+-- Install configuration: ""
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/mic_start.launch.py
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/voi_navigation.launch.py
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/laserfollower.launch.py
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/include/lasertracker.launch.py
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/launch/aiui_chat.launch.py
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofei.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/chongchong.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoshi.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/yifeng.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/catherine.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoying.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaokun.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoxue.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoqian.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaolin.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/common_CnCn.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaorong.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoyan.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaowang.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoqiang.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaomei.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaoyuan.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofeng.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaomeng.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaofang.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/john.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaobao.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/qianqian.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/nannan.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/xtts/xiaodong.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn/res.bin
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/vtn/vtn.ini
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr/contact.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/assets/esr/esr.jet
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/esr.log
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/grammar
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/esr_10801/esr.cfg
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/msc.cfg
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee/local.6.6.0001.0047
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/40be1a8bba4e1264909677def48f42ee/local.6.6.0001.0047/local.cache
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/local.6.6.0001.0047
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/local.6.6.0001.0047/local.cache
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/ns.6.6.0001.0047
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/cfbabf7e57a8366025ab75501d8226d2/ns.6.6.0001.0047/ns.cache
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/aiui.log
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/local.6.6.0001.0047
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/local.6.6.0001.0047/local.cache
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/ns.6.6.0001.0047
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/msc/7b8b82d171b126a5dcdd8e70adb0e4d3/ns.6.6.0001.0047/ns.cache
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/cfg
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/cfg/aiui.cfg
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/audio
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/AIUI/audio/test.pcm
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic_aiui
+-- Set runtime path of "/home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic_aiui" to ""
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/command_recognition
+-- Set runtime path of "/home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/command_recognition" to ""
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic
+-- Set runtime path of "/home/tang/voice/ws_voice/install/wheeltec_mic_aiui/lib/wheeltec_mic_aiui/wheeltec_mic" to ""
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/package_run_dependencies/wheeltec_mic_aiui
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/parent_prefix_path/wheeltec_mic_aiui
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/ament_prefix_path.sh
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/ament_prefix_path.dsv
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/path.sh
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/environment/path.dsv
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.bash
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.sh
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.zsh
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/local_setup.dsv
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/package.dsv
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/ament_index/resource_index/packages/wheeltec_mic_aiui
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/cmake/wheeltec_mic_aiuiConfig.cmake
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/cmake/wheeltec_mic_aiuiConfig-version.cmake
+-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_aiui/share/wheeltec_mic_aiui/package.xml

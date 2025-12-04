@@ -1,0 +1,36 @@
+[0.006s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16
+[0.042s] [ 36%] Built target command_recognition
+[0.042s] [ 36%] Built target call_recognition
+[0.042s] [ 45%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[0.044s] [ 63%] Built target voice_control
+[0.044s] [ 81%] Built target node_feedback
+[0.179s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Get_Serial_Data()':
+[0.179s] wheeltec_mic.cpp:(.text+0xa3a): undefined reference to `serial::Serial::read(unsigned char*, unsigned long)'
+[0.179s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xa81): undefined reference to `serial::Serial::available()'
+[0.179s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::handle_serial_error()':
+[0.179s] wheeltec_mic.cpp:(.text+0xd17): undefined reference to `serial::Serial::close()'
+[0.179s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xea6): undefined reference to `serial::Serial::open()'
+[0.179s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xebb): undefined reference to `serial::Serial::isOpen() const'
+[0.179s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xed8): undefined reference to `serial::Serial::flush()'
+[0.180s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::initialize_serial()':
+[0.180s] wheeltec_mic.cpp:(.text+0x1664): undefined reference to `serial::Serial::isOpen() const'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x167d): undefined reference to `serial::Serial::close()'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16a3): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16c7): undefined reference to `serial::Serial::setBaudrate(unsigned int)'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16e7): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16fc): undefined reference to `serial::Serial::open()'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x1711): undefined reference to `serial::Serial::isOpen() const'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x172e): undefined reference to `serial::Serial::flush()'
+[0.180s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Wheeltec_Mic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[0.180s] wheeltec_mic.cpp:(.text+0x1eea): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x2952): undefined reference to `serial::Serial::~Serial()'
+[0.180s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::~Wheeltec_Mic()':
+[0.180s] wheeltec_mic.cpp:(.text+0x2b43): undefined reference to `serial::Serial::close()'
+[0.180s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x2c54): undefined reference to `serial::Serial::~Serial()'
+[0.184s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o: in function `Wheeltec_Mic::Send_Serial_Data(ServicePacket&)':
+[0.184s] ros2_service.cpp:(.text+0x13c7): undefined reference to `serial::Serial::write(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.196s] collect2: error: ld returned 1 exit status
+[0.198s] gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:184：wheeltec_mic] 错误 1
+[0.198s] gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/wheeltec_mic.dir/all] 错误 2
+[0.198s] gmake: *** [Makefile:146：all] 错误 2
+[0.199s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2' returned '2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16

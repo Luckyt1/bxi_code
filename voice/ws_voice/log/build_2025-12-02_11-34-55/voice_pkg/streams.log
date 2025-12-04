@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/home/tang/voice/ws_voice/build/voice_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/voice_pkg -- -j16 -l16
+[0.043s] [ 50%] Built target talker
+[0.048s] [100%] Built target voice_llm_node
+[0.055s] Invoked command in '/home/tang/voice/ws_voice/build/voice_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/voice_pkg -- -j16 -l16
+[0.057s] Invoking command in '/home/tang/voice/ws_voice/build/voice_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/voice_pkg
+[0.061s] -- Install configuration: ""
+[0.061s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/lib/voice_pkg/libSparkChain.so
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/lib/voice_pkg/talker
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/lib/voice_pkg/voice_llm_node
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/ament_index/resource_index/package_run_dependencies/voice_pkg
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/ament_index/resource_index/parent_prefix_path/voice_pkg
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/ament_prefix_path.sh
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/ament_prefix_path.dsv
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/path.sh
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/environment/path.dsv
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.bash
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.sh
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.zsh
+[0.062s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/local_setup.dsv
+[0.062s] -- Installing: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/package.dsv
+[0.063s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/ament_index/resource_index/packages/voice_pkg
+[0.063s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/cmake/voice_pkgConfig.cmake
+[0.063s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/cmake/voice_pkgConfig-version.cmake
+[0.063s] -- Up-to-date: /home/tang/voice/ws_voice/install/voice_pkg/share/voice_pkg/package.xml
+[0.071s] Invoked command in '/home/tang/voice/ws_voice/build/voice_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/voice_pkg

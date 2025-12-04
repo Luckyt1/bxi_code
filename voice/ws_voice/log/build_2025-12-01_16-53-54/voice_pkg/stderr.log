@@ -1,0 +1,83 @@
+In file included from [01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_agent.h:4[m[K,
+                 from [01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sparkchain.h:4[m[K,
+                 from [01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:15[m[K:
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:56:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   56 |     virtual [01;35m[Kconst[m[K ContentType getContentType() const = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:57:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   57 |     virtual [01;35m[Kconst[m[K int getContentLen() const = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:60:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   60 |     virtual [01;35m[Kconst[m[K int getStatus() const = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:61:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   61 |     virtual [01;35m[Kconst[m[K int getCompletionTokens() const = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:62:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   62 |     virtual [01;35m[Kconst[m[K int getPromptTokens()     const = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:63:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   63 |     virtual [01;35m[Kconst[m[K int getTotalTokens()      const = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:70:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   70 |     virtual [01;35m[Kconst[m[K int   getEventID() const  = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_llm.h:78:13:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on function return type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+   78 |     virtual [01;35m[Kconst[m[K int   getErrCode() const = 0;
+      |             [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_agent.h:5[m[K,
+                 from [01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sparkchain.h:4[m[K,
+                 from [01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:15[m[K:
+[01m[K/home/tang/voice/SparkChain_Linux_SDK_2.0.0_rc1/SparkChain_Linux_SDK_2.0.0_rc1/include/sc_plugins.h:14:5:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   14 |     [01;35m[K;[m[K
+      |     [01;35m[K^[m[K
+      |     [31m[K-[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:35:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   35 | char * APPID     = [01;35m[K"ad184cbf"[m[K;                        // 用户的APPID
+      |                    [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:36:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   36 | char * APIKEY    = [01;35m[K"301e469bbd67f75138209b58436a9e1a"[m[K; // 用户的APIKey
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:37:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   37 | char * APISECRET = [01;35m[K"ZDFkY2JkNjIyZDU3NzZjNjhmYmMzZTA5"[m[K; // 用户的APISecret
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:38:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   38 | char * WORKDIR   = [01;35m[K"./"[m[K;                              // SDK工作目录，要求有读写权限
+      |                    [01;35m[K^~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kvirtual void ASRCallbacksImpl::onResult(SparkChain::ASRResult*, void*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:44:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KusrTag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 |     void onResult(ASRResult * result, [01;35m[Kvoid * usrTag[m[K) override {
+      |                                       [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kvirtual void ASRCallbacksImpl::onError(SparkChain::ASRError*, void*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:56:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KusrTag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   56 |     void onError(ASRError * error, [01;35m[Kvoid * usrTag[m[K) override {
+      |                                    [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kvirtual void LLMCallbacksImpl::onLLMResult(SparkChain::LLMResult*, void*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:67:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KusrContext[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   67 |     void onLLMResult(LLMResult *result, [01;35m[Kvoid *usrContext[m[K) override {
+      |                                         [01;35m[K~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kvirtual void LLMCallbacksImpl::onLLMError(SparkChain::LLMError*, void*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:82:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KusrContext[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |     void onLLMError(LLMError *error, [01;35m[Kvoid *usrContext[m[K) override {
+      |                                      [01;35m[K~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kvirtual void LLMCallbacksImpl::onLLMEvent(SparkChain::LLMEvent*, void*)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:90:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   90 |     void onLLMEvent([01;35m[KLLMEvent *event[m[K, void *usrContext) override {
+      |                     [01;35m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:90:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KusrContext[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   90 |     void onLLMEvent(LLMEvent *event, [01;35m[Kvoid *usrContext[m[K) override {
+      |                                      [01;35m[K~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kstd::string VoiceLLMNode::run_speech_recognition()[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:162:13:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KASRCallbacksImpl[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+  162 |             [01;35m[Kdelete asr_callbacks[m[K;
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:198:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KASRCallbacksImpl[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+  198 |         [01;35m[Kdelete asr_callbacks[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:[m[K In member function ‘[01m[Kstd::string VoiceLLMNode::run_llm_interaction(const string&)[m[K’:
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:227:13:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KLLMCallbacksImpl[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+  227 |             [01;35m[Kdelete llm_callbacks[m[K;
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/tang/voice/ws_voice/src/voice_pkg/src/voice_llm_node.cpp:240:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KLLMCallbacksImpl[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+  240 |         [01;35m[Kdelete llm_callbacks[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K

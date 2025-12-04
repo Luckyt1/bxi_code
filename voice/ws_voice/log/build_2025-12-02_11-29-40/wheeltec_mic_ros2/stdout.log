@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target voice_control[0m
+[ 18%] Built target call_recognition
+[ 54%] Built target voice_control
+[ 54%] Built target node_feedback
+[ 63%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[ 81%] Built target command_recognition

@@ -1,0 +1,15 @@
+In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/ros2_service.cpp:6[m[K:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include/wheeltec_mic.h:7:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: 没有那个文件或目录
+    7 | #include [01;31m[K<serial/serial.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/wheeltec_mic.cpp:6[m[K:
+[01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include/wheeltec_mic.h:7:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: 没有那个文件或目录
+    7 | #include [01;31m[K<serial/serial.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:90：CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:76：CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/wheeltec_mic.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

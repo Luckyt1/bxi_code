@@ -1,0 +1,104 @@
+[0.007s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2 -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/wheeltec_mic_ros2
+[0.014s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.097s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.101s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.102s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.103s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.119s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.133s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.153s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.153s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.163s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.189s] -- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)
+[0.193s] [33mCMake Warning at /home/tang/voice/ws_voice/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[0.193s]   Package 'serial' exports library 'serial' which couldn't be found
+[0.193s] Call Stack (most recent call first):
+[0.193s]   /home/tang/voice/ws_voice/install/serial/share/serial/cmake/serialConfig.cmake:41 (include)
+[0.193s]   CMakeLists.txt:24 (find_package)
+[0.193s] 
+[0.193s] [0m
+[0.193s] -- Found wheeltec_mic_msg: 0.0.0 (/home/tang/voice/ws_voice/install/wheeltec_mic_msg/share/wheeltec_mic_msg/cmake)
+[0.199s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.246s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.248s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.248s] -- Configured cppcheck include dirs: /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include
+[0.248s] -- Configured cppcheck exclude dirs and/or files: 
+[0.251s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.251s] -- Configured cpplint exclude dirs and/or files: 
+[0.251s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.251s] -- Added test 'lint_cmake' to check CMake code style
+[0.252s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.254s] -- Added test 'uncrustify' to check C / C++ code style
+[0.254s] -- Configured uncrustify additional arguments: 
+[0.254s] -- Added test 'xmllint' to check XML markup files
+[0.255s] -- Configuring done
+[0.266s] -- Generating done
+[0.270s] -- Build files have been written to: /home/tang/voice/ws_voice/build/wheeltec_mic_ros2
+[0.275s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2' returned '0': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2 -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/wheeltec_mic_ros2
+[0.276s] Invoking command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16
+[0.301s] [35m[1mConsolidate compiler generated dependencies of target node_feedback[0m
+[0.301s] [35m[1mConsolidate compiler generated dependencies of target command_recognition[0m
+[0.301s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_mic[0m
+[0.302s] [35m[1mConsolidate compiler generated dependencies of target voice_control[0m
+[0.303s] [35m[1mConsolidate compiler generated dependencies of target call_recognition[0m
+[0.310s] [ 18%] Built target node_feedback
+[0.312s] [ 36%] [32mBuilding CXX object CMakeFiles/voice_control.dir/src/voice_control.cpp.o[0m
+[0.312s] [ 45%] Built target command_recognition
+[0.313s] [ 54%] [32m[1mLinking CXX executable wheeltec_mic[0m
+[0.317s] [ 72%] Built target call_recognition
+[0.459s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Get_Serial_Data()':
+[0.459s] wheeltec_mic.cpp:(.text+0xa3a): undefined reference to `serial::Serial::read(unsigned char*, unsigned long)'
+[0.459s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xa81): undefined reference to `serial::Serial::available()'
+[0.459s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::handle_serial_error()':
+[0.459s] wheeltec_mic.cpp:(.text+0xd17): undefined reference to `serial::Serial::close()'
+[0.459s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xea6): undefined reference to `serial::Serial::open()'
+[0.459s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xebb): undefined reference to `serial::Serial::isOpen() const'
+[0.459s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0xed8): undefined reference to `serial::Serial::flush()'
+[0.460s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::initialize_serial()':
+[0.460s] wheeltec_mic.cpp:(.text+0x1664): undefined reference to `serial::Serial::isOpen() const'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x167d): undefined reference to `serial::Serial::close()'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16a3): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16c7): undefined reference to `serial::Serial::setBaudrate(unsigned int)'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16e7): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x16fc): undefined reference to `serial::Serial::open()'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x1711): undefined reference to `serial::Serial::isOpen() const'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x172e): undefined reference to `serial::Serial::flush()'
+[0.460s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::Wheeltec_Mic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[0.460s] wheeltec_mic.cpp:(.text+0x1eea): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x2952): undefined reference to `serial::Serial::~Serial()'
+[0.460s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/wheeltec_mic.cpp.o: in function `Wheeltec_Mic::~Wheeltec_Mic()':
+[0.460s] wheeltec_mic.cpp:(.text+0x2b43): undefined reference to `serial::Serial::close()'
+[0.460s] /usr/bin/ld: wheeltec_mic.cpp:(.text+0x2c54): undefined reference to `serial::Serial::~Serial()'
+[0.464s] /usr/bin/ld: CMakeFiles/wheeltec_mic.dir/src/ros2_service.cpp.o: in function `Wheeltec_Mic::Send_Serial_Data(ServicePacket&)':
+[0.464s] ros2_service.cpp:(.text+0x13c7): undefined reference to `serial::Serial::write(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.476s] collect2: error: ld returned 1 exit status
+[0.477s] gmake[2]: *** [CMakeFiles/wheeltec_mic.dir/build.make:183：wheeltec_mic] 错误 1
+[0.477s] gmake[1]: *** [CMakeFiles/Makefile2:223：CMakeFiles/wheeltec_mic.dir/all] 错误 2
+[0.477s] gmake[1]: *** 正在等待未完成的任务....
+[1.510s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::business_data_t(unsigned char*)[m[K’:
+[1.510s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:235:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.510s]   235 | [01;35m[K}[m[K
+[1.510s]       | [01;35m[K^[m[K
+[1.511s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::finish_record_sound()[m[K’:
+[1.511s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:296:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.511s]   296 | [01;35m[K}[m[K
+[1.511s]       | [01;35m[K^[m[K
+[1.512s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kbool SpeechProcess::Get_Offline_Recognise_Result(const std::shared_ptr<wheeltec_mic_msg::srv::GetOfflineResult_Request_<std::allocator<void> > >&, std::shared_ptr<wheeltec_mic_msg::srv::GetOfflineResult_Response_<std::allocator<void> > >&)[m[K’:
+[1.513s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:369:34:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+[1.513s]   369 |                 if ([01;35m[Kwhole_result != ""[m[K)
+[1.513s]       |                     [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+[1.515s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:405:32:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[1.515s]   405 |                 whole_result = [01;35m[K""[m[K;
+[1.515s]       |                                [01;35m[K^~[m[K
+[1.969s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[Kint SpeechProcess::get_record_sound(const char*)[m[K’:
+[1.969s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:285:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.969s]   285 | [01;35m[K}[m[K
+[1.969s]       | [01;35m[K^[m[K
+[1.969s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:[m[K In member function ‘[01m[KEffective_Result SpeechProcess::show_result(char*)[m[K’:
+[1.969s] [01m[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_control.cpp:334:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchar* strncpy(char*, const char*, size_t)[m[K’ destination unchanged after copying no bytes [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wstringop-truncation-Wstringop-truncation]8;;[m[K]
+[1.969s]   334 |                         [01;35m[Kstrncpy(asr_result, "", 0)[m[K;
+[1.969s]       |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.876s] [ 81%] [32m[1mLinking CXX executable voice_control[0m
+[3.073s] [ 81%] Built target voice_control
+[3.074s] gmake: *** [Makefile:146：all] 错误 2
+[3.076s] Invoked command in '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2' returned '2': AMENT_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/voice/ws_voice/build/wheeltec_mic_ros2 -- -j16 -l16

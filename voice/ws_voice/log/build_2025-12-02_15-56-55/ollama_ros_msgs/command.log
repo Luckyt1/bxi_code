@@ -1,0 +1,1 @@
+Invoking command in '/home/tang/voice/ws_voice/build/ollama_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/ollama_ros_chat/ollama_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/ollama_ros_msgs

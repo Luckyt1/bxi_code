@@ -1,0 +1,51 @@
+[0.006s] Invoking command in '/home/tang/voice/ws_voice/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/serial-ros2 -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/serial
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.082s] -- The CXX compiler identification is GNU 11.4.0
+[0.088s] -- Detecting C compiler ABI info
+[0.138s] -- Detecting C compiler ABI info - done
+[0.142s] -- Check for working C compiler: /usr/bin/gcc-11 - skipped
+[0.142s] -- Detecting C compile features
+[0.143s] -- Detecting C compile features - done
+[0.144s] -- Detecting CXX compiler ABI info
+[0.201s] -- Detecting CXX compiler ABI info - done
+[0.206s] -- Check for working CXX compiler: /usr/bin/g++-11 - skipped
+[0.206s] -- Detecting CXX compile features
+[0.206s] -- Detecting CXX compile features - done
+[0.207s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.321s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.415s] -- Configuring done
+[0.417s] -- Generating done
+[0.418s] -- Build files have been written to: /home/tang/voice/ws_voice/build/serial
+[0.420s] Invoked command in '/home/tang/voice/ws_voice/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/voice/ws_voice/src/serial-ros2 -DCMAKE_INSTALL_PREFIX=/home/tang/voice/ws_voice/install/serial
+[0.422s] Invoking command in '/home/tang/voice/ws_voice/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/serial -- -j16 -l16
+[0.454s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[0.454s] [ 50%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[0.456s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[0.747s] [100%] [32m[1mLinking CXX static library libserial.a[0m
+[0.770s] [100%] Built target serial
+[0.776s] Invoked command in '/home/tang/voice/ws_voice/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/voice/ws_voice/build/serial -- -j16 -l16
+[0.784s] Invoking command in '/home/tang/voice/ws_voice/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/serial
+[0.787s] -- Install configuration: ""
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/environment/library_path.sh
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/environment/library_path.dsv
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/lib/libserial.a
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/include/serial/serial.h
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/include/serial/v8stdint.h
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/environment/ament_prefix_path.sh
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/environment/ament_prefix_path.dsv
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/environment/path.sh
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/environment/path.dsv
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/local_setup.bash
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/local_setup.sh
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/local_setup.zsh
+[0.788s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/local_setup.dsv
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/package.dsv
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/ament_index/resource_index/packages/serial
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/cmake/serialConfig.cmake
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/cmake/serialConfig-version.cmake
+[0.789s] -- Installing: /home/tang/voice/ws_voice/install/serial/share/serial/package.xml
+[0.790s] Invoked command in '/home/tang/voice/ws_voice/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/voice/ws_voice/build/serial

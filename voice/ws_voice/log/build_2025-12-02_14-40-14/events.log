@@ -1,0 +1,247 @@
+[0.000000] (-) TimerEvent: {}
+[0.000149] (-) JobUnselected: {'identifier': 'serial'}
+[0.000168] (-) JobUnselected: {'identifier': 'voice_pkg'}
+[0.000178] (-) JobUnselected: {'identifier': 'wheeltec_mic_msg'}
+[0.000188] (wheeltec_mic_ros2) JobQueued: {'identifier': 'wheeltec_mic_ros2', 'dependencies': OrderedDict([('wheeltec_mic_msg', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg')])}
+[0.000477] (wheeltec_mic_ros2) JobStarted: {'identifier': 'wheeltec_mic_ros2'}
+[0.006990] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'cmake'}
+[0.007407] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'build'}
+[0.007844] (wheeltec_mic_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', '--', '-j16', '-l16'], 'cwd': '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'tang'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin'), ('HOME', '/home/tang'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tang/voice'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1516'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1893'), ('BUNDLED_DEBUGPY_PATH', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/tang/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10699'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/bxi/bxi_ros2_pkg'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tang'), ('JOURNAL_STREAM', '8:9619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'tang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tang/.local/bin:/usr/local/cuda-12.4/bin:/opt/ros/humble/bin:/home/tang/miniconda3/condabin:/home/tang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts:/home/tang/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tang/miniconda3/bin'), ('SESSION_MANAGER', 'local/tang:@/tmp/.ICE-unix/1864,unix/tang:/tmp/.ICE-unix/1864'), ('INVOCATION_ID', 'edcc4db45563420fa8e5a4c113579f98'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('MUJOCO_PY_MUJOCO_PATH', '/home/tang/.mujoco/mujoco336/mujoco-3.3.6'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-af5faa90532656f1.txt'), ('MUJOCO_PY_MJKEY_PATH', '/home/tang/.mujoco/mjkey.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/tang/.config/Code/User/workspaceStorage/b8123f7c2046fb6dbcc1b2263f857fcd/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-52b2883bbf.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/tang/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/bin/g++-11'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/bxi/bxi_ros2_pkg/share/mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/opt/bxi/bxi_ros2_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CC', '/usr/bin/gcc-11'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble')]), 'shell': False}
+[0.042932] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target voice_listener\x1b[0m\n'}
+[0.053791] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/voice_listener.dir/src/voice_listener.cpp.o\x1b[0m\n'}
+[0.054272] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 30%] Built target call_recognition\n'}
+[0.054371] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 38%] Built target command_recognition\n'}
+[0.054420] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 53%] Built target node_feedback\n'}
+[0.059313] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 92%] Built target wheeltec_mic\n'}
+[0.059546] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 92%] Built target voice_control\n'}
+[0.099803] (-) TimerEvent: {}
+[0.200103] (-) TimerEvent: {}
+[0.300400] (-) TimerEvent: {}
+[0.400687] (-) TimerEvent: {}
+[0.501009] (-) TimerEvent: {}
+[0.601478] (-) TimerEvent: {}
+[0.701751] (-) TimerEvent: {}
+[0.802011] (-) TimerEvent: {}
+[0.902287] (-) TimerEvent: {}
+[1.002648] (-) TimerEvent: {}
+[1.103006] (-) TimerEvent: {}
+[1.203287] (-) TimerEvent: {}
+[1.303578] (-) TimerEvent: {}
+[1.403841] (-) TimerEvent: {}
+[1.504105] (-) TimerEvent: {}
+[1.604371] (-) TimerEvent: {}
+[1.704720] (-) TimerEvent: {}
+[1.804974] (-) TimerEvent: {}
+[1.905307] (-) TimerEvent: {}
+[2.005589] (-) TimerEvent: {}
+[2.105918] (-) TimerEvent: {}
+[2.206290] (-) TimerEvent: {}
+[2.306586] (-) TimerEvent: {}
+[2.406859] (-) TimerEvent: {}
+[2.507132] (-) TimerEvent: {}
+[2.607401] (-) TimerEvent: {}
+[2.707661] (-) TimerEvent: {}
+[2.807917] (-) TimerEvent: {}
+[2.908189] (-) TimerEvent: {}
+[3.008467] (-) TimerEvent: {}
+[3.108725] (-) TimerEvent: {}
+[3.208993] (-) TimerEvent: {}
+[3.309276] (-) TimerEvent: {}
+[3.409577] (-) TimerEvent: {}
+[3.509861] (-) TimerEvent: {}
+[3.610140] (-) TimerEvent: {}
+[3.710390] (-) TimerEvent: {}
+[3.810679] (-) TimerEvent: {}
+[3.911007] (-) TimerEvent: {}
+[4.011304] (-) TimerEvent: {}
+[4.111620] (-) TimerEvent: {}
+[4.211937] (-) TimerEvent: {}
+[4.312306] (-) TimerEvent: {}
+[4.412760] (-) TimerEvent: {}
+[4.513239] (-) TimerEvent: {}
+[4.613581] (-) TimerEvent: {}
+[4.713890] (-) TimerEvent: {}
+[4.814215] (-) TimerEvent: {}
+[4.914524] (-) TimerEvent: {}
+[5.014931] (-) TimerEvent: {}
+[5.115257] (-) TimerEvent: {}
+[5.215591] (-) TimerEvent: {}
+[5.315917] (-) TimerEvent: {}
+[5.416259] (-) TimerEvent: {}
+[5.516570] (-) TimerEvent: {}
+[5.616890] (-) TimerEvent: {}
+[5.717234] (-) TimerEvent: {}
+[5.817582] (-) TimerEvent: {}
+[5.917972] (-) TimerEvent: {}
+[6.018318] (-) TimerEvent: {}
+[6.118675] (-) TimerEvent: {}
+[6.218996] (-) TimerEvent: {}
+[6.319340] (-) TimerEvent: {}
+[6.419780] (-) TimerEvent: {}
+[6.520132] (-) TimerEvent: {}
+[6.620495] (-) TimerEvent: {}
+[6.720823] (-) TimerEvent: {}
+[6.821215] (-) TimerEvent: {}
+[6.921644] (-) TimerEvent: {}
+[7.021968] (-) TimerEvent: {}
+[7.122326] (-) TimerEvent: {}
+[7.222710] (-) TimerEvent: {}
+[7.323116] (-) TimerEvent: {}
+[7.423390] (-) TimerEvent: {}
+[7.523713] (-) TimerEvent: {}
+[7.624135] (-) TimerEvent: {}
+[7.724741] (-) TimerEvent: {}
+[7.825204] (-) TimerEvent: {}
+[7.858746] (wheeltec_mic_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable voice_listener\x1b[0m\n'}
+[7.925335] (-) TimerEvent: {}
+[8.025712] (-) TimerEvent: {}
+[8.126045] (-) TimerEvent: {}
+[8.226430] (-) TimerEvent: {}
+[8.241230] (wheeltec_mic_ros2) StdoutLine: {'line': b'[100%] Built target voice_listener\n'}
+[8.248954] (wheeltec_mic_ros2) CommandEnded: {'returncode': 0}
+[8.249545] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'install'}
+[8.256858] (wheeltec_mic_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2'], 'cwd': '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'tang'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin'), ('HOME', '/home/tang'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tang/voice'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1516'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1893'), ('BUNDLED_DEBUGPY_PATH', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/tang/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10699'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/bxi/bxi_ros2_pkg'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tang'), ('JOURNAL_STREAM', '8:9619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'tang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tang/.local/bin:/usr/local/cuda-12.4/bin:/opt/ros/humble/bin:/home/tang/miniconda3/condabin:/home/tang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts:/home/tang/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tang/miniconda3/bin'), ('SESSION_MANAGER', 'local/tang:@/tmp/.ICE-unix/1864,unix/tang:/tmp/.ICE-unix/1864'), ('INVOCATION_ID', 'edcc4db45563420fa8e5a4c113579f98'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('MUJOCO_PY_MUJOCO_PATH', '/home/tang/.mujoco/mujoco336/mujoco-3.3.6'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-af5faa90532656f1.txt'), ('MUJOCO_PY_MJKEY_PATH', '/home/tang/.mujoco/mjkey.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/tang/.config/Code/User/workspaceStorage/b8123f7c2046fb6dbcc1b2263f857fcd/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-52b2883bbf.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/tang/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/bin/g++-11'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/bxi/bxi_ros2_pkg/share/mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/opt/bxi/bxi_ros2_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CC', '/usr/bin/gcc-11'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble')]), 'shell': False}
+[8.262847] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.263040] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch\n'}
+[8.263081] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch/voice_listener.launch.py\n'}
+[8.263139] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch/mic_init.launch.py\n'}
+[8.263169] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/launch/base.launch.py\n'}
+[8.263197] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config\n'}
+[8.263224] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc\n'}
+[8.263250] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/msc.log\n'}
+[8.263276] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res\n'}
+[8.263300] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr\n'}
+[8.263339] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/common.jet\n'}
+[8.263366] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld\n'}
+[8.263422] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/lhheaaaa.d\n'}
+[8.263448] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/azcfaaaa.d\n'}
+[8.263473] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/bzvskdaa.d\n'}
+[8.263499] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/zhdfaaaa.d\n'}
+[8.263545] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/rtpyyuba.d\n'}
+[8.263569] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/qgieaaaa.d\n'}
+[8.263596] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/fyrdwpaa.d\n'}
+[8.263620] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/uikawbda.d\n'}
+[8.263646] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/rlieaaaa.d\n'}
+[8.263674] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/mcaudaaa.d\n'}
+[8.263714] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/gcoeaaaa.d\n'}
+[8.263743] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp\n'}
+[8.263770] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/lhheaaaa.d\n'}
+[8.263810] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/azcfaaaa.d\n'}
+[8.263837] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/bzvskdaa.d\n'}
+[8.263862] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/zhdfaaaa.d\n'}
+[8.263887] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/rtpyyuba.d\n'}
+[8.263942] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/qgieaaaa.d\n'}
+[8.263971] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/fyrdwpaa.d\n'}
+[8.264022] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/uikawbda.d\n'}
+[8.264047] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/rlieaaaa.d\n'}
+[8.264072] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/mcaudaaa.d\n'}
+[8.264097] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/gcoeaaaa.d\n'}
+[8.264121] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/whsnkqba.d\n'}
+[8.264164] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/arlfaaaa.d\n'}
+[8.264227] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/sqieaaaa.d\n'}
+[8.264254] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/rbswtvaa.d\n'}
+[8.264278] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/mmheaaaa.d\n'}
+[8.264338] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/call.g\n'}
+[8.264361] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/kcheaaaa.d\n'}
+[8.264386] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/imqhxtba.d\n'}
+[8.264410] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/ddykzcaa.d\n'}
+[8.264487] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/zwwzwvaa.d\n'}
+[8.264653] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/deofaaaa.d\n'}
+[8.264788] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/temp/call_16K\n'}
+[8.264874] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/whsnkqba.d\n'}
+[8.264946] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/arlfaaaa.d\n'}
+[8.265015] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/sqieaaaa.d\n'}
+[8.265082] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/rbswtvaa.d\n'}
+[8.265148] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/mmheaaaa.d\n'}
+[8.265214] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/call.g\n'}
+[8.265279] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/kcheaaaa.d\n'}
+[8.265343] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/imqhxtba.d\n'}
+[8.265428] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/ddykzcaa.d\n'}
+[8.265575] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/zwwzwvaa.d\n'}
+[8.265642] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/deofaaaa.d\n'}
+[8.265711] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Installing: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/res/asr/GrmBuilld/call_16K\n'}
+[8.265842] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/msc.cfg\n'}
+[8.265905] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/waiter.log\n'}
+[8.265970] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/isr.log\n'}
+[8.266061] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/lgi.log\n'}
+[8.266121] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/grm_lex.log\n'}
+[8.266184] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/msc/isr_local.log\n'}
+[8.266248] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/call.bnf\n'}
+[8.266311] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/config/recognition_params.yaml\n'}
+[8.266374] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice\n'}
+[8.266436] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/voice_control.wav\n'}
+[8.266524] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/navigation_close.wav\n'}
+[8.266589] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/line_open.wav\n'}
+[8.266652] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_mapping_close.wav\n'}
+[8.266742] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/line_close.wav\n'}
+[8.266805] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/stop.wav\n'}
+[8.266869] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rrt_open.wav\n'}
+[8.266932] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_navigation_close.wav\n'}
+[8.267013] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_mapping_close.wav\n'}
+[8.267072] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/find.wav\n'}
+[8.267131] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/visual_open.wav\n'}
+[8.267189] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/sleep.wav\n'}
+[8.267248] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/car_front.wav\n'}
+[8.267307] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_mapping.wav\n'}
+[8.267371] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_navigation_close.wav\n'}
+[8.267430] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/OK.wav\n'}
+[8.267489] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rrt_close.wav\n'}
+[8.267549] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_navigation_open.wav\n'}
+[8.267608] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/turn_right.wav\n'}
+[8.267667] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/awake.wav\n'}
+[8.267736] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/2d_navigation.wav\n'}
+[8.267798] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_navigation_open.wav\n'}
+[8.267857] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/web_close.wav\n'}
+[8.267915] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/web_open.wav\n'}
+[8.267974] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rplidar_close.wav\n'}
+[8.268032] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/close_node.wav\n'}
+[8.268090] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/classify_close.wav\n'}
+[8.268149] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/car_back.wav\n'}
+[8.268215] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/Tracker.wav\n'}
+[8.268274] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_navigation_close.wav\n'}
+[8.268332] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/classify_open.wav\n'}
+[8.268391] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/reach_goal.wav\n'}
+[8.268450] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/kcf_open.wav\n'}
+[8.268512] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/turn_left.wav\n'}
+[8.268571] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/search_voice.wav\n'}
+[8.268631] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/open_node.wav\n'}
+[8.268697] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/overmap.wav\n'}
+[8.268763] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_mapping_close.wav\n'}
+[8.268822] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/AR_open.wav\n'}
+[8.268881] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/visual_close.wav\n'}
+[8.268939] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/AR_close.wav\n'}
+[8.268998] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/3d_mapping_open.wav\n'}
+[8.269056] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/pure3d_mapping_open.wav\n'}
+[8.269115] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/kcf_close.wav\n'}
+[8.269174] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/feedback_voice/rplidar_open.wav\n'}
+[8.269233] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.269292] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/call_recognition\n'}
+[8.269354] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/call_recognition\n'}
+[8.269413] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/command_recognition\n'}
+[8.269472] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/command_recognition\n'}
+[8.269532] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/node_feedback\n'}
+[8.269591] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/node_feedback\n'}
+[8.269649] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/wheeltec_mic\n'}
+[8.269716] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/wheeltec_mic\n'}
+[8.269781] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/voice_control\n'}
+[8.269842] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/voice_control\n'}
+[8.269900] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Symlinking: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/voice_listener\n'}
+[8.273629] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/lib/wheeltec_mic_ros2/voice_listener\n'}
+[8.273789] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/ament_index/resource_index/package_run_dependencies/wheeltec_mic_ros2\n'}
+[8.273878] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/ament_index/resource_index/parent_prefix_path/wheeltec_mic_ros2\n'}
+[8.273951] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/ament_prefix_path.sh\n'}
+[8.274015] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/ament_prefix_path.dsv\n'}
+[8.274113] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/path.sh\n'}
+[8.274176] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/environment/path.dsv\n'}
+[8.274240] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.bash\n'}
+[8.274324] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.sh\n'}
+[8.274384] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.zsh\n'}
+[8.274445] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/local_setup.dsv\n'}
+[8.274504] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Symlinking: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/package.dsv\n'}
+[8.280765] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/ament_index/resource_index/packages/wheeltec_mic_ros2\n'}
+[8.280963] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/cmake/wheeltec_mic_ros2Config.cmake\n'}
+[8.281032] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/cmake/wheeltec_mic_ros2Config-version.cmake\n'}
+[8.281095] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/tang/voice/ws_voice/install/wheeltec_mic_ros2/share/wheeltec_mic_ros2/package.xml\n'}
+[8.282181] (wheeltec_mic_ros2) CommandEnded: {'returncode': 0}
+[8.291077] (wheeltec_mic_ros2) JobEnded: {'identifier': 'wheeltec_mic_ros2', 'rc': 0}
+[8.291619] (-) EventReactorShutdown: {}

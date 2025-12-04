@@ -1,0 +1,11 @@
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/uninstall.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/voice_pkg_uninstall.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/talker.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/voice_llm_node.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/test.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/edit_cache.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/rebuild_cache.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/list_install_components.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/install.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/install/local.dir
+/home/tang/voice/ws_voice/build/voice_pkg/CMakeFiles/install/strip.dir

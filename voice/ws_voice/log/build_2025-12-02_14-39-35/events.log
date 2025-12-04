@@ -1,0 +1,239 @@
+[0.000000] (-) TimerEvent: {}
+[0.000238] (-) JobUnselected: {'identifier': 'serial'}
+[0.000441] (-) JobUnselected: {'identifier': 'voice_pkg'}
+[0.000452] (-) JobUnselected: {'identifier': 'wheeltec_mic_msg'}
+[0.000462] (wheeltec_mic_ros2) JobQueued: {'identifier': 'wheeltec_mic_ros2', 'dependencies': OrderedDict([('wheeltec_mic_msg', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg')])}
+[0.000476] (wheeltec_mic_ros2) JobStarted: {'identifier': 'wheeltec_mic_ros2'}
+[0.007081] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'cmake'}
+[0.007631] (wheeltec_mic_ros2) JobProgress: {'identifier': 'wheeltec_mic_ros2', 'progress': 'build'}
+[0.008282] (wheeltec_mic_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', '--', '-j16', '-l16'], 'cwd': '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'tang'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin'), ('HOME', '/home/tang'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/tang/voice'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1516'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1893'), ('BUNDLED_DEBUGPY_PATH', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/tang/miniconda3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10699'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/bxi/bxi_ros2_pkg'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tang'), ('JOURNAL_STREAM', '8:9619'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'tang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tang/.local/bin:/usr/local/cuda-12.4/bin:/opt/ros/humble/bin:/home/tang/miniconda3/condabin:/home/tang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts:/home/tang/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/tang/miniconda3/bin'), ('SESSION_MANAGER', 'local/tang:@/tmp/.ICE-unix/1864,unix/tang:/tmp/.ICE-unix/1864'), ('INVOCATION_ID', 'edcc4db45563420fa8e5a4c113579f98'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('MUJOCO_PY_MUJOCO_PATH', '/home/tang/.mujoco/mujoco336/mujoco-3.3.6'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/tang/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-af5faa90532656f1.txt'), ('MUJOCO_PY_MJKEY_PATH', '/home/tang/.mujoco/mjkey.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/tang/.config/Code/User/workspaceStorage/b8123f7c2046fb6dbcc1b2263f857fcd/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-52b2883bbf.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/tang/miniconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/bin/g++-11'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/opt/bxi/bxi_ros2_pkg/share/mujoco/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('_CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tang/voice/ws_voice/build/wheeltec_mic_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/tang/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/opt/bxi/bxi_ros2_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CC', '/usr/bin/gcc-11'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tang/voice/ws_voice/install/wheeltec_mic_msg:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble')]), 'shell': False}
+[0.031596] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099856] (-) TimerEvent: {}
+[0.120714] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.126905] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.128199] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.129607] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.147031] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.160422] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.180787] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.181460] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.190986] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.199945] (-) TimerEvent: {}
+[0.217359] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/tang/voice/ws_voice/install/serial/share/serial/cmake)\n'}
+[0.218627] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found wheeltec_mic_msg: 0.0.0 (/home/tang/voice/ws_voice/install/wheeltec_mic_msg/share/wheeltec_mic_msg/cmake)\n'}
+[0.224835] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.272548] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.274956] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.275118] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/include\n'}
+[0.275179] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.277124] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.277162] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.277468] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.278100] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.278459] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.280521] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.280590] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.280898] (wheeltec_mic_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.281390] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.294240] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[0.299001] (wheeltec_mic_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/tang/voice/ws_voice/build/wheeltec_mic_ros2\n'}
+[0.300029] (-) TimerEvent: {}
+[0.316599] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target node_feedback\x1b[0m\n'}
+[0.316792] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target voice_control\x1b[0m\n'}
+[0.316877] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target wheeltec_mic\x1b[0m\n'}
+[0.318077] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target command_recognition\x1b[0m\n'}
+[0.318128] (wheeltec_mic_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target call_recognition\x1b[0m\n'}
+[0.323353] (wheeltec_mic_ros2) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/voice_listener.dir/src/voice_listener.cpp.o\x1b[0m\n'}
+[0.328529] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX executable wheeltec_mic\x1b[0m\n'}
+[0.328758] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 30%] Built target node_feedback\n'}
+[0.328997] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 46%] Built target voice_control\n'}
+[0.330954] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 61%] Built target command_recognition\n'}
+[0.333875] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 76%] Built target call_recognition\n'}
+[0.400242] (-) TimerEvent: {}
+[0.500622] (-) TimerEvent: {}
+[0.512969] (wheeltec_mic_ros2) StdoutLine: {'line': b'[ 92%] Built target wheeltec_mic\n'}
+[0.600789] (-) TimerEvent: {}
+[0.701121] (-) TimerEvent: {}
+[0.801483] (-) TimerEvent: {}
+[0.901894] (-) TimerEvent: {}
+[1.002279] (-) TimerEvent: {}
+[1.102721] (-) TimerEvent: {}
+[1.203101] (-) TimerEvent: {}
+[1.303458] (-) TimerEvent: {}
+[1.403877] (-) TimerEvent: {}
+[1.504377] (-) TimerEvent: {}
+[1.604673] (-) TimerEvent: {}
+[1.622264] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:51:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KUInt32\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.622479] (wheeltec_mic_ros2) StderrLine: {'line': b'   51 |     void awakeAngleCallback(const std_msgs::msg::\x1b[01;31m\x1b[KUInt32\x1b[m\x1b[K::SharedPtr msg)\n'}
+[1.622518] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.622545] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:51:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.622571] (wheeltec_mic_ros2) StderrLine: {'line': b'   51 |     void awakeAngleCallback(const std_msgs::msg::UInt32::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[1.622595] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.622618] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:51:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.622641] (wheeltec_mic_ros2) StderrLine: {'line': b'   51 |     void awakeAngleCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::UInt32::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[1.622666] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                            \x1b[34m\x1b[K~\x1b[m\x1b[K                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[1.622689] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.622716] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:51:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.622739] (wheeltec_mic_ros2) StderrLine: {'line': b'   51 |     void awakeAngleCallback(const std_msgs::msg::UInt32::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K msg)\n'}
+[1.622762] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.622785] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.625777] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:51:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.625888] (wheeltec_mic_ros2) StderrLine: {'line': b'   51 |     void awakeAngleCallback(const std_msgs::msg::UInt32::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[1.625918] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.625942] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:57:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt8\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.625967] (wheeltec_mic_ros2) StderrLine: {'line': b'   57 |     void awakeFlagCallback(const std_msgs::msg::\x1b[01;31m\x1b[KInt8\x1b[m\x1b[K::SharedPtr msg)\n'}
+[1.625990] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.626015] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:57:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.626038] (wheeltec_mic_ros2) StderrLine: {'line': b'   57 |     void awakeFlagCallback(const std_msgs::msg::Int8::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[1.626062] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.626084] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:57:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.626107] (wheeltec_mic_ros2) StderrLine: {'line': b'   57 |     void awakeFlagCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg::Int8::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[1.626129] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                           \x1b[34m\x1b[K~\x1b[m\x1b[K                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[1.626153] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.626175] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:57:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.626205] (wheeltec_mic_ros2) StderrLine: {'line': b'   57 |     void awakeFlagCallback(const std_msgs::msg::Int8::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K msg)\n'}
+[1.626229] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.626252] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.626655] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:57:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.626739] (wheeltec_mic_ros2) StderrLine: {'line': b'   57 |     void awakeFlagCallback(const std_msgs::msg::Int8::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[1.626787] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.649373] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KUInt32\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.649527] (wheeltec_mic_ros2) StderrLine: {'line': b'   82 |     rclcpp::Subscription<std_msgs::msg::\x1b[01;31m\x1b[KUInt32\x1b[m\x1b[K>::SharedPtr awake_angle_sub_;\n'}
+[1.649558] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.649584] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.649609] (wheeltec_mic_ros2) StderrLine: {'line': b'   82 |     rclcpp::Subscription<std_msgs::msg::UInt32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr awake_angle_sub_;\n'}
+[1.649632] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.649654] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.649677] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[1.649699] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[1.649724] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.649748] (wheeltec_mic_ros2) StderrLine: {'line': b'   82 |     rclcpp::Subscription<std_msgs::msg::UInt32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K awake_angle_sub_;\n'}
+[1.649769] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.649790] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.651147] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kawake_angle_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.651197] (wheeltec_mic_ros2) StderrLine: {'line': b'   82 |     rclcpp::Subscription<std_msgs::msg::UInt32>::SharedPtr \x1b[01;31m\x1b[Kawake_angle_sub_\x1b[m\x1b[K;\n'}
+[1.651226] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.651418] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt8\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651448] (wheeltec_mic_ros2) StderrLine: {'line': b'   83 |     rclcpp::Subscription<std_msgs::msg::\x1b[01;31m\x1b[KInt8\x1b[m\x1b[K>::SharedPtr awake_flag_sub_;\n'}
+[1.651474] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.651545] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.651575] (wheeltec_mic_ros2) StderrLine: {'line': b'   83 |     rclcpp::Subscription<std_msgs::msg::Int8\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr awake_flag_sub_;\n'}
+[1.651600] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.651625] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.651650] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[1.651674] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[1.651743] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.651767] (wheeltec_mic_ros2) StderrLine: {'line': b'   83 |     rclcpp::Subscription<std_msgs::msg::Int8>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K awake_flag_sub_;\n'}
+[1.651790] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.651813] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.651835] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint VoiceListener::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651857] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:82:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint VoiceListener::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651881] (wheeltec_mic_ros2) StderrLine: {'line': b'   82 |     rclcpp::Subscription<std_msgs::msg::UInt32>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K awake_angle_sub_;\n'}
+[1.651904] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.653052] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:83:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kawake_flag_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.653088] (wheeltec_mic_ros2) StderrLine: {'line': b'   83 |     rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr \x1b[01;31m\x1b[Kawake_flag_sub_\x1b[m\x1b[K;\n'}
+[1.653113] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.664720] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KVoiceListener::VoiceListener()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.664866] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:20:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kawake_angle_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.664906] (wheeltec_mic_ros2) StderrLine: {'line': b'   20 |         \x1b[01;31m\x1b[Kawake_angle_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::UInt32>(\n'}
+[1.664931] (wheeltec_mic_ros2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.665019] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:20:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KUInt32\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.665049] (wheeltec_mic_ros2) StderrLine: {'line': b'   20 |         awake_angle_sub_ = this->create_subscription<std_msgs::msg::\x1b[01;31m\x1b[KUInt32\x1b[m\x1b[K>(\n'}
+[1.665073] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.666144] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:20:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KVoiceListener::create_subscription<<expression error> >(const char [12], int, std::_Bind_helper<false, void (VoiceListener::*)(...), VoiceListener*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.666180] (wheeltec_mic_ros2) StderrLine: {'line': b'   20 |         awake_angle_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::UInt32>(\x1b[m\x1b[K\n'}
+[1.666208] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.666231] (wheeltec_mic_ros2) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[K            "awake_angle", 10,\x1b[m\x1b[K\n'}
+[1.666253] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                              \n'}
+[1.666275] (wheeltec_mic_ros2) StderrLine: {'line': b'   22 | \x1b[01;31m\x1b[K            std::bind(&VoiceListener::awakeAngleCallback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[1.666298] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.667201] (wheeltec_mic_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[1.667233] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.667259] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.667284] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.667307] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:5\x1b[m\x1b[K:\n'}
+[1.667333] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.667389] (wheeltec_mic_ros2) StderrLine: {'line': b'   92 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_subscription(\n'}
+[1.667412] (wheeltec_mic_ros2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.667435] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.667459] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:20:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.667482] (wheeltec_mic_ros2) StderrLine: {'line': b'   20 |         awake_angle_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::UInt32>(\x1b[m\x1b[K\n'}
+[1.667503] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.667527] (wheeltec_mic_ros2) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[K            "awake_angle", 10,\x1b[m\x1b[K\n'}
+[1.667548] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                              \n'}
+[1.667570] (wheeltec_mic_ros2) StderrLine: {'line': b'   22 | \x1b[01;31m\x1b[K            std::bind(&VoiceListener::awakeAngleCallback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[1.667591] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.672103] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kawake_flag_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.672146] (wheeltec_mic_ros2) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[Kawake_flag_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Int8>(\n'}
+[1.672171] (wheeltec_mic_ros2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.672245] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:25:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt8\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.672274] (wheeltec_mic_ros2) StderrLine: {'line': b'   25 |         awake_flag_sub_ = this->create_subscription<std_msgs::msg::\x1b[01;31m\x1b[KInt8\x1b[m\x1b[K>(\n'}
+[1.672297] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.672370] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:25:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KVoiceListener::create_subscription<<expression error> >(const char [11], int, std::_Bind_helper<false, void (VoiceListener::*)(...), VoiceListener*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.672537] (wheeltec_mic_ros2) StderrLine: {'line': b'   25 |         awake_flag_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::Int8>(\x1b[m\x1b[K\n'}
+[1.672640] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.672716] (wheeltec_mic_ros2) StderrLine: {'line': b'   26 | \x1b[01;31m\x1b[K            "awake_flag", 10,\x1b[m\x1b[K\n'}
+[1.672785] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                            \n'}
+[1.672853] (wheeltec_mic_ros2) StderrLine: {'line': b'   27 | \x1b[01;31m\x1b[K            std::bind(&VoiceListener::awakeFlagCallback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[1.672918] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.672995] (wheeltec_mic_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[1.673057] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.673120] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.673180] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.673261] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:5\x1b[m\x1b[K:\n'}
+[1.673322] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.673394] (wheeltec_mic_ros2) StderrLine: {'line': b'   92 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_subscription(\n'}
+[1.673459] (wheeltec_mic_ros2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.673522] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.673586] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:25:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.673649] (wheeltec_mic_ros2) StderrLine: {'line': b'   25 |         awake_flag_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::Int8>(\x1b[m\x1b[K\n'}
+[1.673709] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.673770] (wheeltec_mic_ros2) StderrLine: {'line': b'   26 | \x1b[01;31m\x1b[K            "awake_flag", 10,\x1b[m\x1b[K\n'}
+[1.673837] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                                            \n'}
+[1.673903] (wheeltec_mic_ros2) StderrLine: {'line': b'   27 | \x1b[01;31m\x1b[K            std::bind(&VoiceListener::awakeFlagCallback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[1.673966] (wheeltec_mic_ros2) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.675522] (wheeltec_mic_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.675672] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.675736] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.675797] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.675857] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.675923] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.675981] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.676039] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.676096] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.676154] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.676218] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.676279] (wheeltec_mic_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:5\x1b[m\x1b[K:\n'}
+[1.676337] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid VoiceListener::voiceWordsCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.676404] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:41:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%ld\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.676470] (wheeltec_mic_ros2) StderrLine: {'line': b'   41 |                    \x1b[01;35m\x1b[K"[\xe6\x97\xb6\xe9\x97\xb4: %ld.%ld]"\x1b[m\x1b[K, \x1b[32m\x1b[Know.seconds()\x1b[m\x1b[K, now.nanoseconds());\n'}
+[1.676529] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.676587] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[1.676644] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[1.676704] (wheeltec_mic_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tang/voice/ws_voice/src/wheeltec_mic/wheeltec_mic_ros2/src/voice_listener.cpp:41:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[1.676768] (wheeltec_mic_ros2) StderrLine: {'line': b'   41 |                    "[\xe6\x97\xb6\xe9\x97\xb4: \x1b[01;36m\x1b[K%ld\x1b[m\x1b[K.%ld]", now.seconds(), now.nanoseconds());\n'}
+[1.676833] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[1.676891] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[1.676949] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[Klong int\x1b[m\x1b[K\n'}
+[1.677005] (wheeltec_mic_ros2) StderrLine: {'line': b'      |                            \x1b[32m\x1b[K%f\x1b[m\x1b[K\n'}
+[1.704787] (-) TimerEvent: {}
+[1.805125] (-) TimerEvent: {}
+[1.905498] (-) TimerEvent: {}
+[2.005784] (-) TimerEvent: {}
+[2.106146] (-) TimerEvent: {}
+[2.206680] (-) TimerEvent: {}
+[2.306952] (-) TimerEvent: {}
+[2.407244] (-) TimerEvent: {}
+[2.507536] (-) TimerEvent: {}
+[2.607814] (-) TimerEvent: {}
+[2.708101] (-) TimerEvent: {}
+[2.808463] (-) TimerEvent: {}
+[2.908776] (-) TimerEvent: {}
+[3.009052] (-) TimerEvent: {}
+[3.104741] (wheeltec_mic_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/voice_listener.dir/build.make:76\xef\xbc\x9aCMakeFiles/voice_listener.dir/src/voice_listener.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[3.104903] (wheeltec_mic_ros2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:277\xef\xbc\x9aCMakeFiles/voice_listener.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[3.105088] (wheeltec_mic_ros2) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[3.107126] (wheeltec_mic_ros2) CommandEnded: {'returncode': 2}
+[3.109162] (-) TimerEvent: {}
+[3.116419] (wheeltec_mic_ros2) JobEnded: {'identifier': 'wheeltec_mic_ros2', 'rc': 2}
+[3.126862] (-) EventReactorShutdown: {}
