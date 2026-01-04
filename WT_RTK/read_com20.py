@@ -1,6 +1,7 @@
 import serial
 import time
 import threading
+import socket
 
 def read_com20(port='COM20', baudrate=460800, timeout=1):
     """
@@ -145,14 +146,111 @@ def read_and_send_com20(port='COM20', baudrate=460800, timeout=1):
             print(f"串口 {port} 已关闭")
 
 
+def read_and_forward_com20(port='COM20', baudrate=460800, timeout=1, 
+                           target_ip='127.0.0.1', target_port=5000):
+    """
+    读取COM20端口的GPS数据并通过socket转发到指定IP
+    
+    参数:
+        port: 串口号，默认COM20
+        baudrate: 波特率，默认460800
+        timeout: 超时时间(秒)，默认1秒
+        target_ip: 目标IP地址，默认127.0.0.1
+        target_port: 目标端口，默认5000
+    """
+    sock = None
+    try:
+        # 打开串口
+        ser = serial.Serial(
+            port=port,
+            baudrate=baudrate,
+            bytesize=serial.EIGHTBITS,
+            parity=serial.PARITY_NONE,
+            stopbits=serial.STOPBITS_ONE,
+            timeout=timeout
+        )
+        
+        # 创建socket连接
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect((target_ip, target_port))
+        
+        print(f"成功打开串口 {port}")
+        print(f"波特率: {baudrate}")
+        print(f"已连接到 {target_ip}:{target_port}")
+        print(f"开始读取并转发GPS数据...\n")
+        
+        # 持续读取并转发数据
+        while True:
+            if ser.in_waiting > 0:  # 检查是否有数据可读
+                # 读取一行数据
+                data = ser.readline()
+                
+                try:
+                    # 尝试解码为字符串
+                    decoded_data = data.decode('utf-8').strip()
+                    
+                    # 检查是否是NMEA格式数据（以$开头）
+                    if decoded_data.startswith('$'):
+                        print(f"接收到GPS数据: {decoded_data}")
+                        
+                        # 通过socket转发数据
+                        try:
+                            sock.sendall((decoded_data + '\n').encode('utf-8'))
+                            print(f"已转发到 {target_ip}:{target_port}")
+                        except socket.error as e:
+                            print(f"Socket发送失败: {e}")
+                            # 尝试重新连接
+                            try:
+                                sock.close()
+                                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                                sock.connect((target_ip, target_port))
+                                print(f"重新连接到 {target_ip}:{target_port}")
+                            except Exception as reconnect_error:
+                                print(f"重新连接失败: {reconnect_error}")
+                                break
+                    else:
+                        print(f"接收到: {decoded_data}")
+                        
+                except UnicodeDecodeError:
+                    # 如果解码失败，显示原始字节数据
+                    print(f"接收到(原始): {data}")
+            
+            time.sleep(0.01)  # 短暂延迟，避免CPU占用过高
+            
+    except serial.SerialException as e:
+        print(f"串口错误: {e}")
+    except socket.error as e:
+        print(f"Socket连接错误: {e}")
+    except KeyboardInterrupt:
+        print("\n程序被用户中断")
+    finally:
+        # 关闭socket连接
+        if sock:
+            try:
+                sock.close()
+                print(f"Socket连接已关闭")
+            except:
+                pass
+        
+        # 关闭串口
+        if 'ser' in locals() and ser.is_open:
+            ser.close()
+            print(f"串口 {port} 已关闭")
+
+
 if __name__ == "__main__":
     # 可以根据需要修改这些参数
-    PORT = 'COM20'
+    PORT = 'COM8'
     BAUDRATE = 460800  # 根据实际设备修改波特率，常见值: 9600, 115200, 57600等
+    
+    # Socket转发配置
+    TARGET_IP = '192.168.1.100'  # 修改为目标IP地址
+    TARGET_PORT = 5000  # 修改为目标端口
     
     # 选择模式：
     # 1. 仅接收模式：read_com20(port=PORT, baudrate=BAUDRATE)
     # 2. 交互模式（可发送和接收）：read_and_send_com20(port=PORT, baudrate=BAUDRATE)
+    # 3. 读取并转发GPS数据：read_and_forward_com20(port=PORT, baudrate=BAUDRATE, target_ip=TARGET_IP, target_port=TARGET_PORT)
     
-    # 默认使用交互模式
-    read_and_send_com20(port=PORT, baudrate=BAUDRATE)
+    # 默认使用GPS转发模式
+    read_and_forward_com20(port=PORT, baudrate=BAUDRATE, target_ip=TARGET_IP, target_port=TARGET_PORT)
