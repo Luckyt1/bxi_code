@@ -170,13 +170,26 @@ def read_and_forward_com20(port='COM20', baudrate=460800, timeout=1,
             timeout=timeout
         )
         
-        # 创建socket连接
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.connect((target_ip, target_port))
-        
         print(f"成功打开串口 {port}")
         print(f"波特率: {baudrate}")
-        print(f"已连接到 {target_ip}:{target_port}")
+        
+        def connect_server():
+            """尝试连接到服务器，如果失败则一直等待"""
+            while True:
+                try:
+                    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    s.settimeout(5)  # 设置连接超时
+                    s.connect((target_ip, target_port))
+                    s.settimeout(None)  # 恢复阻塞模式或根据需要设置
+                    print(f"已连接到 {target_ip}:{target_port}")
+                    return s
+                except socket.error:
+                    print(f"等待服务器 {target_ip}:{target_port} 上线...")
+                    time.sleep(2)  # 等待2秒后重试
+
+        # 初始连接
+        sock = connect_server()
+        
         print(f"开始读取并转发GPS数据...\n")
         
         # 持续读取并转发数据
@@ -199,15 +212,14 @@ def read_and_forward_com20(port='COM20', baudrate=460800, timeout=1,
                             print(f"已转发到 {target_ip}:{target_port}")
                         except socket.error as e:
                             print(f"Socket发送失败: {e}")
-                            # 尝试重新连接
+                            print(f"连接断开，尝试重新连接...")
                             try:
                                 sock.close()
-                                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                                sock.connect((target_ip, target_port))
-                                print(f"重新连接到 {target_ip}:{target_port}")
-                            except Exception as reconnect_error:
-                                print(f"重新连接失败: {reconnect_error}")
-                                break
+                            except:
+                                pass
+                            # 重新连接
+                            sock = connect_server()
+
                     else:
                         print(f"接收到: {decoded_data}")
                         
@@ -244,7 +256,7 @@ if __name__ == "__main__":
     BAUDRATE = 460800  # 根据实际设备修改波特率，常见值: 9600, 115200, 57600等
     
     # Socket转发配置
-    TARGET_IP = '192.168.1.100'  # 修改为目标IP地址
+    TARGET_IP = '192.168.88.83'  # 修改为目标IP地址
     TARGET_PORT = 5000  # 修改为目标端口
     
     # 选择模式：
