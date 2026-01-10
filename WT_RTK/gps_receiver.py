@@ -1,12 +1,15 @@
 import socket
 import time
 import threading
+import math
 from datetime import datetime
 
 # ROS2 依赖库
 import rclpy
 from rclpy.node import Node
-import sensor_msgs.msg
+import sensor_msgs.msg 
+from sensor_msgs.msg import Imu
+from geometry_msgs.msg import Quaternion
 
 class GPSRequestNode(Node):
     def __init__(self):
@@ -14,12 +17,20 @@ class GPSRequestNode(Node):
         # 创建 GPS 发布者，话题通常使用 'gps/fix'
         self.publisher_ = self.create_publisher(
             sensor_msgs.msg.NavSatFix, 
-            "gps/fix", 
+            "/fix", 
+            10
+        )
+        self.publisher_imu = self.create_publisher(
+            Imu,
+            '/imu/rtk',
             10
         )
         self.current_gps_data = None
         self.data_lock = threading.Lock()
         self.quality = "0"   
+        self.roll=0.0
+        self.pitch=0.0
+        self.yaw=0.0
         # 定时器频率调整为 10Hz (0.1s)，对于 GPS 来说通常足够
         # 1000Hz (0.001s) 会造成不必要的 CPU 占用
         self.timer = self.create_timer(0.1, self.process_and_publish)
@@ -32,11 +43,28 @@ class GPSRequestNode(Node):
                     self.current_gps_data = data
                 if(type == 'GNGGA'):
                     self.quality=data.get('quality')
+    def euler_to_quaternion(self, roll, pitch, yaw):
+        """
+        将欧拉角 (Roll, Pitch, Yaw) 转换为四元数
+        """
+        cy = math.cos(yaw * 0.5)
+        sy = math.sin(yaw * 0.5)
+        cp = math.cos(pitch * 0.5)
+        sp = math.sin(pitch * 0.5)
+        cr = math.cos(roll * 0.5)
+        sr = math.sin(roll * 0.5)
 
+        q = Quaternion()
+        q.w = cr * cp * cy + sr * sp * sy
+        q.x = sr * cp * cy - cr * sp * sy
+        q.y = cr * sp * cy + sr * cp * sy
+        q.z = cr * cp * sy - sr * sp * cy
+        
+        return q
     def process_and_publish(self):
         """定时发布最新的 GPS 数据"""
         msg = sensor_msgs.msg.NavSatFix()
-        
+        imu_msg = Imu()
         # 线程安全地获取数据
         current_data = None
         with self.data_lock:
@@ -44,15 +72,32 @@ class GPSRequestNode(Node):
             
         if current_data:
             msg.header.stamp = self.get_clock().now().to_msg()
+            imu_msg.header.stamp = self.get_clock().now().to_msg()
+            imu_msg.header.frame_id = "imu_link"
             msg.header.frame_id = "gps_link"
             
+          
             # 填充位置信息
             if current_data.get('latitude') is not None:
                 msg.latitude = float(current_data['latitude'])
             if current_data.get('longitude') is not None:
                 msg.longitude = float(current_data['longitude'])
-                
+            if current_data.get('angle_x') not in [None, "N/A"]:
+                self.pitch=float(current_data['angle_x'])
+            if current_data.get('angle_y') not in [None, "N/A"]:
+                self.roll=float(current_data['angle_y'])
+            if current_data.get('angle_z') not in [None, "N/A"]:
+                self.yaw=float(current_data['angle_z'])    
             # 填充高度信息
+            imu_msg.orientation = self.euler_to_quaternion(self.roll,self.pitch,self.yaw)   
+            variance = (math.radians(0.2)) ** 2
+            imu_msg.orientation_covariance = [
+                variance, 0.0, 0.0,
+                0.0, variance, 0.0,
+                0.0, 0.0, variance
+            ]
+            imu_msg.angular_velocity_covariance[0] = -1
+            imu_msg.linear_acceleration_covariance[0] = -1
             try:
                 if current_data.get('altitude') not in [None, "N/A"]:
                      msg.altitude = float(current_data['altitude'])
@@ -74,6 +119,7 @@ class GPSRequestNode(Node):
                 pass
                 
             self.publisher_.publish(msg)
+            self.publisher_imu.publish(imu_msg)
         
         
 def parse_wtrtk(wtrtk_data):
@@ -354,6 +400,9 @@ def handle_client(client_socket, client_address, save_to_file=True, log_filename
                             if parsed:
                                 if gps_node:
                                     gps_node.update_gps_data(parsed,type='WTRTK')
+                                    print(f"  x: {parsed['angle_x']}")
+                                    print(f"  y: {parsed['angle_y']}")
+                                    print(f"  z: {parsed['angle_z']}")
                                     print(f"  时间(UTC): {parsed['utc_time']}")
                                     print(f"  经度(): {parsed['longitude']}")
                                     print(f"  纬度(): {parsed['latitude']}")
