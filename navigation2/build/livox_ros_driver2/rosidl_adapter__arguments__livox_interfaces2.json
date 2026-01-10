@@ -1,0 +1,7 @@
+{
+  "package_name": "livox_ros_driver2",
+  "non_idl_tuples": [
+    "/home/tang/tang_ws/navigation2/src/livox_ros_driver2:msg/CustomPoint.msg",
+    "/home/tang/tang_ws/navigation2/src/livox_ros_driver2:msg/CustomMsg.msg"
+  ]
+}

@@ -1,0 +1,41 @@
+[0.016s] Invoking command in '/home/tang/tang_ws/navigation2/build/localizer': CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/interface:/home/tang/tang_ws/navigation2/install/localizer:/home/tang/tang_ws/navigation2/install/fastlio2:/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/interface/lib:/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/localizer -- -j16 -l16
+[0.055s] [ 33%] Built target frame_projector_node
+[0.067s] [100%] Built target localizer_node
+[0.074s] Invoked command in '/home/tang/tang_ws/navigation2/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/interface:/home/tang/tang_ws/navigation2/install/localizer:/home/tang/tang_ws/navigation2/install/fastlio2:/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/interface/lib:/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/localizer -- -j16 -l16
+[0.076s] Invoking command in '/home/tang/tang_ws/navigation2/build/localizer': CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/interface:/home/tang/tang_ws/navigation2/install/localizer:/home/tang/tang_ws/navigation2/install/fastlio2:/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/interface/lib:/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --install /home/tang/tang_ws/navigation2/build/localizer
+[0.083s] -- Install configuration: "Release"
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/lib/localizer/frame_projector_node
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/lib/localizer/localizer_node
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/launch
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/launch/navigation_launch.py
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/launch/localizer_launch.py
+[0.083s] -- Installing: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/launch/rtk_launch.py
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/old_map
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/old_map/elf_gps.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/old_map/map.pgm
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/old_map/map.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/map.pgm
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/ekf_gps.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/localizer.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/map.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/pointcloud_to_laserscan.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/config/nav2_params.yaml
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/rviz
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/rviz/localizer.rviz
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/ament_index/resource_index/package_run_dependencies/localizer
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/ament_index/resource_index/parent_prefix_path/localizer
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/environment/ament_prefix_path.sh
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/environment/ament_prefix_path.dsv
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/environment/path.sh
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/environment/path.dsv
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/local_setup.bash
+[0.083s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/local_setup.sh
+[0.084s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/local_setup.zsh
+[0.084s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/local_setup.dsv
+[0.084s] -- Installing: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/package.dsv
+[0.084s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/ament_index/resource_index/packages/localizer
+[0.084s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/cmake/localizerConfig.cmake
+[0.084s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/cmake/localizerConfig-version.cmake
+[0.084s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/localizer/share/localizer/package.xml
+[0.096s] Invoked command in '/home/tang/tang_ws/navigation2/build/localizer' returned '0': CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/interface:/home/tang/tang_ws/navigation2/install/localizer:/home/tang/tang_ws/navigation2/install/fastlio2:/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/interface/lib:/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin /usr/bin/cmake --install /home/tang/tang_ws/navigation2/build/localizer

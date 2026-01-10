@@ -1,0 +1,3 @@
+Invoking command in '/home/tang/tang_ws/navigation2/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/tang_ws/navigation2/src/interface -DCMAKE_INSTALL_PREFIX=/home/tang/tang_ws/navigation2/install/interface
+Invoked command in '/home/tang/tang_ws/navigation2/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/tang_ws/navigation2/src/interface -DCMAKE_INSTALL_PREFIX=/home/tang/tang_ws/navigation2/install/interface
+Invoking command in '/home/tang/tang_ws/navigation2/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/interface -- -j16 -l16

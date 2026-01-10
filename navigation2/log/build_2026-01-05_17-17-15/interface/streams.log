@@ -1,0 +1,361 @@
+[0.007s] Invoking command in '/home/tang/tang_ws/navigation2/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/tang_ws/navigation2/src/interface -DCMAKE_INSTALL_PREFIX=/home/tang/tang_ws/navigation2/install/interface
+[0.039s] -- The C compiler identification is GNU 11.4.0
+[0.073s] -- The CXX compiler identification is GNU 11.4.0
+[0.077s] -- Detecting C compiler ABI info
+[0.124s] -- Detecting C compiler ABI info - done
+[0.128s] -- Check for working C compiler: /usr/bin/gcc-11 - skipped
+[0.128s] -- Detecting C compile features
+[0.128s] -- Detecting C compile features - done
+[0.130s] -- Detecting CXX compiler ABI info
+[0.183s] -- Detecting CXX compiler ABI info - done
+[0.187s] -- Check for working CXX compiler: /usr/bin/g++-11 - skipped
+[0.188s] -- Detecting CXX compile features
+[0.188s] -- Detecting CXX compile features - done
+[0.189s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.300s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.378s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.381s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.385s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.400s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.415s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.610s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.864s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.988s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.989s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.009s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.009s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.009s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.009s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.032s] -- Found PythonExtra: .so  
+[1.063s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.072s] -- Added test 'lint_cmake' to check CMake code style
+[1.073s] -- Added test 'xmllint' to check XML markup files
+[1.074s] -- Configuring done
+[1.092s] -- Generating done
+[1.099s] -- Build files have been written to: /home/tang/tang_ws/navigation2/build/interface
+[1.103s] Invoked command in '/home/tang/tang_ws/navigation2/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tang/tang_ws/navigation2/src/interface -DCMAKE_INSTALL_PREFIX=/home/tang/tang_ws/navigation2/install/interface
+[1.104s] Invoking command in '/home/tang/tang_ws/navigation2/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/interface -- -j16 -l16
+[1.131s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.139s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.142s] [  3%] Built target ament_cmake_python_copy_interface
+[1.276s] running egg_info
+[1.277s] creating interface.egg-info
+[1.277s] writing interface.egg-info/PKG-INFO
+[1.277s] writing dependency_links to interface.egg-info/dependency_links.txt
+[1.277s] writing top-level names to interface.egg-info/top_level.txt
+[1.278s] writing manifest file 'interface.egg-info/SOURCES.txt'
+[1.279s] reading manifest file 'interface.egg-info/SOURCES.txt'
+[1.279s] writing manifest file 'interface.egg-info/SOURCES.txt'
+[1.294s] [  3%] Built target ament_cmake_python_build_interface_egg
+[1.442s] [  6%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/save_maps__functions.c.o[0m
+[1.442s] [  7%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/relocalize__functions.c.o[0m
+[1.443s] [  7%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/is_valid__functions.c.o[0m
+[1.443s] [  9%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/save_poses__functions.c.o[0m
+[1.443s] [ 11%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_c.dir/rosidl_generator_c/interface/srv/detail/refine_map__functions.c.o[0m
+[1.449s] [ 11%] Built target interface__cpp
+[1.456s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.456s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.459s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.491s] [ 17%] [32m[1mLinking C shared library libinterface__rosidl_generator_c.so[0m
+[1.522s] [ 17%] Built target interface__rosidl_generator_c
+[1.528s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.530s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.530s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.669s] [ 25%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/relocalize__type_support.cpp.o[0m
+[1.669s] [ 25%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/is_valid__type_support.cpp.o[0m
+[1.670s] [ 26%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/refine_map__type_support.cpp.o[0m
+[1.670s] [ 28%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/save_maps__type_support.cpp.o[0m
+[1.670s] [ 30%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface/srv/save_poses__type_support.cpp.o[0m
+[1.818s] [ 31%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/relocalize__type_support.cpp.o[0m
+[1.819s] [ 33%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/save_maps__type_support.cpp.o[0m
+[1.819s] [ 34%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/is_valid__type_support.cpp.o[0m
+[1.823s] [ 36%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/refine_map__type_support.cpp.o[0m
+[1.824s] [ 38%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface/srv/detail/dds_fastrtps/save_poses__type_support.cpp.o[0m
+[1.845s] [ 39%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/is_valid__type_support.cpp.o[0m
+[1.846s] [ 41%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/save_maps__type_support.cpp.o[0m
+[1.847s] [ 42%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/relocalize__type_support.cpp.o[0m
+[1.952s] [ 44%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/refine_map__type_support.cpp.o[0m
+[1.964s] [ 46%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface/srv/detail/save_poses__type_support.cpp.o[0m
+[1.965s] [ 47%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_cpp.so[0m
+[1.966s] [ 49%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/save_maps__type_support.cpp.o[0m
+[1.972s] [ 50%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/relocalize__type_support.cpp.o[0m
+[1.984s] [ 52%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/is_valid__type_support.cpp.o[0m
+[2.024s] [ 55%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/relocalize__type_support_c.cpp.o[0m
+[2.024s] [ 55%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/save_maps__type_support_c.cpp.o[0m
+[2.025s] [ 57%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/is_valid__type_support_c.cpp.o[0m
+[2.026s] [ 57%] Built target interface__rosidl_typesupport_cpp
+[2.036s] [ 58%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/refine_map__type_support.cpp.o[0m
+[2.080s] [ 60%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/refine_map__type_support_c.cpp.o[0m
+[2.091s] [ 61%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface/srv/save_poses__type_support.cpp.o[0m
+[2.134s] [ 63%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/save_maps__type_support.c.o[0m
+[2.167s] [ 65%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_c.so[0m
+[2.225s] [ 66%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/relocalize__type_support.c.o[0m
+[2.229s] [ 66%] Built target interface__rosidl_typesupport_c
+[2.257s] [ 68%] [32mBuilding CXX object CMakeFiles/interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface/srv/detail/save_poses__type_support_c.cpp.o[0m
+[2.289s] [ 69%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/is_valid__type_support.c.o[0m
+[2.324s] [ 71%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/refine_map__type_support.c.o[0m
+[2.349s] [ 73%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface/srv/detail/save_poses__type_support.c.o[0m
+[2.389s] [ 74%] [32m[1mLinking C shared library libinterface__rosidl_typesupport_introspection_c.so[0m
+[2.403s] [ 76%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.414s] [ 76%] Built target interface__rosidl_typesupport_introspection_c
+[2.427s] [ 77%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_introspection_cpp.so[0m
+[2.464s] [ 77%] Built target interface__rosidl_typesupport_fastrtps_cpp
+[2.473s] [ 77%] Built target interface__rosidl_typesupport_introspection_cpp
+[2.550s] [ 79%] [32m[1mLinking CXX shared library libinterface__rosidl_typesupport_fastrtps_c.so[0m
+[2.596s] [ 79%] Built target interface__rosidl_typesupport_fastrtps_c
+[2.607s] [ 79%] Built target interface
+[2.622s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.086s] [ 80%] Built target interface__py
+[3.098s] [ 82%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_save_maps_s.c.o[0m
+[3.098s] [ 84%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_relocalize_s.c.o[0m
+[3.098s] [ 85%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_is_valid_s.c.o[0m
+[3.098s] [ 87%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_save_poses_s.c.o[0m
+[3.098s] [ 88%] [32mBuilding C object CMakeFiles/interface__rosidl_generator_py.dir/rosidl_generator_py/interface/srv/_refine_map_s.c.o[0m
+[3.182s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/interface/libinterface__rosidl_generator_py.so[0m
+[3.213s] [ 90%] Built target interface__rosidl_generator_py
+[3.224s] [ 92%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[3.225s] [ 95%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.225s] [ 95%] [32mBuilding C object CMakeFiles/interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.294s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.295s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.297s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.317s] [100%] Built target interface__rosidl_typesupport_fastrtps_c__pyext
+[3.318s] [100%] Built target interface__rosidl_typesupport_c__pyext
+[3.321s] [100%] Built target interface__rosidl_typesupport_introspection_c__pyext
+[3.328s] Invoked command in '/home/tang/tang_ws/navigation2/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/interface -- -j16 -l16
+[3.329s] Invoking command in '/home/tang/tang_ws/navigation2/build/interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/tang_ws/navigation2/build/interface
+[3.336s] -- Install configuration: ""
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/ament_index/resource_index/rosidl_interfaces/interface
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/refine_map.h
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/is_valid.h
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/save_maps.h
+[3.336s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__functions.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__type_support.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__type_support.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__functions.c
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__type_support.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__functions.c
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__struct.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__struct.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__functions.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__functions.c
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__functions.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__functions.h
+[3.337s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__struct.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__functions.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__type_support.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__struct.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__type_support.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__functions.c
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__struct.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__functions.c
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/relocalize.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/save_poses.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg/rosidl_generator_c__visibility_control.h
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/library_path.sh
+[3.338s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/library_path.dsv
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_generator_c.so
+[3.339s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_generator_c.so" to ""
+[3.339s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface
+[3.339s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv
+[3.339s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_fastrtps_c.h
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_fastrtps_c.h
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_fastrtps_c.h
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_fastrtps_c.h
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_fastrtps_c.h
+[3.339s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.339s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so
+[3.339s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_c.so" to ""
+[3.340s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface
+[3.340s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/is_valid.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/save_poses.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/refine_map.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/relocalize.hpp
+[3.340s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__type_support.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__traits.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__type_support.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__builder.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__struct.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__type_support.hpp
+[3.340s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__builder.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__builder.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__traits.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__traits.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__type_support.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__struct.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__traits.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__struct.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__type_support.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__struct.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__traits.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__builder.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__builder.hpp
+[3.341s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__struct.hpp
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/save_maps.hpp
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/dds_fastrtps
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_fastrtps_cpp.hpp
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_fastrtps_cpp.hpp
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_fastrtps_cpp.hpp
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_fastrtps_cpp.hpp
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_fastrtps_cpp.hpp
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so
+[3.342s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_introspection_c.h
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__type_support.c
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__type_support.c
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__type_support.c
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_introspection_c.h
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_introspection_c.h
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__type_support.c
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_introspection_c.h
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__type_support.c
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_introspection_c.h
+[3.342s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.342s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so
+[3.342s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_introspection_c.so" to ""
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_c.so
+[3.343s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_c.so" to ""
+[3.343s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface
+[3.343s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv
+[3.343s] -- Up-to-date: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__rosidl_typesupport_introspection_cpp.hpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__rosidl_typesupport_introspection_cpp.hpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__rosidl_typesupport_introspection_cpp.hpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__rosidl_typesupport_introspection_cpp.hpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__rosidl_typesupport_introspection_cpp.hpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/refine_map__type_support.cpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/relocalize__type_support.cpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_poses__type_support.cpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/is_valid__type_support.cpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/include/interface/interface/srv/detail/save_maps__type_support.cpp
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so
+[3.343s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_introspection_cpp.so" to ""
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_cpp.so
+[3.343s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_typesupport_cpp.so" to ""
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/pythonpath.sh
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/pythonpath.dsv
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/PKG-INFO
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/top_level.txt
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_refine_map.py
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_poses_s.c
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_relocalize_s.c
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_refine_map_s.c
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_poses.py
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_is_valid_s.c
+[3.343s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_relocalize.py
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_maps.py
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/__init__.py
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_maps_s.c
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_is_valid.py
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/libinterface__rosidl_generator_py.so
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_introspection_c.c
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/_interface_s.ep.rosidl_typesupport_c.c
+[3.344s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.368s] Listing '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface'...
+[3.368s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/__init__.py'...
+[3.368s] Listing '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv'...
+[3.368s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/__init__.py'...
+[3.368s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_is_valid.py'...
+[3.368s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_refine_map.py'...
+[3.368s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_relocalize.py'...
+[3.368s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_maps.py'...
+[3.369s] Compiling '/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/srv/_save_poses.py'...
+[3.371s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.371s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.371s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.371s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.371s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.371s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/local/lib/python3.10/dist-packages/interface/interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_generator_py.so
+[3.372s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/interface/lib/libinterface__rosidl_generator_py.so" to ""
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SaveMaps.idl
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/Relocalize.idl
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/IsValid.idl
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/RefineMap.idl
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SavePoses.idl
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SaveMaps.srv
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SaveMaps_Request.msg
+[3.372s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SaveMaps_Response.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/Relocalize.srv
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/Relocalize_Request.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/Relocalize_Response.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/IsValid.srv
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/IsValid_Request.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/IsValid_Response.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/RefineMap.srv
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/RefineMap_Request.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/RefineMap_Response.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SavePoses.srv
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SavePoses_Request.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/srv/SavePoses_Response.msg
+[3.373s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/ament_index/resource_index/package_run_dependencies/interface
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/ament_index/resource_index/parent_prefix_path/interface
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/ament_prefix_path.sh
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/ament_prefix_path.dsv
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/path.sh
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/environment/path.dsv
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/local_setup.bash
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/local_setup.sh
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/local_setup.zsh
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/local_setup.dsv
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/package.dsv
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/ament_index/resource_index/packages/interface
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport.cmake
+[3.374s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_generator_cExport-noconfig.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_generator_cppExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_cExport-noconfig.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport.cmake
+[3.375s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interface__rosidl_typesupport_cppExport-noconfig.cmake
+[3.376s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport.cmake
+[3.376s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/export_interface__rosidl_generator_pyExport-noconfig.cmake
+[3.376s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/rosidl_cmake-extras.cmake
+[3.376s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.376s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/ament_cmake_export_targets-extras.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interfaceConfig.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/cmake/interfaceConfig-version.cmake
+[3.377s] -- Installing: /home/tang/tang_ws/navigation2/install/interface/share/interface/package.xml
+[3.377s] Invoked command in '/home/tang/tang_ws/navigation2/build/interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tang/tang_ws/navigation2/build/interface

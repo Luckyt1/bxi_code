@@ -1,0 +1,20 @@
+# 订阅的话题配置
+cloud_topic: /fastlio2/body_cloud           # FAST-LIO2发布的体坐标系点云话题
+odom_topic: /fastlio2/lio_odom              # FAST-LIO2发布的里程计话题
+map_frame: map                              # 地图坐标系名称
+local_frame: base_link                           # 局部坐标系名称（通常是激光雷达坐标系）lidar
+update_hz: 10.0                             # 定位更新频率（Hz），1.0表示每秒更新1次
+# 里程计滤波器配置
+enable_odom_filter: false                  # 是否启用里程计滤波
+filter_alpha: 0.2                       # EWMA滤波系数，范围[0,1]，越小越平滑，建议0.2-0.5
+# 粗匹配阶段参数（用于快速初始对齐）
+rough_scan_resolution: 0.25                 # 粗匹配点云降采样分辨率（米）0.25
+rough_map_resolution: 0.25                  # 粗匹配地图降采样分辨率（米）0.25
+rough_max_iteration: 5                      # 粗匹配最大迭代次数
+rough_score_thresh: 0.25                     # 粗匹配分数阈值，大于此值认为匹配失败0.2
+
+# 精匹配阶段参数（用于精细优化）
+refine_scan_resolution: 0.15                 # 精匹配点云降采样分辨率（米）0.1
+refine_map_resolution: 0.15                  # 精匹配地图降采样分辨率（米）0.1
+refine_max_iteration: 10                    # 精匹配最大迭代次数10
+refine_score_thresh: 0.15                    # 精匹配分数阈值，大于此值认为匹配失败0.1

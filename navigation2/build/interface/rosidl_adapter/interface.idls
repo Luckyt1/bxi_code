@@ -1,0 +1,5 @@
+/home/tang/tang_ws/navigation2/build/interface/rosidl_adapter/interface:srv/SaveMaps.idl
+/home/tang/tang_ws/navigation2/build/interface/rosidl_adapter/interface:srv/Relocalize.idl
+/home/tang/tang_ws/navigation2/build/interface/rosidl_adapter/interface:srv/IsValid.idl
+/home/tang/tang_ws/navigation2/build/interface/rosidl_adapter/interface:srv/RefineMap.idl
+/home/tang/tang_ws/navigation2/build/interface/rosidl_adapter/interface:srv/SavePoses.idl

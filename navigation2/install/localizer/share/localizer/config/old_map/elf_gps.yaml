@@ -1,0 +1,50 @@
+### 1. 全局 EKF 节点：融合 Odom 和 GPS，发布 map -> odom ###
+ekf_filter_node_map:
+  ros__parameters:
+    frequency: 30.0
+    two_d_mode: true
+    publish_acceleration: false
+    publish_tf: true
+    
+    # 坐标系设置
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: map  # 设置为 map，使其发布 map -> odom 的变换
+
+    # 输入1: FastLIO2 的里程计 (提供平滑的连续运动)
+    odom0: /odom  # 请确认这是 FastLIO2 发布的里程计话题
+    odom0_config: [true,  true,  true,   # X, Y, Z
+                   true,  true,  true,   # Roll, Pitch, Yaw
+                   false, false, false,  # dX, dY, dZ
+                   false, false, false,  # dRoll, dPitch, dYaw
+                   false, false, false]  # ddX, ddY, ddZ
+    odom0_differential: false
+    odom0_queue_size: 10
+
+    # 输入2: GPS 转换后的里程计 (提供全局绝对位置，修正漂移)
+    odom1: /odometry/gps
+    odom1_config: [true,  true,  false,  # X, Y, Z (只信任 GPS 的水平位置)
+                   false, false, false,
+                   false, false, false,
+                   false, false, false,
+                   false, false, false]
+    odom1_differential: false
+    odom1_queue_size: 10
+
+### 2. NavSat Transform 节点：GPS (经纬度) -> Odom (米) ###
+navsat_transform:
+  ros__parameters:
+    frequency: 30.0
+    delay: 3.0
+    magnetic_declination_radians: 0.0  # 磁偏角，根据所在城市查询并修改 (东偏为正)
+    yaw_offset: 0.0                    # IMU 朝向与正东的偏差 (如 IMU 安装不是正北需修改)
+    zero_altitude: true                # 忽略 GPS 高度，设为 0（用于平面导航）
+    broadcast_cartesian_transform: false # 由 EKF 发布 TF，这里设为 false
+    publish_filtered_gps: true
+    use_odometry_yaw: true             # 使用输入的里程计/IMU 来获取航向
+    wait_for_datum: true               # 重要：设为 true 以便手动指定地图原点
+
+    # 设置地图原点 (必须与你 Python 脚本里的 origin_lat, origin_lon 一致！)
+    # 格式: [纬度, 经度, 航向(弧度)]
+    datum: [31.123456, 121.123456, 0.0] 

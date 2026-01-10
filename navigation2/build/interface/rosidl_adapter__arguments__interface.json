@@ -1,0 +1,10 @@
+{
+  "package_name": "interface",
+  "non_idl_tuples": [
+    "/home/tang/tang_ws/navigation2/src/interface:srv/SaveMaps.srv",
+    "/home/tang/tang_ws/navigation2/src/interface:srv/Relocalize.srv",
+    "/home/tang/tang_ws/navigation2/src/interface:srv/IsValid.srv",
+    "/home/tang/tang_ws/navigation2/src/interface:srv/RefineMap.srv",
+    "/home/tang/tang_ws/navigation2/src/interface:srv/SavePoses.srv"
+  ]
+}

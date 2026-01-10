@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "interface__py",
+		"source" : "/home/tang/tang_ws/navigation2/build/interface/interface__py"
+	}
+}

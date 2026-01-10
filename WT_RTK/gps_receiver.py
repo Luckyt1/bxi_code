@@ -3,21 +3,188 @@ import time
 import threading
 from datetime import datetime
 
+# ROS2 依赖库
+import rclpy
+from rclpy.node import Node
+import sensor_msgs.msg
 
-def save_gps_data(data, filename='gps_log.txt'):
+class GPSRequestNode(Node):
+    def __init__(self):
+        super().__init__('gps_request_node')
+        # 创建 GPS 发布者，话题通常使用 'gps/fix'
+        self.publisher_ = self.create_publisher(
+            sensor_msgs.msg.NavSatFix, 
+            "gps/fix", 
+            10
+        )
+        self.current_gps_data = None
+        self.data_lock = threading.Lock()
+        self.quality = "0"   
+        # 定时器频率调整为 10Hz (0.1s)，对于 GPS 来说通常足够
+        # 1000Hz (0.001s) 会造成不必要的 CPU 占用
+        self.timer = self.create_timer(0.1, self.process_and_publish)
+        
+    def update_gps_data(self, data,type):
+        """供外部线程调用的数据更新接口"""
+        if data:
+            with self.data_lock:
+                if(type == 'WTRTK'):
+                    self.current_gps_data = data
+                if(type == 'GNGGA'):
+                    self.quality=data.get('quality')
+
+    def process_and_publish(self):
+        """定时发布最新的 GPS 数据"""
+        msg = sensor_msgs.msg.NavSatFix()
+        
+        # 线程安全地获取数据
+        current_data = None
+        with self.data_lock:
+            current_data = self.current_gps_data
+            
+        if current_data:
+            msg.header.stamp = self.get_clock().now().to_msg()
+            msg.header.frame_id = "gps_link"
+            
+            # 填充位置信息
+            if current_data.get('latitude') is not None:
+                msg.latitude = float(current_data['latitude'])
+            if current_data.get('longitude') is not None:
+                msg.longitude = float(current_data['longitude'])
+                
+            # 填充高度信息
+            try:
+                if current_data.get('altitude') not in [None, "N/A"]:
+                     msg.altitude = float(current_data['altitude'])
+            except ValueError:
+                pass
+
+            # 填充状态信息 (根据 satellites 数量简单判断)
+            try:
+                num_sats = int(self.quality)
+                if num_sats == 4 :
+                    msg.status.status = 2 # STATUS_FIX
+                elif num_sats ==5:
+                    msg.status.status = 1 # STATUS_SBAS_FIX
+                elif num_sats in [1,2]:
+                    msg.status.status = 0 # STATUS_FIX
+                else:
+                    msg.status.status = -1 # STATUS_NO_FIX
+            except ValueError:
+                pass
+                
+            self.publisher_.publish(msg)
+        
+        
+def parse_wtrtk(wtrtk_data):
     """
-    保存GPS数据到文件
+    解析WTRTK格式的GPS数据
     
     参数:
-        data: GPS数据字符串
-        filename: 保存的文件名
+        wtrtk_data: WTRTK格式字符串，例如:
+        $WTRTK,0.000,0.000,0.000,0.000,0.033,-0.099,85.607,1,0,0,28,24,0.00,1,32.0218285784,118.8566535316,44.3265,104.92,23.08*75
+    
+    WTRTK数据结构:
+        [0] $WTRTK - 帧头
+        [1] 差分X距离（米）
+        [2] 差分Y距离（米）
+        [3] 差分Z距离（米）
+        [4] 差分R距离（米）
+        [5] 角度X
+        [6] 角度Y
+        [7] 角度Z（±180°）
+        [8] 定向状态（0:初始化,1:单点,2:码差分,4:固定解,5:浮点解）
+        [9] 保留
+        [10] 保留
+        [11] 无线信号质量
+        [12] 无线通讯数据量
+        [13] 运动航向角（0-360°）
+        [14] 定位标志（0:未对准,1:已对准,2:二次对准）
+        [15] 纬度（度）- 惯导定位
+        [16] 经度（度）- 惯导定位
+        [17] GPS高度（米）- 惯导高度
+        [18] 定向航向角（4GA专用）
+        [19] 俯仰角（4GA专用）
+        [*] 校验位
+    
+    返回:
+        解析后的字典，包含时间、纬度、经度、卫星数等信息
     """
     try:
-        with open(filename, 'a', encoding='utf-8') as f:
-            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
-            f.write(f"[{timestamp}] {data}\n")
+        parts = wtrtk_data.split(',')
+        if len(parts) < 18 or not parts[0].endswith('WTRTK'):
+            return None
+        
+        # 解析纬度（已经是度格式，不需要转换）
+        latitude = None
+        if len(parts) > 19 and parts[19]:
+            try:
+                latitude = float(parts[19])*0.01
+            except ValueError:
+                pass
+        
+        # 解析经度（已经是度格式，不需要转换）
+        longitude = None
+        if len(parts) > 21 and parts[21]:
+            try:
+                longitude = float(parts[21])*0.01
+            except ValueError:
+                pass
+        
+        # 解析高度
+        altitude = "N/A"
+        if len(parts) > 17 and parts[17]:
+            try:
+                altitude = parts[17]
+            except:
+                pass
+        
+        # 定向状态作为质量指标
+        # 0:初始化, 1:单点定位, 2:码差分, 4:固定解, 5:浮点解
+        quality = parts[8] if len(parts) > 8 else "N/A"
+        
+        # 定位标志
+        positioning_flag = parts[14] if len(parts) > 14 else "N/A"
+        
+        # 无线信号质量作为卫星数的替代
+        num_satellites = parts[11] if len(parts) > 11 else "N/A"
+        
+        # 角度信息
+        angle_x = parts[5] if len(parts) > 5 else "N/A"
+        angle_y = parts[6] if len(parts) > 6 else "N/A"
+        angle_z = parts[7] if len(parts) > 7 else "N/A"
+        
+        # 航向角
+        heading = parts[13] if len(parts) > 13 else "N/A"
+        orientation_heading = parts[18] if len(parts) > 18 else "N/A"
+        
+        # 俯仰角（最后一个字段，需要去掉校验和）
+        pitch = "N/A"
+        if len(parts) > 19:
+            pitch_str = parts[19].split('*')[0]
+            pitch = pitch_str if pitch_str else "N/A"
+        
+        # 获取当前时间作为 UTC 时间
+        utc_time = datetime.now().strftime('%H:%M:%S')
+        
+        return {
+            'utc_time': utc_time,
+            'latitude': latitude,
+            'longitude': longitude,
+            'quality': quality,
+            'satellites': num_satellites,  # 实际是无线信号质量
+            'hdop': positioning_flag,  # 定位标志
+            'altitude': altitude,
+            'angle_x': angle_x,
+            'angle_y': angle_y,
+            'angle_z': angle_z,
+            'heading': heading,
+            'orientation_heading': orientation_heading,
+            'pitch': pitch
+        }
     except Exception as e:
-        print(f"保存文件失败: {e}")
+        print(f"解析WTRTK数据失败: {e}")
+        return None
 
 
 def parse_gngga(gngga_data):
@@ -90,7 +257,7 @@ def parse_gngga(gngga_data):
         return None
 
 
-def gps_receiver_server(host='0.0.0.0', port=5000, save_to_file=True, log_filename='gps_log.txt'):
+def gps_receiver_server(host='0.0.0.0', port=5000, save_to_file=True, log_filename='gps_log.txt', gps_node=None):
     """
     GPS数据接收服务器
     
@@ -115,8 +282,6 @@ def gps_receiver_server(host='0.0.0.0', port=5000, save_to_file=True, log_filena
         
         print(f"GPS接收服务器启动成功")
         print(f"监听地址: {host}:{port}")
-        if save_to_file:
-            print(f"数据将保存到: {log_filename}")
         print(f"等待客户端连接...\n")
         
         while True:
@@ -127,7 +292,7 @@ def gps_receiver_server(host='0.0.0.0', port=5000, save_to_file=True, log_filena
             # 为每个客户端创建一个处理线程
             client_thread = threading.Thread(
                 target=handle_client,
-                args=(client_socket, client_address, save_to_file, log_filename),
+                args=(client_socket, client_address, save_to_file, log_filename, gps_node),
                 daemon=True
             )
             client_thread.start()
@@ -142,7 +307,7 @@ def gps_receiver_server(host='0.0.0.0', port=5000, save_to_file=True, log_filena
             print("服务器已关闭")
 
 
-def handle_client(client_socket, client_address, save_to_file=True, log_filename='gps_log.txt'):
+def handle_client(client_socket, client_address, save_to_file=True, log_filename='gps_log.txt', gps_node=None):
     """
     处理单个客户端连接
     
@@ -172,24 +337,27 @@ def handle_client(client_socket, client_address, save_to_file=True, log_filename
                 while '\n' in buffer:
                     line, buffer = buffer.split('\n', 1)
                     line = line.strip()
-                    
+                    type=''
                     if line:
                         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
-                        print(f"[{timestamp}] 接收到: {line}")
                         
-                        # 如果是GNGGA数据，解析并显示
+                        # 如果是WTRTK数据，解析并显示
                         if 'GNGGA' in line:
-                            parsed = parse_gngga(line)
+                            parsed_gngga = parse_gngga(line)
+                            if parsed_gngga:
+                                if gps_node:
+                                    gps_node.update_gps_data(parsed_gngga, type='GNGGA')
+                                    print(f"  定位状态(UTC): {parsed_gngga['quality']}")
+        
+                        if 'WTRTK' in line:
+                            parsed = parse_wtrtk(line)
                             if parsed:
-                                print(f"  时间(UTC): {parsed['utc_time']}")
-                                if parsed['latitude'] and parsed['longitude']:
-                                    print(f"  位置: {parsed['latitude']:.6f}°N, {parsed['longitude']:.6f}°E")
-                                print(f"  卫星数: {parsed['satellites']}, 质量: {parsed['quality']}, 高度: {parsed['altitude']}m")
-                        
-                        # 保存到文件
-                        if save_to_file:
-                            save_gps_data(line, log_filename)
-                        
+                                if gps_node:
+                                    gps_node.update_gps_data(parsed,type='WTRTK')
+                                    print(f"  时间(UTC): {parsed['utc_time']}")
+                                    print(f"  经度(): {parsed['longitude']}")
+                                    print(f"  纬度(): {parsed['latitude']}")
+                                    
                         print()  # 空行分隔
             
             except UnicodeDecodeError:
@@ -209,5 +377,23 @@ if __name__ == "__main__":
     SAVE_TO_FILE = True  # 是否保存GPS数据到文件
     LOG_FILE = 'gps_log.txt'  # 日志文件名
     
-    # 启动GPS接收服务器
-    gps_receiver_server(host=HOST, port=PORT, save_to_file=SAVE_TO_FILE, log_filename=LOG_FILE)
+    # 初始化 ROS2
+    rclpy.init()
+    gps_node = GPSRequestNode()
+    
+    # 在单独线程中启动GPS接收服务器
+    server_thread = threading.Thread(
+        target=gps_receiver_server,
+        args=(HOST, PORT, SAVE_TO_FILE, LOG_FILE, gps_node),
+        daemon=True
+    )
+    server_thread.start()
+    
+    try:
+        # 运行 ROS 节点
+        rclpy.spin(gps_node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        gps_node.destroy_node()
+        rclpy.shutdown()

@@ -1,0 +1,386 @@
+[0.040s] Invoking command in '/home/tang/tang_ws/navigation2/build/fastlio2': AMENT_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/tang/tang_ws/navigation2/src/fastlio2 -DCMAKE_INSTALL_PREFIX=/home/tang/tang_ws/navigation2/install/fastlio2
+[0.120s] -- The C compiler identification is GNU 11.4.0
+[0.172s] -- The CXX compiler identification is GNU 11.4.0
+[0.179s] -- Detecting C compiler ABI info
+[0.233s] -- Detecting C compiler ABI info - done
+[0.237s] -- Check for working C compiler: /usr/bin/gcc-11 - skipped
+[0.237s] -- Detecting C compile features
+[0.237s] -- Detecting C compile features - done
+[0.239s] -- Detecting CXX compiler ABI info
+[0.294s] -- Detecting CXX compiler ABI info - done
+[0.300s] -- Check for working CXX compiler: /usr/bin/g++-11 - skipped
+[0.300s] -- Detecting CXX compile features
+[0.300s] -- Detecting CXX compile features - done
+[0.301s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.416s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.466s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.490s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.492s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.497s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.503s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.512s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.535s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.537s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.591s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.602s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.619s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.623s] -- Looking for pthread.h
+[0.667s] -- Looking for pthread.h - found
+[0.667s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.713s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.713s] -- Found Threads: TRUE  
+[0.743s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.757s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.817s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.831s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.840s] -- Found livox_ros_driver2: 1.0.0 (/home/tang/tang_ws/navigation2/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[0.868s] -- Checking for module 'eigen3'
+[0.875s] --   Found eigen3, version 3.4.0
+[0.901s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.901s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.927s] -- Checking for module 'flann'
+[0.936s] --   Found flann, version 1.9.1
+[0.962s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.963s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.556s] -- Checking for module 'libusb-1.0'
+[1.566s] --   Found libusb-1.0, version 1.0.25
+[1.589s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.590s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.626s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.723s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.728s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.732s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.821s] -- Found Qhull version 8.0.2
+[1.913s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.004s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.005s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.005s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.006s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.006s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.007s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.007s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.007s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.008s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.008s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.009s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.009s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.010s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.010s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.011s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.012s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.012s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.013s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.013s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.014s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.014s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.014s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.015s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.015s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.016s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.240s] [33mCMake Warning (dev) at CMakeLists.txt:35 (find_package):
+[2.240s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.240s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.240s]   command to set the policy and suppress this warning.
+[2.240s] 
+[2.240s]   CMake variable PCL_ROOT is set to:
+[2.240s] 
+[2.240s]     /usr
+[2.240s] 
+[2.240s]   For compatibility, CMake is ignoring the variable.
+[2.240s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.240s] [0m
+[2.260s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.338s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.338s] -- Configured cppcheck include dirs: 
+[2.338s] -- Configured cppcheck exclude dirs and/or files: 
+[2.338s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.339s] -- Added test 'lint_cmake' to check CMake code style
+[2.339s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.339s] -- Added test 'uncrustify' to check C / C++ code style
+[2.339s] -- Configured uncrustify additional arguments: 
+[2.340s] -- Added test 'xmllint' to check XML markup files
+[2.340s] -- Configuring done
+[2.359s] -- Generating done
+[2.364s] -- Build files have been written to: /home/tang/tang_ws/navigation2/build/fastlio2
+[2.376s] Invoked command in '/home/tang/tang_ws/navigation2/build/fastlio2' returned '0': AMENT_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/tang/tang_ws/navigation2/src/fastlio2 -DCMAKE_INSTALL_PREFIX=/home/tang/tang_ws/navigation2/install/fastlio2
+[2.378s] Invoking command in '/home/tang/tang_ws/navigation2/build/fastlio2': AMENT_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/fastlio2 -- -j16 -l16
+[2.410s] [ 22%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/imu_processor.cpp.o[0m
+[2.410s] [ 22%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/commons.cpp.o[0m
+[2.410s] [ 44%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/lidar_processor.cpp.o[0m
+[2.410s] [ 44%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/lio_node.cpp.o[0m
+[2.410s] [ 55%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/map_builder.cpp.o[0m
+[2.410s] [ 66%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/ieskf.cpp.o[0m
+[2.411s] [ 77%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/utils.cpp.o[0m
+[2.412s] [ 88%] [32mBuilding CXX object CMakeFiles/lio_node.dir/src/map_builder/ikd_Tree.cpp.o[0m
+[4.388s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::multi_thread_rebuild() [with PointType = pcl::PointXYZ][m[K’:
+[4.388s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.388s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:329:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_old[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.388s]   329 |             int [01;35m[Kvalid_old[m[K = old_root_node->TreeSize - old_root_node->invalid_point_num;
+[4.388s]       |                 [01;35m[K^~~~~~~~~[m[K
+[4.388s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:330:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_new[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.388s]   330 |             int [01;35m[Kvalid_new[m[K = new_root_node->TreeSize - new_root_node->invalid_point_num;
+[4.388s]       |                 [01;35m[K^~~~~~~~~[m[K
+[4.388s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:231:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_node_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.388s]   231 |     KD_TREE_NODE *father_ptr, **[01;35m[Knew_node_ptr[m[K;
+[4.388s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[4.391s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Rebuild(KD_TREE<PointType>::KD_TREE_NODE**) [with PointType = pcl::PointXYZ][m[K’:
+[4.391s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.391s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:751:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize_rec[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.391s]   751 |         int [01;35m[Ksize_rec[m[K = (*root)->TreeSize;
+[4.391s]       |             [01;35m[K^~~~~~~~[m[K
+[4.392s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool, bool) [with PointType = pcl::PointXYZ][m[K’:
+[4.392s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.392s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:802:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.392s]   802 |     struct timespec [01;35m[KTimeout[m[K;
+[4.392s]       |                     [01;35m[K^~~~~~~[m[K
+[4.392s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool) [with PointType = pcl::PointXYZ][m[K’:
+[4.392s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.392s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:867:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.392s]   867 |     struct timespec [01;35m[KTimeout[m[K;
+[4.392s]       |                     [01;35m[K^~~~~~~[m[K
+[4.393s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool, int) [with PointType = pcl::PointXYZ][m[K’:
+[4.393s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.393s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1006:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.393s]  1006 |     struct timespec [01;35m[KTimeout[m[K;
+[4.393s]       |                     [01;35m[K^~~~~~~[m[K
+[4.393s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool) [with PointType = pcl::PointXYZ][m[K’:
+[4.393s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.393s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:946:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.393s]   946 |     struct timespec [01;35m[KTimeout[m[K;
+[4.393s]       |                     [01;35m[K^~~~~~~[m[K
+[4.393s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Search(KD_TREE<PointType>::KD_TREE_NODE*, int, PointType, KD_TREE<PointType>::MANUAL_HEAP&, float) [with PointType = pcl::PointXYZ][m[K’:
+[4.393s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.393s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1097:63:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[4.394s]  1097 |     if (q.size() < k_nearest || [01;35m[Kdist_left_node < q.top().dist && dist_right_node < q.top().dist[m[K)
+[4.394s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.394s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1094:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_search_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.394s]  1094 |     int [01;35m[Kcur_search_counter[m[K;
+[4.394s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.403s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Add_Points(KD_TREE<PointType>::PointVector&, bool) [with PointType = pcl::PointXYZ; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >][m[K’:
+[4.403s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.403s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:485:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.403s]   485 |     for (int i = 0; [01;35m[Ki < PointToAdd.size()[m[K; i++)
+[4.403s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[4.403s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:502:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.403s]   502 |             for (int index = 0; [01;35m[Kindex < Downsample_Storage.size()[m[K; index++)
+[4.403s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.404s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNewPointSize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.404s]   478 |     int [01;35m[KNewPointSize[m[K = PointToAdd.size();
+[4.404s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[4.404s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:479:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktree_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.404s]   479 |     int [01;35m[Ktree_size[m[K = size();
+[4.405s]       |         [01;35m[K^~~~~~~~~[m[K
+[4.405s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZ][m[K’:
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:576:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.405s]   576 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[4.405s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[4.405s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_Points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZ; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >][m[K’:
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:604:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.405s]   604 |     for (int i = 0; [01;35m[Ki < PointToDel.size()[m[K; i++)
+[4.405s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[4.405s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZ][m[K’:
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:633:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.405s]   633 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[4.405s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[4.405s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::acquire_removed_points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZ; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >][m[K’:
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1730:16:[m[K   required from here
+[4.405s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:662:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.405s]   662 |     for (int i = 0; [01;35m[Ki < Points_deleted.size()[m[K; i++)
+[4.406s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.406s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:666:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.406s]   666 |     for (int i = 0; [01;35m[Ki < Multithread_Points_deleted.size()[m[K; i++)
+[4.406s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.408s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::multi_thread_rebuild() [with PointType = pcl::PointXYZI][m[K’:
+[4.408s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.408s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:329:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_old[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.408s]   329 |             int [01;35m[Kvalid_old[m[K = old_root_node->TreeSize - old_root_node->invalid_point_num;
+[4.408s]       |                 [01;35m[K^~~~~~~~~[m[K
+[4.408s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:330:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_new[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.408s]   330 |             int [01;35m[Kvalid_new[m[K = new_root_node->TreeSize - new_root_node->invalid_point_num;
+[4.409s]       |                 [01;35m[K^~~~~~~~~[m[K
+[4.409s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:231:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_node_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.409s]   231 |     KD_TREE_NODE *father_ptr, **[01;35m[Knew_node_ptr[m[K;
+[4.409s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[4.411s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Rebuild(KD_TREE<PointType>::KD_TREE_NODE**) [with PointType = pcl::PointXYZI][m[K’:
+[4.411s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.411s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:751:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize_rec[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.411s]   751 |         int [01;35m[Ksize_rec[m[K = (*root)->TreeSize;
+[4.411s]       |             [01;35m[K^~~~~~~~[m[K
+[4.411s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool, bool) [with PointType = pcl::PointXYZI][m[K’:
+[4.411s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.411s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:802:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.411s]   802 |     struct timespec [01;35m[KTimeout[m[K;
+[4.411s]       |                     [01;35m[K^~~~~~~[m[K
+[4.412s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool) [with PointType = pcl::PointXYZI][m[K’:
+[4.412s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.412s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:867:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.412s]   867 |     struct timespec [01;35m[KTimeout[m[K;
+[4.412s]       |                     [01;35m[K^~~~~~~[m[K
+[4.412s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool, int) [with PointType = pcl::PointXYZI][m[K’:
+[4.412s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.412s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1006:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.412s]  1006 |     struct timespec [01;35m[KTimeout[m[K;
+[4.412s]       |                     [01;35m[K^~~~~~~[m[K
+[4.413s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool) [with PointType = pcl::PointXYZI][m[K’:
+[4.413s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.413s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:946:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.413s]   946 |     struct timespec [01;35m[KTimeout[m[K;
+[4.413s]       |                     [01;35m[K^~~~~~~[m[K
+[4.413s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Search(KD_TREE<PointType>::KD_TREE_NODE*, int, PointType, KD_TREE<PointType>::MANUAL_HEAP&, float) [with PointType = pcl::PointXYZI][m[K’:
+[4.413s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.413s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1097:63:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[4.413s]  1097 |     if (q.size() < k_nearest || [01;35m[Kdist_left_node < q.top().dist && dist_right_node < q.top().dist[m[K)
+[4.413s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.414s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1094:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_search_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.414s]  1094 |     int [01;35m[Kcur_search_counter[m[K;
+[4.414s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.421s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Add_Points(KD_TREE<PointType>::PointVector&, bool) [with PointType = pcl::PointXYZI; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >][m[K’:
+[4.421s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.421s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:485:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.421s]   485 |     for (int i = 0; [01;35m[Ki < PointToAdd.size()[m[K; i++)
+[4.421s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[4.422s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:502:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.422s]   502 |             for (int index = 0; [01;35m[Kindex < Downsample_Storage.size()[m[K; index++)
+[4.422s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.422s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNewPointSize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.422s]   478 |     int [01;35m[KNewPointSize[m[K = PointToAdd.size();
+[4.422s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[4.422s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:479:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktree_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.422s]   479 |     int [01;35m[Ktree_size[m[K = size();
+[4.422s]       |         [01;35m[K^~~~~~~~~[m[K
+[4.422s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZI][m[K’:
+[4.422s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.422s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:576:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.422s]   576 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[4.422s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[4.423s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_Points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZI; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >][m[K’:
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:604:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.423s]   604 |     for (int i = 0; [01;35m[Ki < PointToDel.size()[m[K; i++)
+[4.423s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[4.423s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZI][m[K’:
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:633:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.423s]   633 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[4.423s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[4.423s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::acquire_removed_points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZI; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >][m[K’:
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1731:16:[m[K   required from here
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:662:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.423s]   662 |     for (int i = 0; [01;35m[Ki < Points_deleted.size()[m[K; i++)
+[4.423s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.423s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:666:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.423s]   666 |     for (int i = 0; [01;35m[Ki < Multithread_Points_deleted.size()[m[K; i++)
+[4.423s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.426s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::multi_thread_rebuild() [with PointType = pcl::PointXYZINormal][m[K’:
+[4.427s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.427s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:329:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_old[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.427s]   329 |             int [01;35m[Kvalid_old[m[K = old_root_node->TreeSize - old_root_node->invalid_point_num;
+[4.427s]       |                 [01;35m[K^~~~~~~~~[m[K
+[4.427s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:330:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalid_new[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.427s]   330 |             int [01;35m[Kvalid_new[m[K = new_root_node->TreeSize - new_root_node->invalid_point_num;
+[4.427s]       |                 [01;35m[K^~~~~~~~~[m[K
+[4.427s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:231:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_node_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.427s]   231 |     KD_TREE_NODE *father_ptr, **[01;35m[Knew_node_ptr[m[K;
+[4.427s]       |                                 [01;35m[K^~~~~~~~~~~~[m[K
+[4.429s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Rebuild(KD_TREE<PointType>::KD_TREE_NODE**) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.429s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.429s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:751:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize_rec[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.429s]   751 |         int [01;35m[Ksize_rec[m[K = (*root)->TreeSize;
+[4.430s]       |             [01;35m[K^~~~~~~~[m[K
+[4.430s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool, bool) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.430s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.430s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:802:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.430s]   802 |     struct timespec [01;35m[KTimeout[m[K;
+[4.430s]       |                     [01;35m[K^~~~~~~[m[K
+[4.430s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.430s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.430s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:867:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.430s]   867 |     struct timespec [01;35m[KTimeout[m[K;
+[4.431s]       |                     [01;35m[K^~~~~~~[m[K
+[4.431s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_point(KD_TREE<PointType>::KD_TREE_NODE**, PointType, bool, int) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.431s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.431s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1006:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.431s]  1006 |     struct timespec [01;35m[KTimeout[m[K;
+[4.431s]       |                     [01;35m[K^~~~~~~[m[K
+[4.432s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_by_range(KD_TREE<PointType>::KD_TREE_NODE**, BoxPointType, bool) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.432s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.432s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:946:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.432s]   946 |     struct timespec [01;35m[KTimeout[m[K;
+[4.432s]       |                     [01;35m[K^~~~~~~[m[K
+[4.432s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Search(KD_TREE<PointType>::KD_TREE_NODE*, int, PointType, KD_TREE<PointType>::MANUAL_HEAP&, float) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.432s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.432s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1097:63:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[4.432s]  1097 |     if (q.size() < k_nearest || [01;35m[Kdist_left_node < q.top().dist && dist_right_node < q.top().dist[m[K)
+[4.432s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.433s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1094:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcur_search_counter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.433s]  1094 |     int [01;35m[Kcur_search_counter[m[K;
+[4.433s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.441s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Add_Points(KD_TREE<PointType>::PointVector&, bool) [with PointType = pcl::PointXYZINormal; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >][m[K’:
+[4.441s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.441s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:485:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.441s]   485 |     for (int i = 0; [01;35m[Ki < PointToAdd.size()[m[K; i++)
+[4.441s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:502:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.442s]   502 |             for (int index = 0; [01;35m[Kindex < Downsample_Storage.size()[m[K; index++)
+[4.442s]       |                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNewPointSize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.442s]   478 |     int [01;35m[KNewPointSize[m[K = PointToAdd.size();
+[4.442s]       |         [01;35m[K^~~~~~~~~~~~[m[K
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:479:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktree_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.442s]   479 |     int [01;35m[Ktree_size[m[K = size();
+[4.442s]       |         [01;35m[K^~~~~~~~~[m[K
+[4.442s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Add_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:576:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.442s]   576 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[4.442s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[4.442s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::Delete_Points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZINormal; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >][m[K’:
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.442s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:604:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.442s]   604 |     for (int i = 0; [01;35m[Ki < PointToDel.size()[m[K; i++)
+[4.443s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[4.443s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kint KD_TREE<PointType>::Delete_Point_Boxes(std::vector<BoxPointType>&) [with PointType = pcl::PointXYZINormal][m[K’:
+[4.443s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.443s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:633:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<BoxPointType>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.443s]   633 |     for (int i = 0; [01;35m[Ki < BoxPoints.size()[m[K; i++)
+[4.443s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[4.443s] /home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp: In instantiation of ‘[01m[Kvoid KD_TREE<PointType>::acquire_removed_points(KD_TREE<PointType>::PointVector&) [with PointType = pcl::PointXYZINormal; KD_TREE<PointType>::PointVector = std::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >][m[K’:
+[4.443s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:1732:16:[m[K   required from here
+[4.443s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:662:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.443s]   662 |     for (int i = 0; [01;35m[Ki < Points_deleted.size()[m[K; i++)
+[4.443s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.443s] [01m[K/home/tang/tang_ws/navigation2/src/fastlio2/src/map_builder/ikd_Tree.cpp:666:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZINormal, Eigen::aligned_allocator<pcl::PointXYZINormal> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.443s]   666 |     for (int i = 0; [01;35m[Ki < Multithread_Points_deleted.size()[m[K; i++)
+[4.443s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.986s] [100%] [32m[1mLinking CXX executable lio_node[0m
+[20.412s] [100%] Built target lio_node
+[20.419s] Invoked command in '/home/tang/tang_ws/navigation2/build/fastlio2' returned '0': AMENT_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tang/tang_ws/navigation2/build/fastlio2 -- -j16 -l16
+[20.420s] Invoking command in '/home/tang/tang_ws/navigation2/build/fastlio2': AMENT_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tang/tang_ws/navigation2/build/fastlio2
+[20.425s] -- Install configuration: "Release"
+[20.425s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/lib/fastlio2/lio_node
+[20.426s] -- Set runtime path of "/home/tang/tang_ws/navigation2/install/fastlio2/lib/fastlio2/lio_node" to ""
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/launch
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/launch/lio_launch.py
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/rviz
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/rviz/fastlio2.rviz
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/config
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/config/lio.yaml
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/ament_index/resource_index/package_run_dependencies/fastlio2
+[20.426s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/ament_index/resource_index/parent_prefix_path/fastlio2
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/environment/ament_prefix_path.sh
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/environment/ament_prefix_path.dsv
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/environment/path.sh
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/environment/path.dsv
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/local_setup.bash
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/local_setup.sh
+[20.427s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/local_setup.zsh
+[20.428s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/local_setup.dsv
+[20.428s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/package.dsv
+[20.428s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/ament_index/resource_index/packages/fastlio2
+[20.428s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/cmake/fastlio2Config.cmake
+[20.428s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/cmake/fastlio2Config-version.cmake
+[20.428s] -- Installing: /home/tang/tang_ws/navigation2/install/fastlio2/share/fastlio2/package.xml
+[20.429s] Invoked command in '/home/tang/tang_ws/navigation2/build/fastlio2' returned '0': AMENT_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2:/opt/bxi/bxi_ros2_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/opt/bxi/bxi_ros2_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.4/lib64:/usr/lib/x86_64-linux-gnu:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin:/home/.mujoco/mujoco-3.3.3-linux-x86_64/mujoco-3.3.3/bin:/home/tang/.mujoco/mujoco336/mujoco-3.3.6bin PYTHONPATH=/home/tang/tang_ws/navigation2/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tang/tang_ws/navigation2/build/fastlio2
